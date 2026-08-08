@@ -9,6 +9,7 @@
   --lime: #ddeb8c;
   --water: #b8dce0;
   --sand: #eee4cb;
+  --sun: #f1d36e;
   --line: rgba(24,48,37,.16);
 }
 * { box-sizing: border-box; }
@@ -16,7 +17,7 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--cream); color: var(--ink); }
 a { color: inherit; }
 main { overflow: hidden; }
-.siteHeader, .hero, .plainIdea, .explainGrid, .world, .germany, .join, footer { max-width: 1380px; margin-left: auto; margin-right: auto; padding-left: 36px; padding-right: 36px; }
+.siteHeader, .hero, .plainIdea, .explainGrid, .world, .germanyLead, .campaignIdea, .stateSection, .bavariaFeature, .join, footer { max-width: 1380px; margin-left: auto; margin-right: auto; padding-left: 36px; padding-right: 36px; }
 .siteHeader { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 1.05rem; }
 .brandLeaf { font-size: 1.3rem; }
@@ -72,12 +73,42 @@ nav a { text-decoration: none; font-size: .93rem; }
 .story h3 { font-size: 2.35rem; letter-spacing: -.045em; margin: 14px 0; }
 .story p { line-height: 1.65; min-height: 132px; }
 .coming { font-size: .9rem; font-weight: 700; }
-.germany { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; padding-top: 110px; padding-bottom: 120px; border-top: 1px solid var(--line); }
-.germany h2 { font-size: clamp(2.8rem, 5vw, 5.2rem); line-height: .98; letter-spacing: -.05em; font-weight: 500; margin: 0; }
-.germanyText { padding-top: 42px; }
-.germanyText p { font-size: 1.16rem; line-height: 1.7; }
-.germanyText a { display: inline-block; margin-top: 20px; font-weight: 700; text-underline-offset: 5px; }
-.join { background: var(--lime); border-radius: 30px; padding-top: 70px; padding-bottom: 70px; margin-bottom: 90px; }
+.germanyLead { padding-top: 115px; padding-bottom: 90px; display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 70px; border-top: 1px solid var(--line); }
+.germanyLead h2 { margin: 0 0 28px; font-size: clamp(3.5rem, 7vw, 7.2rem); line-height: .9; letter-spacing: -.065em; font-weight: 500; }
+.germanyLeadCopy > p:last-child { max-width: 720px; font-size: 1.3rem; line-height: 1.6; }
+.sixteen { font-size: clamp(11rem, 25vw, 23rem); line-height: .67; letter-spacing: -.1em; font-weight: 700; color: var(--lime); text-align: right; transform: translateY(6px); }
+.campaignIdea { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; padding-top: 80px; padding-bottom: 100px; }
+.campaignHeadline > span { display: inline-block; margin-bottom: 25px; padding: 8px 13px; border-radius: 999px; background: var(--sand); font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; }
+.campaignHeadline h2 { margin: 0; max-width: 800px; font-size: clamp(2.7rem, 4.8vw, 5rem); line-height: .98; letter-spacing: -.05em; font-weight: 500; }
+.campaignCopy { padding-top: 56px; }
+.campaignCopy p { margin: 0 0 24px; font-size: 1.15rem; line-height: 1.7; }
+.stateSection { padding-bottom: 135px; }
+.stateHeader { max-width: 870px; margin-bottom: 55px; }
+.stateHeader h2 { margin: 0 0 25px; font-size: clamp(2.8rem, 5vw, 5.3rem); line-height: .98; letter-spacing: -.05em; font-weight: 500; }
+.stateHeader > p:last-child { font-size: 1.08rem; line-height: 1.6; opacity: .75; }
+.stateGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.stateCard { min-height: 245px; border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; background: rgba(255,255,255,.35); transition: transform .2s ease, background .2s ease; }
+.stateCard:hover { transform: translateY(-3px); background: white; }
+.stateCard > span { font-size: .72rem; opacity: .5; }
+.stateCard h3 { margin: 38px 0 10px; font-size: 1.35rem; line-height: 1.05; letter-spacing: -.03em; }
+.stateCard p { margin: 0; font-size: .88rem; line-height: 1.5; opacity: .72; }
+.stateCard strong { margin-top: auto; padding-top: 18px; font-size: .8rem; }
+.stateActive { background: var(--lime); border-color: var(--lime); }
+.stateActive:hover { background: var(--lime); }
+.bavariaFeature { display: grid; grid-template-columns: .7fr 1.3fr; gap: 80px; padding-top: 105px; padding-bottom: 115px; border-top: 1px solid var(--line); }
+.bavariaNumber { align-self: start; font-size: clamp(9rem, 19vw, 18rem); line-height: .72; letter-spacing: -.08em; color: var(--water); font-weight: 700; }
+.bavariaCopy { padding-top: 15px; }
+.bavariaCopy h2 { margin: 0 0 30px; font-size: clamp(3rem, 5.3vw, 5.6rem); line-height: .96; letter-spacing: -.055em; font-weight: 500; }
+.bavariaCopy > p { max-width: 720px; font-size: 1.18rem; line-height: 1.7; }
+.bavariaLinks { margin-top: 38px; border-top: 1px solid var(--line); }
+.bavariaLinks a, .bavariaLinks span { display: block; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.bavariaLinks a { font-weight: 700; text-decoration: none; }
+.bavariaLinks span { opacity: .65; }
+.campaignCall { background: var(--sun); text-align: center; padding: 110px max(36px, calc((100vw - 1200px)/2)); }
+.campaignCall .tiny { display: inline-block; margin-bottom: 20px; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; }
+.campaignCall h2 { max-width: 1100px; margin: 0 auto 28px; font-size: clamp(3.4rem, 7vw, 7rem); line-height: .9; letter-spacing: -.065em; font-weight: 500; }
+.campaignCall p { max-width: 760px; margin: auto; font-size: 1.2rem; line-height: 1.65; }
+.join { background: var(--lime); border-radius: 30px; padding-top: 70px; padding-bottom: 70px; margin-top: 100px; margin-bottom: 90px; }
 .join h2 { max-width: 950px; font-size: clamp(2.7rem, 5vw, 5.3rem); line-height: .98; letter-spacing: -.05em; font-weight: 500; margin: 0 0 55px; }
 .joinLinks { border-top: 1px solid rgba(24,48,37,.3); }
 .joinLinks a { display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid rgba(24,48,37,.3); text-decoration: none; font-size: 1.08rem; font-weight: 700; }
@@ -85,15 +116,20 @@ footer { display: grid; grid-template-columns: 1fr 2fr auto; gap: 30px; padding-
 .footerBrand { font-weight: 700; }
 footer p { margin: 0; opacity: .7; }
 footer span { opacity: .55; }
+@media (max-width: 1000px) {
+  .stateGrid { grid-template-columns: repeat(2, 1fr); }
+  .germanyLead, .campaignIdea, .bavariaFeature { grid-template-columns: 1fr; }
+  .sixteen { text-align: left; }
+  .campaignCopy { padding-top: 0; }
+}
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .heroNature { height: 460px; }
-  .explainGrid, .storyGrid, .germany { grid-template-columns: 1fr; }
-  .germany { gap: 20px; }
+  .explainGrid, .storyGrid { grid-template-columns: 1fr; }
   .story p { min-height: 0; }
 }
 @media (max-width: 680px) {
-  .siteHeader, .hero, .plainIdea, .explainGrid, .world, .germany, .join, footer { padding-left: 20px; padding-right: 20px; }
+  .siteHeader, .hero, .plainIdea, .explainGrid, .world, .germanyLead, .campaignIdea, .stateSection, .bavariaFeature, .join, footer { padding-left: 20px; padding-right: 20px; }
   .siteHeader { align-items: flex-start; flex-direction: column; padding-top: 22px; padding-bottom: 22px; }
   nav { gap: 14px 18px; }
   .navAction { padding: 0; border: 0; }
@@ -102,10 +138,17 @@ footer span { opacity: .55; }
   .heroNature { height: 390px; border-radius: 150px 150px 10px 10px; }
   .plainIdea { padding-top: 90px; }
   .explainGrid { padding-bottom: 90px; }
-  .questionBand { padding: 75px 20px; }
+  .questionBand, .campaignCall { padding-left: 20px; padding-right: 20px; }
   .world { padding-top: 90px; padding-bottom: 90px; }
   .storyVisual { height: 220px; }
-  .germany { padding-top: 80px; padding-bottom: 85px; }
-  .join { margin: 0 12px 70px; padding-top: 55px; padding-bottom: 55px; }
+  .germanyLead { padding-top: 85px; padding-bottom: 60px; }
+  .sixteen { font-size: 12rem; }
+  .campaignIdea { gap: 35px; padding-top: 45px; }
+  .stateGrid { grid-template-columns: 1fr; }
+  .stateCard { min-height: 210px; }
+  .bavariaFeature { gap: 35px; }
+  .bavariaNumber { font-size: 10rem; }
+  .campaignCall { padding-top: 80px; padding-bottom: 85px; }
+  .join { margin: 70px 12px 70px; padding-top: 55px; padding-bottom: 55px; }
   footer { grid-template-columns: 1fr; }
 }
