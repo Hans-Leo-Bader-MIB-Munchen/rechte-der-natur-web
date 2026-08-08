@@ -1,36 +1,21 @@
-const cases = [
+const stories = [
   {
     place: "Spanien",
     title: "Mar Menor",
-    text: "Eine Lagune mit eigener Rechtspersönlichkeit – und ein Beispiel dafür, dass Rechtsstatus, Vertretung und tatsächliche Wirkung getrennt betrachtet werden müssen.",
+    text: "Eine Lagune bekommt eigene Rechte. Seit 2022 ist das Mar Menor in Spanien Rechtssubjekt – ein außergewöhnlicher Versuch, ein bedrohtes Ökosystem anders zu schützen.",
+    mark: "Wasser",
   },
   {
-    place: "Neuseeland",
+    place: "Aotearoa / Neuseeland",
     title: "Whanganui",
-    text: "Ein Fluss als Rechtsperson innerhalb einer institutionellen Vertretungsordnung. Nicht Naturromantik, sondern eine konkrete Neuordnung von Zuständigkeit und Verantwortung.",
+    text: "Der Fluss ist mehr als Wasser zwischen zwei Ufern. Seine rechtliche Anerkennung verbindet staatliches Recht mit der Beziehung der Māori zu einem lebendigen Ganzen.",
+    mark: "Fluss",
   },
   {
-    place: "Kolumbien",
-    title: "Flüsse und Ökosysteme",
-    text: "Gerichte und Gesetzgebung entwickeln unterschiedliche Modelle. Entscheidend ist nicht nur die Anerkennung von Rechten, sondern ihre institutionelle Umsetzung.",
-  },
-];
-
-const principles = [
-  {
-    number: "01",
-    title: "Eigene rechtliche Stellung",
-    text: "Natur wird nicht ausschließlich als Objekt menschlicher Nutzung oder als Schutzgut behandelt. Rechte der Natur eröffnen die Möglichkeit einer eigenständigen rechtlichen Berücksichtigung.",
-  },
-  {
-    number: "02",
-    title: "Vertretung braucht Struktur",
-    text: "Ein Recht wirkt nicht von selbst. Es braucht Personen, Institutionen und Verfahren, die ökologische Interessen zuverlässig wahrnehmen und in Entscheidungen einbringen.",
-  },
-  {
-    number: "03",
-    title: "Wirkung muss geprüft werden",
-    text: "Rechtsträgerschaft ist kein Erfolgssiegel. Wir schauen darauf, ob Rechte aktiviert, institutionell aufgenommen und in tatsächliche Entscheidungen übersetzt werden.",
+    place: "Ecuador",
+    title: "Natur in der Verfassung",
+    text: "Seit 2008 erkennt die Verfassung Rechte der Natur an. Was daraus folgt, entscheidet sich nicht nur im Gesetzestext, sondern in Gerichten, Behörden und konkreten Konflikten.",
+    mark: "Land",
   },
 ];
 
@@ -39,162 +24,133 @@ export default function Home() {
     <main id="top">
       <header className="siteHeader">
         <a className="brand" href="#top" aria-label="Rechte der Natur – Startseite">
-          <span className="brandMark" aria-hidden="true">R/N</span>
-          <span className="brandText">Rechte der Natur</span>
+          <span className="brandLeaf" aria-hidden="true">✦</span>
+          <span>Rechte der Natur</span>
         </a>
         <nav aria-label="Hauptnavigation">
-          <a href="#warum">Warum?</a>
-          <a href="#wirkung">Wie wirkt Recht?</a>
-          <a href="#beispiele">Beispiele</a>
-          <a href="#weiter">Weiterdenken</a>
+          <a href="#idee">Die Idee</a>
+          <a href="#weltweit">Weltweit</a>
+          <a href="#deutschland">Deutschland</a>
+          <a className="navAction" href="#mitmachen">Mitmachen</a>
         </nav>
       </header>
 
       <section className="hero">
-        <div className="heroMeta">
-          <span>Entwurf · Preview</span>
-          <span>rechtedernatur.de</span>
-        </div>
-        <h1>
-          Natur ist nicht nur
-          <span>Gegenstand des Rechts.</span>
-        </h1>
-        <div className="heroBottom">
+        <div className="heroCopy">
+          <p className="eyebrow">Rechte der Natur</p>
+          <h1>Was wäre, wenn ein Fluss eigene Rechte hätte?</h1>
           <p className="lead">
-            Rechte der Natur stellen eine einfache, aber weitreichende Frage:
-            Was verändert sich, wenn Flüsse, Wälder und Ökosysteme im Recht nicht
-            nur geschützt werden, sondern eine eigene rechtliche Stellung erhalten?
+            Wir schützen Natur – und behandeln sie im Recht trotzdem meist als Sache,
+            Eigentum oder Ressource. Weltweit wächst eine andere Idee: Natur kann
+            eigene Rechte haben.
           </p>
-          <a className="roundLink" href="#warum" aria-label="Weiterlesen">
-            ↓
-          </a>
+          <div className="heroActions">
+            <a className="buttonPrimary" href="#idee">Verstehen, worum es geht</a>
+            <a className="textLink" href="#weltweit">Wo gibt es das schon? ↓</a>
+          </div>
+        </div>
+        <div className="heroNature" aria-hidden="true">
+          <div className="sun" />
+          <div className="river riverOne" />
+          <div className="river riverTwo" />
+          <div className="land landOne" />
+          <div className="land landTwo" />
+          <span>Fluss</span>
+          <span>Wald</span>
+          <span>Meer</span>
         </div>
       </section>
 
-      <section className="statement" id="warum">
-        <p className="sectionLabel">Der Perspektivwechsel</p>
-        <div className="statementText">
-          <h2>
-            Wir leben nicht außerhalb der Natur. Unser Recht tut aber oft noch so.
-          </h2>
-          <p>
-            Umweltrecht schützt Natur überwiegend aus einer menschlichen Perspektive:
-            als Lebensgrundlage, Eigentum, Ressource oder Schutzgut. Rechte der Natur
-            verschieben diesen Ausgangspunkt. Sie fragen, ob Teile der Mitwelt auch um
-            ihrer selbst willen rechtlich berücksichtigt werden sollen.
-          </p>
-          <p>
-            Das ist kein juristischer Zaubertrick. Und es ist nicht automatisch ein
-            zusätzliches Klageinstrument. Entscheidend ist, wie Rechte ausgestaltet,
-            vertreten und in Verfahren tatsächlich wirksam werden.
-          </p>
-        </div>
+      <section className="plainIdea" id="idee">
+        <p className="sectionLabel">Die Idee in einem Satz</p>
+        <h2>Natur soll nicht nur geschützt werden, weil sie uns nützt.</h2>
+        <p className="bigText">
+          Ein Wald, ein Fluss oder ein Ökosystem kann einen eigenen Wert haben – und
+          dieser Wert kann im Recht eine eigene Stimme bekommen.
+        </p>
       </section>
 
-      <section className="effectSection" id="wirkung">
-        <div className="effectIntro">
-          <p className="sectionLabel">Recht ist nicht gleich Wirkung</p>
-          <h2>Ein Recht auf dem Papier verändert noch keine Entscheidung.</h2>
+      <section className="explainGrid" aria-label="Was Rechte der Natur bedeuten">
+        <article>
+          <span className="symbol">01</span>
+          <h3>Eigene Rechte</h3>
+          <p>Natur wird nicht nur zum Objekt menschlicher Interessen. Ihre Existenz, Regeneration und ökologischen Funktionen können selbst rechtlich zählen.</p>
+        </article>
+        <article>
+          <span className="symbol">02</span>
+          <h3>Jemand spricht für sie</h3>
+          <p>Ein Fluss geht natürlich nicht ins Rathaus. Menschen oder Institutionen können seine Rechte vertreten – ähnlich wie wir auch andere nicht selbst handlungsfähige Rechtsträger vertreten.</p>
+        </article>
+        <article>
+          <span className="symbol">03</span>
+          <h3>Kein Zauberstab</h3>
+          <p>Ein Recht allein rettet noch keinen Wald. Entscheidend ist, ob es ernst genommen, vertreten und bei realen Entscheidungen tatsächlich berücksichtigt wird.</p>
+        </article>
+      </section>
+
+      <section className="questionBand">
+        <p>Der eigentliche Perspektivwechsel</p>
+        <h2>Nicht nur: „Was dürfen wir mit der Natur tun?“</h2>
+        <strong>Sondern: „Was braucht sie, um zu leben?“</strong>
+      </section>
+
+      <section className="world" id="weltweit">
+        <div className="sectionIntro">
+          <p className="sectionLabel">Weltweit</p>
+          <h2>Die Idee ist längst Wirklichkeit.</h2>
+          <p>Aber nicht überall auf dieselbe Weise. Genau deshalb lohnt sich der Blick auf die Erfahrungen.</p>
         </div>
-        <div className="principleGrid">
-          {principles.map((principle) => (
-            <article className="principle" key={principle.number}>
-              <span>{principle.number}</span>
-              <h3>{principle.title}</h3>
-              <p>{principle.text}</p>
+        <div className="storyGrid">
+          {stories.map((story) => (
+            <article className="story" key={story.title}>
+              <div className={`storyVisual visual${story.mark}`}>
+                <span>{story.mark}</span>
+              </div>
+              <div className="storyCopy">
+                <span className="place">{story.place}</span>
+                <h3>{story.title}</h3>
+                <p>{story.text}</p>
+                <span className="coming">Mehr dazu entsteht hier →</span>
+              </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="quoteBand" aria-label="Leitsatz">
-        <p>Die entscheidende Frage lautet nicht nur:</p>
-        <strong>Hat Natur Rechte?</strong>
-        <p>Sondern auch:</p>
-        <strong>Wer sorgt dafür, dass sie in einer Entscheidung vorkommen?</strong>
-      </section>
-
-      <section className="caseSection" id="beispiele">
-        <div className="sectionHeading">
-          <p className="sectionLabel">Internationale Erfahrungen</p>
-          <h2>Kein Modell ist einfach übertragbar.</h2>
-          <p>
-            Weltweit entstehen sehr unterschiedliche rechtliche Konstruktionen. Wir
-            behandeln sie nicht als Erfolgsgeschichten, sondern als Erfahrungen, aus
-            denen sich lernen lässt.
-          </p>
+      <section className="germany" id="deutschland">
+        <div>
+          <p className="sectionLabel">Und Deutschland?</p>
+          <h2>Auch hier ist die Frage längst angekommen.</h2>
         </div>
-        <div className="caseGrid">
-          {cases.map((item) => (
-            <article className="caseCard" key={item.title}>
-              <span>{item.place}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
+        <div className="germanyText">
+          <p>
+            Initiativen, Wissenschaft und Rechtspraxis diskutieren, ob und wie die
+            rechtliche Stellung der Natur weiterentwickelt werden kann. In Bayern
+            begann unsere Arbeit mit dem Volksbegehren „Rechte der Natur“.
+          </p>
+          <p>
+            Heute geht es um mehr als eine einzelne Forderung: Wir wollen verstehen,
+            welche rechtlichen Veränderungen Natur tatsächlich helfen – und wo schöne
+            Worte allein nicht reichen.
+          </p>
+          <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">Zur Geschichte des Volksbegehrens →</a>
         </div>
       </section>
 
-      <section className="paths" id="weiter">
-        <article className="path pathPrimary">
-          <p className="sectionLabel">Aktuelle Plattform</p>
-          <h2>Rechte der Natur weiterdenken.</h2>
-          <p>
-            Diese Seite soll aktuelle Entwicklungen, Grundlagen, Debatten und Wege
-            zum Mitmachen zusammenführen – verständlich, aber ohne die juristischen
-            Schwierigkeiten glattzubügeln.
-          </p>
-          <a href="#top">Hier entsteht die neue Plattform →</a>
-        </article>
-
-        <article className="path">
-          <p className="sectionLabel">Fachliche Vertiefung</p>
-          <h2>Systemische Rechtsentwicklung</h2>
-          <p>
-            Wie werden rechtliche Innovationen tatsächlich handlungsfähig? Die
-            methodische und rechtswissenschaftliche Vertiefung bleibt bewusst auf
-            einer eigenständigen Plattform.
-          </p>
-          <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">
-            Zur SRE-Plattform →
-          </a>
-        </article>
-
-        <article className="path">
-          <p className="sectionLabel">Historische Referenz</p>
-          <h2>Wo alles begann</h2>
-          <p>
-            Die bisherige Website mit Volksbegehren, Verfassungsbeschwerde und
-            dokumentierten Materialien bleibt als eigenständige Referenzschicht
-            vollständig erreichbar.
-          </p>
-          <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">
-            Zur Referenzseite →
-          </a>
-        </article>
-      </section>
-
-      <section className="domainBar" aria-label="Domainstruktur">
-        <div>
-          <span>rechtedernatur.de</span>
-          <strong>Hauptplattform</strong>
-        </div>
-        <div>
-          <span>rechtedernatur.bayern</span>
-          <strong>Regionaler Einstieg</strong>
-        </div>
-        <div>
-          <span>dubistdieer.de · ichbindieer.de</span>
-          <strong>Kampagnenzugänge</strong>
+      <section className="join" id="mitmachen">
+        <p className="sectionLabel">Mitdenken. Mitreden. Mitmachen.</p>
+        <h2>Recht verändert sich, wenn Menschen anfangen, anders zu fragen.</h2>
+        <div className="joinLinks">
+          <a href="#weltweit">Entwicklungen entdecken <span>→</span></a>
+          <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Fachlich tiefer einsteigen <span>→</span></a>
+          <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">Unsere bisherige Arbeit <span>→</span></a>
         </div>
       </section>
 
       <footer>
-        <div>
-          <strong>Rechte der Natur</strong>
-          <span>Preview · keine Produktionsfreigabe</span>
-        </div>
-        <a href="#top">Nach oben ↑</a>
+        <div className="footerBrand">Rechte der Natur</div>
+        <p>Eine neue Perspektive auf Recht, Verantwortung und unsere Mitwelt.</p>
+        <span>Entwurf · Preview</span>
       </footer>
     </main>
   );
