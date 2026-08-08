@@ -19,6 +19,13 @@ const stories = [
   },
 ];
 
+const states = [
+  "Baden-Württemberg", "Bayern", "Berlin", "Brandenburg",
+  "Bremen", "Hamburg", "Hessen", "Mecklenburg-Vorpommern",
+  "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz", "Saarland",
+  "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen",
+];
+
 export default function Home() {
   return (
     <main id="top">
@@ -46,7 +53,7 @@ export default function Home() {
           </p>
           <div className="heroActions">
             <a className="buttonPrimary" href="#idee">Verstehen, worum es geht</a>
-            <a className="textLink" href="#weltweit">Wo gibt es das schon? ↓</a>
+            <a className="textLink" href="#deutschland">Was heißt das für Deutschland? ↓</a>
           </div>
         </div>
         <div className="heroNature" aria-hidden="true">
@@ -117,31 +124,85 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="germany" id="deutschland">
-        <div>
-          <p className="sectionLabel">Und Deutschland?</p>
-          <h2>Auch hier ist die Frage längst angekommen.</h2>
-        </div>
-        <div className="germanyText">
+      <section className="germanyLead" id="deutschland">
+        <div className="germanyLeadCopy">
+          <p className="sectionLabel">Deutschland</p>
+          <h2>16 Länder. Eine große Frage.</h2>
           <p>
-            Initiativen, Wissenschaft und Rechtspraxis diskutieren, ob und wie die
-            rechtliche Stellung der Natur weiterentwickelt werden kann. In Bayern
-            begann unsere Arbeit mit dem Volksbegehren „Rechte der Natur“.
+            Wie können Rechte der Natur dort verankert werden, wo Menschen unmittelbar
+            über ihre Landesverfassungen und Gesetze mitentscheiden können?
+          </p>
+        </div>
+        <div className="sixteen" aria-hidden="true">16</div>
+      </section>
+
+      <section className="campaignIdea">
+        <div className="campaignHeadline">
+          <span>Unsere Perspektive</span>
+          <h2>Nicht ein Volksbegehren. Ein lernendes Netz aus vielen möglichen Wegen.</h2>
+        </div>
+        <div className="campaignCopy">
+          <p>
+            Bayern war der Ausgangspunkt. Daraus kann mehr werden: Für jedes Bundesland
+            muss neu geprüft werden, was rechtlich möglich, politisch sinnvoll und
+            gesellschaftlich tragfähig ist.
           </p>
           <p>
-            Heute geht es um mehr als eine einzelne Forderung: Wir wollen verstehen,
-            welche rechtlichen Veränderungen Natur tatsächlich helfen – und wo schöne
-            Worte allein nicht reichen.
+            Die gemeinsame Plattform kann Wissen, Gestaltung, Materialien und Erfahrungen
+            teilen. Die konkrete Kampagne muss trotzdem zum jeweiligen Land passen.
           </p>
-          <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">Zur Geschichte des Volksbegehrens →</a>
         </div>
+      </section>
+
+      <section className="stateSection" aria-label="Die 16 Bundesländer">
+        <div className="stateHeader">
+          <p className="sectionLabel">16 Länder</p>
+          <h2>Eine gemeinsame Plattform. Sechzehn eigenständige Wege.</h2>
+          <p>Noch ist das eine Landkarte der Möglichkeiten – keine Behauptung über bereits laufende Kampagnen.</p>
+        </div>
+        <div className="stateGrid">
+          {states.map((state, index) => (
+            <article className={`stateCard ${state === "Bayern" ? "stateActive" : ""}`} key={state}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{state}</h3>
+              <p>{state === "Bayern" ? "Ausgangspunkt · Volksbegehren und Verfassungsbeschwerde" : "Perspektive · rechtlicher und politischer Weg noch zu entwickeln"}</p>
+              <strong>{state === "Bayern" ? "Bayern ansehen →" : "Noch offen"}</strong>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bavariaFeature">
+        <div className="bavariaNumber">01</div>
+        <div className="bavariaCopy">
+          <p className="sectionLabel">Der erste Weg</p>
+          <h2>Bayern: Hier hat unsere Geschichte begonnen.</h2>
+          <p>
+            Das Volksbegehren „Rechte der Natur“ war mehr als eine Kampagne. Es wurde
+            zum Ausgangspunkt für Verfassungsbeschwerde, rechtliche Vertiefung und die
+            Frage, wie neue Rechte tatsächlich wirksam werden können.
+          </p>
+          <div className="bavariaLinks">
+            <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">Die bisherige Kampagne und Dokumentation →</a>
+            <span>Neue Bayern-Kampagnenseite entsteht innerhalb dieser Plattform.</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="campaignCall">
+        <span className="tiny">Vielleicht ein bisschen größenwahnsinnig.</span>
+        <h2>Aber warum eigentlich nicht alle 16?</h2>
+        <p>
+          Nicht gleichzeitig. Nicht identisch. Und nicht um jeden Preis. Aber mit einer
+          gemeinsamen Idee, einer lernenden Struktur und dem Mut, Recht neu zu denken.
+        </p>
       </section>
 
       <section className="join" id="mitmachen">
         <p className="sectionLabel">Mitdenken. Mitreden. Mitmachen.</p>
         <h2>Recht verändert sich, wenn Menschen anfangen, anders zu fragen.</h2>
         <div className="joinLinks">
-          <a href="#weltweit">Entwicklungen entdecken <span>→</span></a>
+          <a href="#deutschland">Die 16-Länder-Idee erkunden <span>→</span></a>
           <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Fachlich tiefer einsteigen <span>→</span></a>
           <a href="https://gibdernaturrecht.muc-mib.de" target="_blank" rel="noreferrer">Unsere bisherige Arbeit <span>→</span></a>
         </div>
