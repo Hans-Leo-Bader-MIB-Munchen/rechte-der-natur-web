@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 import { federalStates } from "../lib/states";
+import { landesEntwuerfe } from "./land-entwuerfe";
 import styles from "./page.module.css";
 
 const status = [
@@ -12,6 +13,8 @@ const status = [
   ["Laufende Sammelphase", "Die Kampagne sammelt Unterstützungsunterschriften für den Zulassungsantrag. Bayern befindet sich derzeit in dieser Phase."],
   ["Aktive Kampagne", "Eine konkrete Initiative läuft – mit Organisation, Mobilisierung und der im jeweiligen Verfahren vorgesehenen Unterschriftensammlung."],
 ];
+
+const draftByState = Object.fromEntries(landesEntwuerfe.map((item) => [item.name, item.slug]));
 
 export default function Deutschland() {
   return (
@@ -40,8 +43,14 @@ export default function Deutschland() {
       </section>
 
       <section className={styles.map} id="laender">
-        <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Frühere Initiativen markieren vorhandene Erfahrungen. Bayern sammelt bereits Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
-        <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=><article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>{name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : status === "Frühere Initiative" ? <div><strong>Startpunkt</strong><br/><small>Textentwurf</small></div> : <strong>{status}</strong>}</article>)}</div>
+        <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Frühere Initiativen markieren vorhandene Erfahrungen. Für sechs Länder liegen bereits dokumentierte Textentwürfe vor. Bayern sammelt Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
+        <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=>{
+          const draftSlug = draftByState[name];
+          return <article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}>
+            <span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>
+            {name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : draftSlug ? <Link href={`/deutschland/${draftSlug}`}><strong>Startpunkt</strong><br/><small>Textentwurf ansehen →</small></Link> : <strong>{status}</strong>}
+          </article>;
+        })}</div>
       </section>
 
       <section className={styles.status}>
