@@ -151,25 +151,32 @@
     background: var(--pale);
   }
 
-  /* Two deliberate typographic groups, not an accident of import order:
-     Leitseiten (Start, Bayern) carry the larger display size; every
-     other route (Themenseiten) shares the calmer size below. Bayern's
-     own h1 is set directly in its CSS module to the same value, since
-     module classnames aren't reachable from here. */
+  /* Display hierarchy: only true page entries stay large. */
   .hero h1 {
-    font-size: clamp(4rem, 7vw, 7.5rem) !important;
-    line-height: .9 !important;
+    font-size: clamp(3.7rem, 5.4vw, 5.3rem) !important;
+    line-height: .94 !important;
   }
 
-  /* Keep large headings expressive without letting them dominate laptop screens. */
   .worldHero h1,
   .deHero h1,
   .newsHero h1,
   .joinHero h1,
   .aboutHero h1,
   .hubHero h1 {
-    font-size: clamp(3.8rem, 5.3vw, 6rem) !important;
-    line-height: .93 !important;
+    font-size: clamp(3.2rem, 4.4vw, 4.6rem) !important;
+    line-height: .96 !important;
+  }
+
+  /* Bayern uses CSS modules, so this global important rule caps its hero too. */
+  main h1 {
+    max-font-size: 5.3rem;
+  }
+
+  /* Sections should read as sections, not as a sequence of new hero screens. */
+  main h2 {
+    font-size: clamp(2rem, 3vw, 3.2rem) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.035em !important;
   }
 }
 
@@ -217,5 +224,30 @@
 
   .siteHeader > .mainNav {
     gap: 16px;
+  }
+}
+
+/* Mobile/tablet typography: still expressive, but no billboard scale. */
+@media (max-width: 900px) {
+  main h1 {
+    font-size: clamp(2.8rem, 9.5vw, 4.2rem) !important;
+    line-height: .98 !important;
+    letter-spacing: -.045em !important;
+  }
+
+  main h2 {
+    font-size: clamp(1.9rem, 6vw, 2.8rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -.03em !important;
+  }
+}
+
+@media (max-width: 520px) {
+  main h1 {
+    font-size: clamp(2.5rem, 11vw, 3.5rem) !important;
+  }
+
+  main h2 {
+    font-size: clamp(1.75rem, 7.5vw, 2.45rem) !important;
   }
 }
