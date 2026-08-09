@@ -56,10 +56,12 @@
 .joinPage .joinRule>div:last-child p,.joinPage .joinStates>div:first-child p,.joinPage .joinContact>p:not(.sectionLabel){font-size:1.04rem;line-height:1.68}
 .joinPage .joinSteps{display:grid;gap:10px}
 .joinPage .joinSteps span{display:block;padding:14px 16px;border-radius:12px;background:#eef5e6;font-weight:700;font-size:.92rem}
-.joinPage .joinContact{margin-top:0;margin-bottom:82px;padding-top:68px;padding-bottom:72px;text-align:center;background:#fbfaf5;border-radius:22px}
-.joinPage .joinContact>p:not(.sectionLabel){max-width:760px;margin-left:auto;margin-right:auto}
+.joinPage .joinContact{margin-top:0;margin-bottom:82px;padding-top:68px;padding-bottom:72px;text-align:center;background:#fbfaf5;color:var(--deep)!important;border-radius:22px}
+.joinPage .joinContact .sectionLabel{color:#a95500!important}
+.joinPage .joinContact h2{color:var(--deep)!important}
+.joinPage .joinContact>p:not(.sectionLabel){max-width:760px;margin-left:auto;margin-right:auto;color:var(--deep)!important}
 .joinPage .joinContact .heroActions{justify-content:center}
-.joinPage .joinContact .textLink{color:var(--deep)}
+.joinPage .joinContact .textLink{color:var(--deep)!important}
 
 /* Über uns */
 .aboutPage .aboutOrigin,.aboutPage .aboutPatrons,.aboutPage .aboutDelegates,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
