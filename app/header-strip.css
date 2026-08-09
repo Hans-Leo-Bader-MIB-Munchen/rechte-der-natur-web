@@ -1,10 +1,12 @@
-/* Desktop: keep each page's original green campaign strip and make it sticky beneath the main header. */
+/* Desktop: keep each page's original green campaign strip fixed beneath the main header. */
 .headerStrip{display:none!important}
 
 .heritageStrip:not(.headerStrip){
   display:flex!important;
-  position:sticky;
+  position:fixed;
   top:104px;
+  left:0;
+  right:0;
   z-index:999;
   width:100%;
   max-width:none!important;
@@ -12,11 +14,12 @@
   box-shadow:0 4px 12px rgba(38,62,28,.04);
 }
 
-@media(max-width:1180px) and (min-width:901px){
-  .heritageStrip:not(.headerStrip){top:104px}
+/* Desktop content must clear both fixed bars. */
+@media(min-width:901px){
+  body{padding-top:142px!important}
 }
 
-/* Mobile/tablet: the compact header strip becomes the location indicator. */
+/* Mobile/tablet: the compact header strip lives inside the fixed header. */
 @media(max-width:900px){
   .heritageStrip:not(.headerStrip){display:none!important}
 
