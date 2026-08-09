@@ -1,0 +1,27 @@
+/* Shared footer. Legacy per-page footers remain in markup for now but are hidden. */
+main > footer{display:none!important}
+
+.siteFooter{background:#f7f8f3;border-top:1px solid var(--line);color:var(--deep);margin-top:0}
+.siteFooterInner{max-width:1240px;margin:0 auto;padding:48px 32px 34px;display:grid;grid-template-columns:1.15fr 1.5fr 1fr;gap:48px;align-items:start}
+.siteFooterBrand{display:flex;gap:14px;align-items:center}
+.siteFooterBrand .brandMarkOfficial{width:72px}
+.siteFooterBrand>div{display:flex;flex-direction:column;gap:4px}
+.siteFooterBrand strong{font-size:1.05rem;color:var(--green)}
+.siteFooterBrand span{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--earth);font-weight:700}
+.siteFooterNav,.siteFooterLegal{display:grid;gap:10px;align-content:start}
+.siteFooterNav a,.siteFooterLegal a{font-size:.9rem;text-decoration:none;width:max-content;max-width:100%;text-underline-offset:4px}
+.siteFooterNav a:hover,.siteFooterLegal a:hover{text-decoration:underline}
+.siteFooterLegal{justify-self:end}
+.siteFooterBottom{max-width:1240px;margin:0 auto;padding:20px 32px 34px;border-top:1px solid rgba(73,107,53,.12);display:flex;justify-content:space-between;gap:24px;font-size:.78rem;color:var(--earth)}
+.siteFooterBottom a{color:var(--deep);text-decoration:none}
+
+@media(max-width:900px){
+  .siteFooterInner{grid-template-columns:1fr 1fr;gap:30px 40px}
+  .siteFooterBrand{grid-column:1/-1}
+  .siteFooterLegal{justify-self:start}
+}
+@media(max-width:620px){
+  .siteFooterInner{grid-template-columns:1fr;padding:38px 20px 26px}
+  .siteFooterBrand{grid-column:auto}
+  .siteFooterBottom{padding:18px 20px 28px;flex-direction:column;gap:10px}
+}
