@@ -16,13 +16,12 @@ export default function Volksbegehren() {
   return (
     <main className="hubPage">
       <SiteHeader section="Volksbegehren" />
-
       <section className="heritageStrip"><span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Aus Prüfung wird Kampagne.</span></section>
 
       <section className="hubHero">
         <p className="hubEyebrow">16 Länder · 16 unterschiedliche Wege</p>
         <h1>Ein Volksbegehren lässt sich nicht kopieren.</h1>
-        <p>Aber Wissen, Gestaltung, rechtliche Prüfung, Organisation und Kampagnenerfahrung lassen sich teilen. Das Ziel ist nicht eine schöne Landkarte: Wo die Voraussetzungen stimmen, sollen reale Initiativen entstehen.</p>
+        <p>Aber Wissen, Gestaltung, rechtliche Prüfung, Organisation und Kampagnenerfahrung lassen sich teilen. Bayern ist dabei kein abgeschlossener Fall: Dort läuft die Sammlung für den Zulassungsantrag weiter.</p>
         <div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Mitstreiter werden</Link><Link className="textLink" href="/deutschland">Stand der 16 Länder →</Link></div>
       </section>
 
@@ -32,9 +31,9 @@ export default function Volksbegehren() {
       </section>
 
       <section className="hubMap">
-        <div className="hubSectionHead"><p>Deutschland</p><h2>Wo stehen die Länder?</h2><span>Arbeitsdarstellung · keine Behauptung über laufende Kampagnen.</span></div>
+        <div className="hubSectionHead"><p>Deutschland</p><h2>Wo stehen die Länder?</h2><span>Arbeitsdarstellung · nur Bayern wird derzeit als laufende Sammelphase geführt.</span></div>
         <div className="hubStates">
-          {federalStates.map(({name,status},i)=><article className={name === "Bayern" ? "hubState hubStateActive" : "hubState"} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><strong>{status}</strong>{name === "Bayern" ? <Link href="/volksbegehren/bayern">Zum Referenzfall →</Link> : <em>Prüfung und Aufbau folgen</em>}</article>)}
+          {federalStates.map(({name,status},i)=><article className={name === "Bayern" ? "hubState hubStateActive" : "hubState"} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><strong>{status}</strong>{name === "Bayern" ? <Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link> : <em>Prüfung und Aufbau folgen</em>}</article>)}
         </div>
       </section>
 
@@ -45,7 +44,7 @@ export default function Volksbegehren() {
 
       <section className="hubBayern">
         <div className="hubBayernMark">BY</div>
-        <div><p>Referenzfall 01</p><h2>Bayern ist kein Muster zum Kopieren. Bayern ist der erste Lernfall.</h2><p>Hier begann die Initiative. Hier liegen Kampagnenerfahrung, historische Materialien und die Erfahrung, dass ein Volksbegehren nicht bei juristischen Texten endet, sondern Menschen erreichen und formale Hürden überwinden muss.</p><Link href="/volksbegehren/bayern">Bayern ansehen →</Link></div>
+        <div><p>Laufende Kampagne</p><h2>Bayern sammelt weiter.</h2><p>Seit 2021 werden Unterstützungsunterschriften für den Zulassungsantrag gesammelt. Die Kampagne ist damit nicht Vergangenheit. Sie läuft weiter – parallel zu der fachlichen Weiterentwicklung, mit der wir manche frühen Aussagen heute präziser formulieren.</p><Link href="/volksbegehren/bayern">Bayern ansehen →</Link></div>
       </section>
 
       <section className="hubCall"><p>Ein Land starten?</p><h2>Prüfen. Vernetzen. Mobilisieren.</h2><span>Wenn du in deinem Bundesland mitarbeiten, ein Netzwerk aufbauen oder eine spätere Unterschriftensammlung vorbereiten willst, brauchen wir genau dich.</span><div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Jetzt mitmachen →</Link></div></section>
