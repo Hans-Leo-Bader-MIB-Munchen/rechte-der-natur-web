@@ -80,7 +80,7 @@ export default function BuendnispartnerPage() {
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Bündnispartner & Unterstützer</p>
           <h1>Viele Menschen und Organisationen tragen die Volksbegehren mit.</h1>
-          <p>Die Galerie übernimmt den bestehenden Bestand der Kampagne. Bündnispartner und Unterstützer zeigen damit, dass sie hinter den Zielen der Initiative stehen.</p>
+          <p>Seit Jahren unterstützen Menschen, Initiativen und Organisationen die Rechte der Natur und die Volksbegehren. Diese Vielfalt macht sichtbar, wie breit die Idee getragen wird.</p>
         </div>
       </section>
 
@@ -88,7 +88,7 @@ export default function BuendnispartnerPage() {
         <div className={styles.galleryIntro}>
           <p className={styles.label}>Gemeinsam sichtbar</p>
           <h2>Das Bündnis wächst seit Jahren.</h2>
-          <p>Die Motive stammen direkt aus der bestehenden WordPress-Mediathek der Kampagne und bleiben dadurch ohne doppelte Pflege aktuell verfügbar.</p>
+          <p>Die Galerie zeigt Bündnispartner und Unterstützer, die die Ziele der Kampagne öffentlich mittragen.</p>
         </div>
         <div className={styles.gallery}>
           {gallery.map((src, index) => (
@@ -102,10 +102,10 @@ export default function BuendnispartnerPage() {
       <section className={styles.join}>
         <p className={styles.label}>Mittragen</p>
         <h2>Bündnispartner oder Unterstützer werden.</h2>
-        <p>Wer die Ziele der Volksbegehren mittragen und sichtbar unterstützen möchte, kann sich direkt bei der Kampagne melden.</p>
+        <p>Organisationen, Initiativen und Menschen können die Ziele der Volksbegehren sichtbar mittragen und Teil des Bündnisses werden.</p>
         <div className={styles.actions}>
           <Link className={styles.button} href="/mitmachen">Mitmachen</Link>
-          <a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterstuetzer" target="_blank" rel="noreferrer">Historische Unterstützer-Seite →</a>
+          <a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterstuetzer" target="_blank" rel="noreferrer">Zur bisherigen Unterstützerseite →</a>
         </div>
       </section>
 
