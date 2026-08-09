@@ -17,6 +17,7 @@ export default function SiteFooter() {
           <Link href="/buendnispartner">Bündnispartner & Unterstützer</Link>
           <Link href="/ueber-uns">Über uns</Link>
           <Link href="/mitmachen">Mitmachen</Link>
+          <Link href="/unterstuetzen">Unterstützen</Link>
           <a href="https://gibdernaturrecht.muc-mib.de/" target="_blank" rel="noreferrer">Historische Kampagnenseite ↗</a>
         </nav>
 
