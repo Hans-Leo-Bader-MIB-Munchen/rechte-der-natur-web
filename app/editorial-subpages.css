@@ -79,11 +79,13 @@
 .aboutPage .aboutDelegates{padding-top:82px;padding-bottom:88px;border-top:1px solid var(--line)}
 .aboutPage .aboutDelegatesHead{max-width:860px;margin:0 auto 34px;text-align:center}
 .aboutPage .aboutDelegatesHead .sectionLabel{color:var(--orange)}
-.aboutPage .aboutDelegatesHead>p:last-child{font-size:1.04rem;line-height:1.68}
-.aboutPage .aboutDelegatesFrame{height:720px;border:1px solid rgba(73,107,53,.14);border-radius:20px;overflow:hidden;background:#f6f6f1}
-.aboutPage .aboutDelegatesFrame iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+.aboutPage .aboutLeadDelegate{max-width:860px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:28px;padding:20px;background:#fbfaf5;border:1px solid rgba(73,107,53,.12);border-radius:20px;align-items:center}
+.aboutPage .aboutLeadDelegateImage{aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#eef2e7}
+.aboutPage .aboutLeadDelegateImage img{display:block;width:100%;height:100%;object-fit:cover}
+.aboutPage .aboutLeadDelegateCopy h3{margin:0 0 10px;font-size:1.55rem}
+.aboutPage .aboutLeadDelegateCopy p:not(.aboutPatronRole){margin:0;line-height:1.6}
 .aboutPage .aboutDelegatesFoot{max-width:860px;margin:24px auto 0;text-align:center}
-.aboutPage .aboutDelegatesFoot p{font-size:.98rem;line-height:1.6}
+.aboutPage .aboutDelegatesFoot a{font-weight:700;text-underline-offset:5px}
 .aboutPage .aboutLayers{padding-top:76px;padding-bottom:84px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .aboutPage .aboutLayers article{padding:26px;background:#fafaf6;border-radius:18px;border-top:4px solid var(--green)}
 .aboutPage .aboutLayers article:nth-child(2){border-top-color:var(--blue)}
@@ -108,7 +110,7 @@
   .newsPage .newsItem{gap:14px}.newsPage .newsMeta{flex-direction:row;justify-content:space-between}
   .joinPage .joinWays,.newsPage .labelGrid,.aboutPage .aboutLayers,.aboutPage .aboutPrinciples>div,.aboutPage .aboutPatronGrid{grid-template-columns:1fr}
   .aboutPage .aboutPatronCard{grid-template-columns:120px 1fr}
-  .aboutPage .aboutDelegatesFrame{height:620px;border-radius:14px}
+  .aboutPage .aboutLeadDelegate{grid-template-columns:1fr;max-width:680px}
   .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
 }
-@media(max-width:480px){.aboutPage .aboutPatronCard{grid-template-columns:1fr}.aboutPage .aboutPatronImage{aspect-ratio:16/10}.aboutPage .aboutDelegatesFrame{height:560px}}
+@media(max-width:480px){.aboutPage .aboutPatronCard{grid-template-columns:1fr}.aboutPage .aboutPatronImage{aspect-ratio:16/10}.aboutPage .aboutLeadDelegate{padding:14px}.aboutPage .aboutLeadDelegateImage{border-radius:12px}}
