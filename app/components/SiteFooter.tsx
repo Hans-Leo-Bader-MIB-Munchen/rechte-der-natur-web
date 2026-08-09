@@ -30,6 +30,9 @@ export default function SiteFooter() {
         <span>Rechte der Natur – Die Volksbegehren</span>
         <Link href="#top">Nach oben ↑</Link>
       </div>
+      <div className="siteFooterNetwork">
+        <img src="https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2025/08/RoN_klein_UnisundNetzwerk_Garn_UNHwN_neu_2024.png" alt="Netzwerk- und Hochschulzugehörigkeiten im Umfeld der Rechte der Natur" />
+      </div>
     </footer>
   );
 }
