@@ -26,9 +26,12 @@ export default function UeberUns() {
       </section>
 
       <section className="aboutDelegates" id="beauftragte">
-        <div className="aboutDelegatesHead"><p className="sectionLabel">Beauftragte</p><h2>Menschen übernehmen Verantwortung für das Volksbegehren.</h2><p>Die Beauftragten begleiten die Initiative in unterschiedlichen Rollen. Der bestehende Bestand bleibt auf der historischen Kampagnenseite gepflegt und wird hier direkt eingebunden.</p></div>
-        <div className="aboutDelegatesFrame"><iframe src="https://gibdernaturrecht.muc-mib.de/beauftragt" title="Beauftragte des Volksbegehrens Rechte der Natur" loading="lazy" /></div>
-        <div className="aboutDelegatesFoot"><p><strong>Hauptbeauftragter: Hans Leo Bader.</strong> Für die formale Vertretung des bayerischen Zulassungsantrags ist der Hauptbeauftragte zuständig.</p><a href="https://gibdernaturrecht.muc-mib.de/beauftragt" target="_blank" rel="noreferrer">Beauftragte auf der historischen Seite öffnen ↗</a></div>
+        <div className="aboutDelegatesHead"><p className="sectionLabel">Beauftragte</p><h2>Verantwortung für das Volksbegehren.</h2></div>
+        <article className="aboutLeadDelegate">
+          <div className="aboutLeadDelegateImage"><img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader, Hauptbeauftragter des bayerischen Volksbegehrens Rechte der Natur" /></div>
+          <div className="aboutLeadDelegateCopy"><p className="aboutPatronRole">Hauptbeauftragter</p><h3>Hans Leo Bader</h3><p>Initiator der Volksbegehren und Hauptbeauftragter des bayerischen Zulassungsantrags.</p></div>
+        </article>
+        <div className="aboutDelegatesFoot"><a href="https://gibdernaturrecht.muc-mib.de/beauftragt" target="_blank" rel="noreferrer">Weitere Beauftragte ansehen →</a></div>
       </section>
 
       <section className="aboutLayers"><article><span>01</span><h3>Kampagne</h3><p>Die Rechte-der-Natur-Plattform erklärt, mobilisiert, verbindet und unterstützt konkrete Volksbegehren und politische Initiativen.</p></article><article><span>02</span><h3>Netzwerk</h3><p>Die Arbeit lebt von Menschen und Organisationen, die Erfahrungen, Kontakte, Öffentlichkeit und praktische Kampagnenkraft einbringen.</p></article><article><span>03</span><h3>Fachliche Vertiefung</h3><p>Die Systemische Rechtsentwicklung untersucht Rechtsformen und Wirkungsbedingungen eigenständig. Ihre Aufgabe ist belastbare Erkenntnis und die Weiterentwicklung rechtlicher Lösungen.</p></article></section>
