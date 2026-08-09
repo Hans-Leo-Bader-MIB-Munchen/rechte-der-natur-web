@@ -5,9 +5,9 @@ import "./weltweit/weltweit.css";
 import "./consolidation.css";
 
 export const metadata: Metadata = {
-  title: "Rechte der Natur – Gib der Natur Recht",
+  title: "Rechte der Natur – Die Volksbegehren",
   description:
-    "Rechte der Natur: Kampagne, Volksbegehren, internationale Erfahrungen und Mitmachen für eine eigenständige rechtliche Stellung der Mitwelt.",
+    "Rechte der Natur – Die Volksbegehren: laufende Kampagne in Bayern, neue Landesinitiativen, internationale Erfahrungen und Mitmachen für eine eigenständige rechtliche Stellung der Mitwelt.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
