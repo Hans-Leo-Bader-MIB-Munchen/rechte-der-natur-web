@@ -42,15 +42,15 @@
 
 /* Mitmachen */
 .joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
-.joinPage .joinWays{padding-top:78px;padding-bottom:84px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.joinPage .joinWays article{background:#fafaf6;border-radius:16px;padding:22px;border-top:4px solid var(--green)}
+.joinPage .joinWays{padding-top:78px;padding-bottom:84px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.joinPage .joinWays article{display:flex;flex-direction:column;background:#fafaf6;border-radius:16px;padding:22px;border-top:4px solid var(--green);min-height:300px}
 .joinPage .joinWays article:nth-child(2){border-top-color:var(--blue)}
 .joinPage .joinWays article:nth-child(3){border-top-color:var(--orange)}
 .joinPage .joinWays article:nth-child(4){border-top-color:var(--earth)}
-.joinPage .joinWays article:nth-child(5){border-top-color:var(--green)}
 .joinPage .joinWays span{font-size:.7rem;color:var(--earth)}
 .joinPage .joinWays h2{font-size:1.18rem!important;margin:28px 0 10px!important;line-height:1.15!important}
-.joinPage .joinWays p{margin:0;font-size:.92rem;line-height:1.58}
+.joinPage .joinWays p{margin:0 0 22px;font-size:.92rem;line-height:1.58}
+.joinPage .joinWayLink{margin-top:auto;font-weight:700;font-size:.88rem;text-underline-offset:5px}
 .joinPage .joinRule,.joinPage .joinStates{padding-top:78px;padding-bottom:86px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;border-top:1px solid var(--line)}
 .joinPage .joinRule h2,.joinPage .joinStates h2,.joinPage .joinContact h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
 .joinPage .joinRule>div:last-child p,.joinPage .joinStates>div:first-child p,.joinPage .joinContact>p:not(.sectionLabel){font-size:1.04rem;line-height:1.68}
@@ -59,6 +59,7 @@
 .joinPage .joinContact{margin-top:0;margin-bottom:82px;padding-top:68px;padding-bottom:72px;text-align:center;background:#fbfaf5;border-radius:22px}
 .joinPage .joinContact>p:not(.sectionLabel){max-width:760px;margin-left:auto;margin-right:auto}
 .joinPage .joinContact .heroActions{justify-content:center}
+.joinPage .joinContact .textLink{color:var(--deep)}
 
 /* Über uns */
 .aboutPage .aboutOrigin,.aboutPage .aboutPatrons,.aboutPage .aboutDelegates,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
@@ -109,6 +110,7 @@
   .newsPage .newsItem,.newsPage .newsBridge,.joinPage .joinRule,.joinPage .joinStates,.aboutPage .aboutOrigin,.aboutPage .aboutSeparation{grid-template-columns:1fr}
   .newsPage .newsItem{gap:14px}.newsPage .newsMeta{flex-direction:row;justify-content:space-between}
   .joinPage .joinWays,.newsPage .labelGrid,.aboutPage .aboutLayers,.aboutPage .aboutPrinciples>div,.aboutPage .aboutPatronGrid{grid-template-columns:1fr}
+  .joinPage .joinWays article{min-height:0}
   .aboutPage .aboutPatronCard{grid-template-columns:120px 1fr}
   .aboutPage .aboutLeadDelegate{grid-template-columns:1fr;max-width:680px}
   .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
