@@ -1,0 +1,63 @@
+/* Semantic label colour system.
+   Light accent green is reserved for dark surfaces; light surfaces use darker, contrast-safe accents. */
+:root{
+  --label-green:#496b35;
+  --label-blue:#0b6f96;
+  --label-orange:#a55300;
+  --label-earth:#6f6257;
+  --label-light:#d5ed96;
+}
+
+/* Default labels on light surfaces */
+.sectionLabel,
+.eyebrow,
+.hubEyebrow,
+.hubSectionHead>p,
+.hubBayern>div:last-child>p,
+.hubCall>p{
+  color:var(--label-green) !important;
+}
+
+/* Dark hero surfaces keep a light, readable accent. */
+.newsHero .eyebrow,
+.joinHero .eyebrow,
+.aboutHero .eyebrow,
+.deHero .eyebrow,
+.worldHero .eyebrow,
+.hubHero .hubEyebrow{
+  color:var(--label-light) !important;
+}
+
+/* Knowledge / law / verification */
+.countryPage .sectionLabel,
+.worldPage .worldRead .sectionLabel,
+.worldPage .lensGrid+* .sectionLabel,
+.newsPage .newsLabels .sectionLabel{
+  color:var(--label-blue) !important;
+}
+
+/* Campaign / movement / current activity */
+.newsPage .newsBridge .sectionLabel,
+.joinPage .sectionLabel,
+.hubPage .hubSectionHead>p,
+.countryPage .deBayern .sectionLabel{
+  color:var(--label-orange) !important;
+}
+
+/* Origin / background / identity */
+.aboutPage .sectionLabel,
+.countryPage .statusIntro .sectionLabel{
+  color:var(--label-earth) !important;
+}
+
+/* Page-specific fine tuning */
+.worldPage .worldBridge .sectionLabel{color:var(--label-orange) !important}
+.worldPage .worldCases .sectionLabel{color:var(--label-blue) !important}
+.countryPage .dePrinciple .sectionLabel{color:var(--label-blue) !important}
+.countryPage .deMap .sectionLabel{color:var(--label-earth) !important}
+.newsPage .newsLabels .sectionLabel{color:var(--label-blue) !important}
+.aboutPage .aboutOpen .sectionLabel{color:var(--label-orange) !important}
+.aboutPage .aboutPrinciples .sectionLabel{color:var(--label-blue) !important}
+.joinPage .joinRule .sectionLabel{color:var(--label-blue) !important}
+.joinPage .joinStates .sectionLabel{color:var(--label-earth) !important}
+.joinPage .joinContact .sectionLabel{color:var(--label-orange) !important}
