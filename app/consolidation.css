@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 104px;
+}
+
 main {
   overflow: visible;
   overflow-x: clip;
@@ -49,14 +53,26 @@ span {
 }
 
 .siteHeader {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none !important;
+  margin: 0 !important;
   z-index: 1000;
   background: rgba(255,255,255,.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(73,107,53,.12);
   box-shadow: 0 4px 18px rgba(38,62,28,.06);
+}
+
+.siteHeader > .headerTopline,
+.siteHeader > .mainNav {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .headerTopline {
@@ -173,6 +189,10 @@ span {
 }
 
 @media (max-width: 900px) {
+  body {
+    padding-top: 108px;
+  }
+
   .siteHeader {
     min-height: auto;
     display: block;
@@ -327,6 +347,10 @@ span {
 }
 
 @media (max-width: 680px) {
+  body {
+    padding-top: 102px;
+  }
+
   .siteHeader,
   .hero,
   .plainIdea,
