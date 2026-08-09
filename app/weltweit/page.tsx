@@ -1,3 +1,5 @@
+import "./weltweit.css";
+
 const cases=[
   {region:"Ecuador",title:"Natur in der Verfassung",type:"Verfassung",year:"2008",text:"Ecuador verankerte Rechte der Natur auf Verfassungsebene. Damit wurde aus einer politischen Idee ein verfassungsrechtlicher Bezugspunkt – aber noch keine Garantie für eine einheitliche Praxis."},
   {region:"Ecuador",title:"Los Cedros",type:"Gericht",year:"2021",text:"Im Fall des Schutzwalds Los Cedros wurde sichtbar, wie Rechte der Natur in einer konkreten gerichtlichen Entscheidung Bedeutung entfalten können."},
