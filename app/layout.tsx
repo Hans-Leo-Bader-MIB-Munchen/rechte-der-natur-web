@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteFooter from "./components/SiteFooter";
 import "./globals.css";
 import "./participation.css";
 import "./weltweit/weltweit.css";
@@ -7,6 +8,7 @@ import "./header-strip.css";
 import "./desktop-qa.css";
 import "./editorial-subpages.css";
 import "./label-colors.css";
+import "./footer.css";
 
 export const metadata: Metadata = {
   title: "Rechte der Natur – Die Volksbegehren",
@@ -17,7 +19,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
