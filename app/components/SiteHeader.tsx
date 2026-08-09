@@ -10,6 +10,7 @@ const nav = [
   ["Volksbegehren", "/volksbegehren"],
   ["Aktuelles", "/aktuelles"],
   ["Über uns", "/ueber-uns"],
+  ["Unterstützen", "/unterstuetzen"],
 ];
 
 export default function SiteHeader({
