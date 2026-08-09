@@ -21,8 +21,8 @@ export default function Deutschland() {
       <section className="deHero">
         <div>
           <p className="eyebrow">Deutschland</p>
-          <h1>Ein Land. 16 Länder. Viele mögliche Wege.</h1>
-          <p className="lead">Jedes Bundesland braucht seinen eigenen Weg zu den Rechten der Natur. Verfassungen, Verfahren direkter Demokratie, politische Konstellationen und Landschaften unterscheiden sich. Bayern zeigt, wie eine Kampagne über Jahre wachsen und sammeln kann, bevor der nächste formale Verfahrensschritt ausgelöst wird.</p>
+          <h1>Ein Land. 16 Bundesländer. Viele mögliche Wege.</h1>
+          <p className="lead">Jedes Bundesland hat eigene Regeln für direkte Demokratie. Verfassungen, Verfahren und Fristen unterscheiden sich – und damit auch der Weg zu einem Volksbegehren für die Rechte der Natur. Bayern ist dabei ein besonderer Fall: Hier kann die Sammlung der Unterstützungsunterschriften über einen längeren Zeitraum laufen, bevor der Zulassungsantrag eingereicht wird. In den anderen Bundesländern gelten jeweils eigene Verfahren und Fristen.</p>
           <div className="heroActions"><a className="buttonPrimary" href="#laender">Die Länder ansehen</a><Link className="textLink" href="/volksbegehren">Zur Kampagnenidee →</Link></div>
         </div>
         <div className="deBig16">16</div>
