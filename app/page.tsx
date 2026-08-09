@@ -38,7 +38,9 @@ export default function Home() {
           <p className={styles.ideaText}>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
           <div className={styles.ideaActions}><Link className={styles.button} href="/ueber-uns">Mehr zur Idee</Link></div>
         </div>
-        <div className={styles.natureFrame} aria-label="Bildfläche für Natur- oder Kampagnenmotiv"><span>Bildmotiv folgt</span></div>
+        <div className={styles.natureFrame}>
+          <img src="https://drive.google.com/uc?export=view&id=1j4mmgsXbYZMTHtjmH5NuuXys8UmMp7-p" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Kampagnenaktion zu den Rechten der Natur" />
+        </div>
       </section>
 
       <section className={styles.principles}>
