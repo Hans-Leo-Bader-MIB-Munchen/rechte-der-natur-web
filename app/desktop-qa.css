@@ -92,6 +92,13 @@
     padding-right: 0 !important;
   }
 
+  /* The introductory idea copy should read in two calm lines on desktop. */
+  .plainIdea .bigText {
+    max-width: 1120px !important;
+    font-size: clamp(1.22rem, 1.65vw, 1.55rem) !important;
+    line-height: 1.48 !important;
+  }
+
   .worldCases {
     padding-left: var(--desktop-gutter);
     padding-right: var(--desktop-gutter);
