@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./participation.css";
 import "./weltweit/weltweit.css";
+import "./consolidation.css";
 
 export const metadata: Metadata = {
   title: "Rechte der Natur – Gib der Natur Recht",
