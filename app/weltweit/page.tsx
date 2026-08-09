@@ -107,6 +107,15 @@ export default function Weltweit() {
         <div className={styles.caseGrid}>{cases.map(c=><article className={styles.case} key={c.title}><div className={styles.meta}><span>{c.region}</span><strong>{c.year}</strong></div><h3>{c.title}</h3><em>{c.type}</em><p>{c.text}</p></article>)}</div>
       </section>
 
+      <aside className={styles.monitor}>
+        <div>
+          <p className={styles.label}>Weiter entdecken</p>
+          <h2>Eco Jurisprudence Monitor</h2>
+          <p>Der Eco Jurisprudence Monitor sammelt und erschließt weltweit Initiativen einer naturzentrierten Rechtsentwicklung – darunter Rechte der Natur, Rechtspersönlichkeit von Naturgebilden, indigene Rechtsmodelle und weitere Formen ökologischer Jurisprudenz. Die Datenbank macht sichtbar, wie vielfältig sich diese Entwicklung international ausprägt.</p>
+        </div>
+        <a className={styles.monitorLink} href="https://ecojurisprudence.org/" target="_blank" rel="noreferrer">Zum Eco Jurisprudence Monitor →</a>
+      </aside>
+
       <section className={styles.bridge}><p className={styles.label}>Was folgt daraus?</p><h2>Internationale Modelle geben Orientierung für eigene Wege.</h2><p>Für eine deutsche Kampagne zählt, welche Elemente unter unseren rechtlichen und politischen Bedingungen tragfähig sind. Internationale Erfahrung, Länderkenntnis und konkrete Mobilisierung greifen dabei ineinander.</p><div className={styles.actions}><Link className={styles.button} href="/deutschland">Zur Deutschlandseite</Link><Link className={styles.textLink} href="/volksbegehren">Zu den Volksbegehren →</Link></div></section>
 
       <footer className={styles.footer}><Link href="/">Startseite</Link><Link href="/deutschland">Deutschland</Link><Link href="/volksbegehren">Volksbegehren</Link><span>Preview · interne Arbeitsfassung</span></footer>
