@@ -15,6 +15,18 @@ main > footer{display:none!important}
 .siteFooterBottom{max-width:1240px;margin:0 auto;padding:20px 32px 34px;border-top:1px solid rgba(73,107,53,.12);display:flex;justify-content:space-between;gap:24px;font-size:.78rem;color:var(--earth)}
 .siteFooterBottom a{color:var(--deep);text-decoration:none}
 
+.legalPage{background:#fff;color:var(--deep)}
+.legalHero{background:var(--deep);color:#fff;text-align:center;padding:72px max(32px,calc((100vw - 980px)/2)) 76px}
+.legalHero .sectionLabel{color:#d5ed96;margin-bottom:14px}
+.legalHero h1{margin:0 auto 20px;max-width:860px;color:#b9dc69!important;font-size:clamp(2.35rem,3.2vw,3.35rem)!important;line-height:1.04!important;font-weight:500!important;letter-spacing:-.035em!important}
+.legalHero p:last-child{max-width:760px;margin:0 auto;font-size:1.04rem;line-height:1.68}
+.legalContent{max-width:900px;margin:0 auto;padding:72px 32px 90px}
+.legalContent h2{margin:44px 0 12px!important;font-size:1.6rem!important}
+.legalContent h2:first-child{margin-top:0!important}
+.legalContent p{line-height:1.7}
+.legalContent a{font-weight:700;text-underline-offset:5px}
+.legalNote{margin-top:48px;padding:20px 22px;border-radius:16px;background:#f7f8f3;border-left:4px solid var(--green)}
+
 @media(max-width:900px){
   .siteFooterInner{grid-template-columns:1fr 1fr;gap:30px 40px}
   .siteFooterBrand{grid-column:1/-1}
@@ -24,4 +36,6 @@ main > footer{display:none!important}
   .siteFooterInner{grid-template-columns:1fr;padding:38px 20px 26px}
   .siteFooterBrand{grid-column:auto}
   .siteFooterBottom{padding:18px 20px 28px;flex-direction:column;gap:10px}
+  .legalHero{padding:52px 20px 58px}
+  .legalContent{padding:54px 20px 70px}
 }
