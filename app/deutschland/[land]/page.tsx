@@ -19,8 +19,8 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
       <SiteHeader section={entwurf.name} claimLead="Vorarbeit ist da." claimTrail="Jetzt kann der Landesweg weiterwachsen." />
 
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{entwurf.name} · Vorarbeit</p>
-        <h1>Ein Textentwurf als Startpunkt für die weitere Entwicklung.</h1>
+        <p className={styles.eyebrow}>{entwurf.name} · Vorarbeit vorhanden</p>
+        <h1>Ein Textentwurf als Grundlage für die weitere Entwicklung.</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
@@ -31,7 +31,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
-            <p>Für {entwurf.name} liegt bereits ein konkreter Verfassungstext vor. Er schafft eine belastbare Grundlage, auf der die weitere rechtliche und politische Entwicklung aufbauen kann.</p>
+            <p>Für {entwurf.name} liegt bereits ein konkreter Verfassungstext vor. Er schafft eine Grundlage, auf der die weitere rechtliche und politische Entwicklung aufbauen kann.</p>
           </div>
         </div>
 
@@ -50,6 +50,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
           </div>
           <div>
             <p>Der nächste Schritt verbindet den vorhandenen Entwurf mit der heutigen Verfassungslage, dem jeweiligen Verfahren direkter Demokratie und den Erfahrungen aus der Systemischen Rechtsentwicklung.</p>
+            <p>Dieser Entwurf verfolgt einen eigenständigen verfassungsrechtlichen Ansatz. Rechte der Natur können je nach Rechtsordnung unterschiedlich ausgestaltet werden – etwa als Verfassungsrecht, Rechtspersönlichkeit oder institutionelle Vertretungsordnung.</p>
             <p>Daraus kann ein tragfähiger Text mit passender Vertretung, institutioneller Einbindung und klarer Kampagnenstruktur entstehen.</p>
           </div>
         </div>
