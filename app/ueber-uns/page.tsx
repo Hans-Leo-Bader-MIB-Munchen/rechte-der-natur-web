@@ -1,3 +1,5 @@
+import "../participation.css";
+
 function Mark(){return <span className="brandMark" aria-hidden="true"><i/><i/><i/><i/><b>⌁</b></span>}
 export default function UeberUns(){return <main className="aboutPage">
 <header className="siteHeader"><a className="brand" href="/"><Mark/><span className="brandWords"><strong>Rechte der Natur</strong><small>Über uns</small></span></a><nav><a href="/aktuelles">Aktuelles</a><a href="/weltweit">Weltweit</a><a href="/deutschland">Deutschland</a><a href="/mitmachen">Mitmachen</a></nav></header>
