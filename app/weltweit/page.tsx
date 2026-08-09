@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
-import BrandMark from "../components/BrandMark";
+import styles from "./page.module.css";
 
 const cases = [
   { region: "Ecuador", title: "Natur in der Verfassung", type: "Verfassung", year: "2008", text: "Ecuador verankerte Rechte der Natur auf Verfassungsebene. Damit wurde aus einer politischen Idee ein verfassungsrechtlicher Bezugspunkt, dessen Wirkung sich in Anwendung und Rechtsprechung entfaltet." },
@@ -20,20 +20,33 @@ const lenses = [
 
 export default function Weltweit() {
   return (
-    <main className="worldPage">
+    <main className={styles.page}>
       <SiteHeader section="Weltweit" claimLead="Rechte der Natur" claimTrail="Viele Rechtswege. Viele Erfahrungen." />
 
-      <section className="worldHero"><div><p className="eyebrow">Weltweit</p><h1>Die Idee hat viele Formen angenommen.</h1><p className="lead">Verfassungen, Gesetze und Gerichte haben Natur in unterschiedlichen Rechtsordnungen eine eigenständige Stellung gegeben. Für eine Kampagne in Deutschland ist besonders wichtig, welche Elemente wirken und welche Anpassungen ein eigener deutscher Weg braucht.</p><div className="heroActions"><a className="buttonPrimary" href="#faelle">Fälle entdecken</a><Link className="textLink" href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div></div><div className="worldOrb" aria-hidden="true"><span>Wald</span><span>Fluss</span><span>Lagune</span><span>Land</span></div></section>
+      <section className={styles.hero}>
+        <div className={styles.heroInner}>
+          <p className={styles.eyebrow}>Weltweit</p>
+          <h1>Die Idee hat viele Formen angenommen.</h1>
+          <p className={styles.lead}>Verfassungen, Gesetze und Gerichte haben Natur in unterschiedlichen Rechtsordnungen eine eigenständige Stellung gegeben. Für eine Kampagne in Deutschland ist besonders wichtig, welche Elemente wirken und welche Anpassungen ein eigener deutscher Weg braucht.</p>
+          <div className={styles.actions}><a className={styles.button} href="#faelle">Fälle entdecken</a><Link className={styles.textLink} href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div>
+        </div>
+      </section>
 
-      <section className="worldRead" id="lesen"><div><p className="sectionLabel">Vier Blickwinkel</p><h2>Anerkennung ist der Anfang.</h2></div><div><p>Die eigentliche Wirkung zeigt sich in Vertretung, Institutionen, Entscheidungen und im Zustand des Ökosystems.</p><p>Vier Blickwinkel machen sichtbar, was internationale Erfahrungen für Kampagnen in Deutschland leisten können.</p></div></section>
+      <section className={styles.read}>
+        <div><p className={styles.label}>Vier Blickwinkel</p><h2>Anerkennung ist der Anfang.</h2></div>
+        <div><p>Die eigentliche Wirkung zeigt sich in Vertretung, Institutionen, Entscheidungen und im Zustand des Ökosystems.</p><p>Vier Blickwinkel machen sichtbar, was internationale Erfahrungen für Kampagnen in Deutschland leisten können.</p></div>
+      </section>
 
-      <section className="lensGrid">{lenses.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><h3>{title}</h3><p>{text}</p></article>)}</section>
+      <section className={styles.lenses}>{lenses.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><h3>{title}</h3><p>{text}</p></article>)}</section>
 
-      <section className="worldCases" id="faelle"><div className="stateHeader"><p className="sectionLabel">Falllandschaft</p><h2>Sechs Fälle. Sechs unterschiedliche rechtliche Konstruktionen.</h2><p>Die Auswahl spannt ein Spektrum unterschiedlicher rechtlicher Konstruktionen auf.</p></div><div className="caseLandscape">{cases.map(c=><article key={c.title}><div className="caseMeta"><span>{c.region}</span><strong>{c.year}</strong></div><h3>{c.title}</h3><em>{c.type}</em><p>{c.text}</p><span className="caseMore">Vertiefung →</span></article>)}</div></section>
+      <section className={styles.cases} id="faelle">
+        <div className={styles.sectionHead}><p className={styles.label}>Falllandschaft</p><h2>Sechs Fälle. Sechs unterschiedliche rechtliche Konstruktionen.</h2><p>Die Auswahl spannt ein Spektrum unterschiedlicher rechtlicher Konstruktionen auf.</p></div>
+        <div className={styles.caseGrid}>{cases.map(c=><article className={styles.case} key={c.title}><div className={styles.meta}><span>{c.region}</span><strong>{c.year}</strong></div><h3>{c.title}</h3><em>{c.type}</em><p>{c.text}</p></article>)}</div>
+      </section>
 
-      <section className="worldBridge"><p className="sectionLabel">Was folgt daraus?</p><h2>Internationale Modelle geben Orientierung für eigene Wege.</h2><p>Für eine deutsche Kampagne zählt, welche Elemente unter unseren rechtlichen und politischen Bedingungen tragfähig sind. Internationale Erfahrung, Länderkenntnis und konkrete Mobilisierung greifen dabei ineinander.</p><div className="heroActions"><Link className="buttonPrimary" href="/deutschland">Zur Deutschlandseite</Link><Link className="textLink" href="/volksbegehren">Zu den Volksbegehren →</Link></div></section>
+      <section className={styles.bridge}><p className={styles.label}>Was folgt daraus?</p><h2>Internationale Modelle geben Orientierung für eigene Wege.</h2><p>Für eine deutsche Kampagne zählt, welche Elemente unter unseren rechtlichen und politischen Bedingungen tragfähig sind. Internationale Erfahrung, Länderkenntnis und konkrete Mobilisierung greifen dabei ineinander.</p><div className={styles.actions}><Link className={styles.button} href="/deutschland">Zur Deutschlandseite</Link><Link className={styles.textLink} href="/volksbegehren">Zu den Volksbegehren →</Link></div></section>
 
-      <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Weltweit</small></div></div><p>Internationale Erfahrungen für konkrete Kampagnen nutzbar machen.</p><span>Entwurf · Preview</span></footer>
+      <footer className={styles.footer}><Link href="/">Startseite</Link><Link href="/deutschland">Deutschland</Link><Link href="/volksbegehren">Volksbegehren</Link><span>Preview · interne Arbeitsfassung</span></footer>
     </main>
   );
 }
