@@ -10,32 +10,13 @@
   color:#fff;
   text-align:center;
 }
-.newsPage .newsHero .eyebrow,.joinPage .joinHero .eyebrow,.aboutPage .aboutHero .eyebrow{
-  color:#d5ed96;
-  margin-bottom:14px;
-}
-.newsPage .newsHero h1,.joinPage .joinHero h1,.aboutPage .aboutHero h1{
-  max-width:960px!important;
-  margin:0 auto 22px!important;
-  color:#b9dc69!important;
-  font-size:clamp(2.5rem,3.5vw,3.65rem)!important;
-  line-height:1.02!important;
-  letter-spacing:-.04em!important;
-  font-weight:500!important;
-}
-.newsPage .newsHero .lead,.joinPage .joinHero .lead,.aboutPage .aboutHero .lead{
-  max-width:820px!important;
-  margin:0 auto!important;
-  font-size:1.08rem!important;
-  line-height:1.7!important;
-  color:#fff!important;
-}
+.newsPage .newsHero .eyebrow,.joinPage .joinHero .eyebrow,.aboutPage .aboutHero .eyebrow{color:#d5ed96;margin-bottom:14px}
+.newsPage .newsHero h1,.joinPage .joinHero h1,.aboutPage .aboutHero h1{max-width:960px!important;margin:0 auto 22px!important;color:#b9dc69!important;font-size:clamp(2.5rem,3.5vw,3.65rem)!important;line-height:1.02!important;letter-spacing:-.04em!important;font-weight:500!important}
+.newsPage .newsHero .lead,.joinPage .joinHero .lead,.aboutPage .aboutHero .lead{max-width:820px!important;margin:0 auto!important;font-size:1.08rem!important;line-height:1.7!important;color:#fff!important}
 .joinPage .joinHero .heroActions{justify-content:center;margin-top:28px}
 
 /* Aktuelles */
-.newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge{
-  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
-}
+.newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
 .newsPage .newsItems{padding-top:78px;padding-bottom:84px;display:grid;gap:16px}
 .newsPage .newsItem{display:grid;grid-template-columns:165px 1fr;gap:28px;padding:24px 26px;border:1px solid rgba(73,107,53,.12);border-radius:18px;background:#fbfaf5}
 .newsPage .newsMeta{display:flex;flex-direction:column;gap:8px;font-size:.78rem;color:var(--earth)}
@@ -60,9 +41,7 @@
 .newsPage .newsBridge>div:last-child p{font-size:1.05rem;line-height:1.68}
 
 /* Mitmachen */
-.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact{
-  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
-}
+.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
 .joinPage .joinWays{padding-top:78px;padding-bottom:84px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .joinPage .joinWays article{background:#fafaf6;border-radius:16px;padding:22px;border-top:4px solid var(--green)}
 .joinPage .joinWays article:nth-child(2){border-top-color:var(--blue)}
@@ -82,12 +61,29 @@
 .joinPage .joinContact .heroActions{justify-content:center}
 
 /* Über uns */
-.aboutPage .aboutOrigin,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{
-  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
-}
+.aboutPage .aboutOrigin,.aboutPage .aboutPatrons,.aboutPage .aboutDelegates,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
 .aboutPage .aboutOrigin,.aboutPage .aboutSeparation{padding-top:78px;padding-bottom:86px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;border-top:1px solid var(--line)}
-.aboutPage .aboutOrigin h2,.aboutPage .aboutSeparation h2,.aboutPage .aboutOpen h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
+.aboutPage .aboutOrigin h2,.aboutPage .aboutSeparation h2,.aboutPage .aboutOpen h2,.aboutPage .aboutPatronHead h2,.aboutPage .aboutDelegatesHead h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
 .aboutPage .aboutOrigin>div:last-child p,.aboutPage .aboutSeparation>div:last-child p,.aboutPage .aboutOpen>p:not(.sectionLabel){font-size:1.04rem;line-height:1.68}
+.aboutPage .aboutPatrons{padding-top:82px;padding-bottom:88px;border-top:1px solid var(--line)}
+.aboutPage .aboutPatronHead{max-width:860px;margin:0 auto 38px;text-align:center}
+.aboutPage .aboutPatronHead .sectionLabel{color:var(--blue)}
+.aboutPage .aboutPatronHead>p:last-child{font-size:1.04rem;line-height:1.68}
+.aboutPage .aboutPatronGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.aboutPage .aboutPatronCard{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:20px;background:#fbfaf5;border:1px solid rgba(73,107,53,.12);border-radius:20px;align-items:center}
+.aboutPage .aboutPatronImage{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#eef2e7}
+.aboutPage .aboutPatronImage img{display:block;width:100%;height:100%;object-fit:cover}
+.aboutPage .aboutPatronRole{margin:0 0 7px;text-transform:uppercase;letter-spacing:.11em;font-size:.7rem;font-weight:700;color:var(--orange)}
+.aboutPage .aboutPatronCard h3{margin:0 0 10px;font-size:1.45rem}
+.aboutPage .aboutPatronCard p:not(.aboutPatronRole){margin:0 0 14px;line-height:1.6}
+.aboutPage .aboutDelegates{padding-top:82px;padding-bottom:88px;border-top:1px solid var(--line)}
+.aboutPage .aboutDelegatesHead{max-width:860px;margin:0 auto 34px;text-align:center}
+.aboutPage .aboutDelegatesHead .sectionLabel{color:var(--orange)}
+.aboutPage .aboutDelegatesHead>p:last-child{font-size:1.04rem;line-height:1.68}
+.aboutPage .aboutDelegatesFrame{height:720px;border:1px solid rgba(73,107,53,.14);border-radius:20px;overflow:hidden;background:#f6f6f1}
+.aboutPage .aboutDelegatesFrame iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+.aboutPage .aboutDelegatesFoot{max-width:860px;margin:24px auto 0;text-align:center}
+.aboutPage .aboutDelegatesFoot p{font-size:.98rem;line-height:1.6}
 .aboutPage .aboutLayers{padding-top:76px;padding-bottom:84px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .aboutPage .aboutLayers article{padding:26px;background:#fafaf6;border-radius:18px;border-top:4px solid var(--green)}
 .aboutPage .aboutLayers article:nth-child(2){border-top-color:var(--blue)}
@@ -104,17 +100,15 @@
 
 .newsPage footer,.joinPage footer,.aboutPage footer{max-width:1240px;margin:0 auto;padding:0 32px 48px}
 
-@media(max-width:1000px){
-  .joinPage .joinWays{grid-template-columns:repeat(2,1fr)}
-  .newsPage .labelGrid{grid-template-columns:repeat(2,1fr)}
-  .aboutPage .aboutPrinciples>div{grid-template-columns:repeat(2,1fr)}
-}
+@media(max-width:1000px){.joinPage .joinWays{grid-template-columns:repeat(2,1fr)}.newsPage .labelGrid{grid-template-columns:repeat(2,1fr)}.aboutPage .aboutPrinciples>div{grid-template-columns:repeat(2,1fr)}.aboutPage .aboutPatronCard{grid-template-columns:145px 1fr}}
 @media(max-width:760px){
   .newsPage .newsHero,.joinPage .joinHero,.aboutPage .aboutHero{padding:54px 20px 60px!important}
-  .newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge,.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact,.aboutPage .aboutOrigin,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{padding-left:20px;padding-right:20px}
+  .newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge,.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact,.aboutPage .aboutOrigin,.aboutPage .aboutPatrons,.aboutPage .aboutDelegates,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{padding-left:20px;padding-right:20px}
   .newsPage .newsItem,.newsPage .newsBridge,.joinPage .joinRule,.joinPage .joinStates,.aboutPage .aboutOrigin,.aboutPage .aboutSeparation{grid-template-columns:1fr}
-  .newsPage .newsItem{gap:14px}
-  .newsPage .newsMeta{flex-direction:row;justify-content:space-between}
-  .joinPage .joinWays,.newsPage .labelGrid,.aboutPage .aboutLayers,.aboutPage .aboutPrinciples>div{grid-template-columns:1fr}
+  .newsPage .newsItem{gap:14px}.newsPage .newsMeta{flex-direction:row;justify-content:space-between}
+  .joinPage .joinWays,.newsPage .labelGrid,.aboutPage .aboutLayers,.aboutPage .aboutPrinciples>div,.aboutPage .aboutPatronGrid{grid-template-columns:1fr}
+  .aboutPage .aboutPatronCard{grid-template-columns:120px 1fr}
+  .aboutPage .aboutDelegatesFrame{height:620px;border-radius:14px}
   .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
 }
+@media(max-width:480px){.aboutPage .aboutPatronCard{grid-template-columns:1fr}.aboutPage .aboutPatronImage{aspect-ratio:16/10}.aboutPage .aboutDelegatesFrame{height:560px}}
