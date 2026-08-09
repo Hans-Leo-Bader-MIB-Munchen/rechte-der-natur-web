@@ -92,8 +92,6 @@
     padding-right: 0 !important;
   }
 
-  /* worldCases is full-bleed (coloured background); its inner grid
-     follows the shared content axis, same pattern as .hubMap below. */
   .worldCases {
     padding-left: var(--desktop-gutter);
     padding-right: var(--desktop-gutter);
@@ -103,7 +101,6 @@
     max-width: var(--desktop-content) !important;
   }
 
-  /* Hub map stays full-bleed, but its inner grid follows the content axis. */
   .hubMap {
     padding-left: var(--desktop-gutter) !important;
     padding-right: var(--desktop-gutter) !important;
@@ -113,7 +110,6 @@
     max-width: var(--desktop-content) !important;
   }
 
-  /* A calmer vertical rhythm. */
   .hubHero {
     padding-top: 78px;
     padding-bottom: 88px;
@@ -130,7 +126,6 @@
     margin-bottom: 38px;
   }
 
-  /* 16-state cards: less blocky, more information density. */
   .hubStates {
     gap: 14px;
   }
@@ -151,7 +146,12 @@
     background: var(--pale);
   }
 
-  /* Display hierarchy: only true page entries stay large. */
+  /* Global cap catches CSS-module heroes such as Bayern. */
+  main h1 {
+    font-size: clamp(3.5rem, 5vw, 5.3rem) !important;
+    line-height: .95 !important;
+  }
+
   .hero h1 {
     font-size: clamp(3.7rem, 5.4vw, 5.3rem) !important;
     line-height: .94 !important;
@@ -165,11 +165,6 @@
   .hubHero h1 {
     font-size: clamp(3.2rem, 4.4vw, 4.6rem) !important;
     line-height: .96 !important;
-  }
-
-  /* Bayern uses CSS modules, so this global important rule caps its hero too. */
-  main h1 {
-    max-font-size: 5.3rem;
   }
 
   /* Sections should read as sections, not as a sequence of new hero screens. */
@@ -227,7 +222,6 @@
   }
 }
 
-/* Mobile/tablet typography: still expressive, but no billboard scale. */
 @media (max-width: 900px) {
   main h1 {
     font-size: clamp(2.8rem, 9.5vw, 4.2rem) !important;
