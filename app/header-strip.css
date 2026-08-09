@@ -61,7 +61,7 @@
     background: var(--green);
     color: #fff;
     display: grid !important;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     gap: 12px;
     text-transform: uppercase;
@@ -71,7 +71,8 @@
     line-height: 1.2;
   }
 
-  .headerStrip .heritageColors { display: flex; align-items: center; gap: 4px; }
+  .headerStripClaim { justify-self: start; white-space: nowrap; }
+  .headerStrip .heritageColors { display: flex; align-items: center; justify-self: center; gap: 4px; }
   .headerStrip .heritageColors i { display: block; width: 15px; height: 3px; }
   .headerStrip .heritageColors i:nth-child(1) { background: var(--blue); }
   .headerStrip .heritageColors i:nth-child(2) { background: var(--orange); }
@@ -79,7 +80,6 @@
   .headerStrip .heritageColors i:nth-child(4) { background: var(--earth); }
   .headerStripTrail { display: none; }
   .headerStripActive { display: block !important; justify-self: end; text-align: right; white-space: nowrap; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; }
-  .headerStripClaim { white-space: nowrap; }
 }
 
 @media (max-width: 680px) {
@@ -93,7 +93,7 @@
 }
 
 @media (max-width: 520px) {
-  .headerStrip { grid-template-columns: auto auto minmax(0, 1fr); gap: 9px; padding: 7px 12px !important; font-size: .57rem; letter-spacing: .075em; }
+  .headerStrip { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 9px; padding: 7px 12px !important; font-size: .57rem; letter-spacing: .075em; }
   .headerStripClaim { font-size: .56rem; }
   .headerStrip .heritageColors { gap: 3px; }
   .headerStrip .heritageColors i { width: 11px; height: 3px; }
@@ -102,6 +102,7 @@
 
 @media (max-width: 380px) {
   .headerStripClaim { display: none; }
-  .headerStrip { grid-template-columns: auto 1fr; }
-  .headerStripActive { display: block !important; justify-self: end; }
+  .headerStrip { grid-template-columns: 1fr auto 1fr; }
+  .headerStrip .heritageColors { grid-column: 2; }
+  .headerStripActive { display: block !important; grid-column: 3; justify-self: end; }
 }
