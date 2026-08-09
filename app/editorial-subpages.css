@@ -94,7 +94,10 @@
 .aboutPage .aboutLayers article:nth-child(2){border-top-color:var(--blue)}
 .aboutPage .aboutLayers article:nth-child(3){border-top-color:var(--orange)}
 .aboutPage .aboutLayers span{font-size:.7rem;color:var(--earth)}
-.aboutPage .aboutLayers h3{margin:32px 0 10px;font-size:1.3rem}
+.aboutPage .aboutLayerLogo{height:112px;margin:20px 0 18px;display:flex;align-items:center;justify-content:flex-start}
+.aboutPage .aboutLayerLogo img{display:block;max-width:190px;max-height:100%;width:auto;height:auto;object-fit:contain}
+.aboutPage .aboutLayerLogoTall img{max-width:92px}
+.aboutPage .aboutLayers h3{margin:0 0 10px;font-size:1.3rem}
 .aboutPage .aboutLayers p{margin:0;line-height:1.6}
 .aboutPage .aboutPrinciples{padding-top:72px;padding-bottom:78px;border-top:1px solid var(--line)}
 .aboutPage .aboutPrinciples>div{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
@@ -115,6 +118,7 @@
   .joinPage .joinWays article{min-height:0}
   .aboutPage .aboutPatronCard{grid-template-columns:120px 1fr}
   .aboutPage .aboutLeadDelegate{grid-template-columns:1fr;max-width:680px}
+  .aboutPage .aboutLayerLogo{height:96px}
   .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
 }
 @media(max-width:480px){.aboutPage .aboutPatronCard{grid-template-columns:1fr}.aboutPage .aboutPatronImage{aspect-ratio:16/10}.aboutPage .aboutLeadDelegate{padding:14px}.aboutPage .aboutLeadDelegateImage{border-radius:12px}}
