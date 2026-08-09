@@ -18,7 +18,7 @@ export default function Home() {
         <div className="heroCopy">
           <p className="eyebrow">Rechte der Natur</p>
           <h1>Was wäre, wenn ein Fluss eigene Rechte hätte?</h1>
-          <p className="lead">Wir schützen Natur – und behandeln sie im Recht trotzdem meist als Sache, Eigentum oder Ressource. Wir wollen das verändern: mit einer Kampagne für eigene Rechte der Natur und neue Volksbegehren in Deutschland.</p>
+          <p className="lead">Wir schützen Natur – und behandeln sie im Recht trotzdem meist als Sache, Eigentum oder Ressource. Wir wollen das verändern: mit einer laufenden Kampagne in Bayern und neuen Volksbegehren in weiteren Bundesländern.</p>
           <div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Mitmachen</Link><a className="textLink" href="#idee">Erst einmal verstehen ↓</a></div>
         </div>
         <div className="heroNature" aria-hidden="true"><div className="sun"/><div className="river riverOne"/><div className="river riverTwo"/><div className="land landOne"/><div className="land landTwo"/><span>Isar</span><span>Loisach</span><span>Lech</span><div className="heroSeal"><BrandMark/><em>Gib der Natur<br/>Recht.</em></div></div>
@@ -39,21 +39,21 @@ export default function Home() {
       <section className="questionBand"><p>Der Perspektivwechsel</p><h2>Nicht nur: „Was dürfen wir mit der Natur tun?“</h2><strong>Sondern: „Was braucht sie, um zu leben?“</strong></section>
 
       <section className="world" id="weltweit">
-        <div className="sectionIntro"><p className="sectionLabel">Weltweit</p><h2>Andere haben längst angefangen.</h2><p>Rechte der Natur existieren bereits in unterschiedlichen Rechtsordnungen. Wir schauen genau hin, was daraus für eine Kampagne in Deutschland gelernt werden kann.</p><div className="heroActions"><Link className="buttonPrimary" href="/weltweit">Zur weltweiten Falllandschaft</Link></div></div>
+        <div className="sectionIntro"><p className="sectionLabel">Weltweit</p><h2>Andere haben längst angefangen.</h2><p>Rechte der Natur existieren bereits in unterschiedlichen Rechtsordnungen. Wir schauen genau hin, was daraus für Kampagnen in Deutschland gelernt werden kann.</p><div className="heroActions"><Link className="buttonPrimary" href="/weltweit">Zur weltweiten Falllandschaft</Link></div></div>
         <div className="storyGrid">{stories.map(s=><article className="story" key={s.title}><div className={`storyVisual visual${s.mark}`}><span>{s.mark}</span></div><div className="storyCopy"><span className="place">{s.place}</span><h3>{s.title}</h3><p>{s.text}</p></div></article>)}</div>
       </section>
 
       <section className="germanyLead" id="deutschland">
-        <div className="germanyLeadCopy"><p className="sectionLabel">Deutschland</p><h2>16 Länder. Viele Wege. Eine Kampagne, die wachsen kann.</h2><p>Bayern war der Anfang. Jetzt bauen wir eine gemeinsame Plattform, auf der für jedes Bundesland geprüft werden kann, welcher Weg trägt – und wo daraus eine reale Initiative mit Mitstreitern und Unterschriftensammlung entstehen kann.</p><div className="heroActions"><Link className="buttonPrimary" href="/deutschland">Die 16 Länder ansehen</Link><Link className="textLink" href="/volksbegehren">Wie Volksbegehren entstehen →</Link></div></div>
+        <div className="germanyLeadCopy"><p className="sectionLabel">Deutschland</p><h2>16 Länder. Viele Wege. Eine Kampagne, die wachsen kann.</h2><p>Bayern ist der laufende Ausgangspunkt. Dort sammeln wir weiter Unterstützungsunterschriften für den Zulassungsantrag. Gleichzeitig bauen wir eine gemeinsame Plattform auf, auf der für weitere Bundesländer geprüft werden kann, welcher Weg trägt.</p><div className="heroActions"><Link className="buttonPrimary" href="/deutschland">Die 16 Länder ansehen</Link><Link className="textLink" href="/volksbegehren">Wie Volksbegehren entstehen →</Link></div></div>
         <div className="sixteen">16</div>
       </section>
 
       <section className="bavariaFeature">
         <div className="bavariaNumber"><BrandMark/></div>
-        <div className="bavariaCopy"><p className="sectionLabel">Woher wir kommen</p><h2>Bayern: Eine Stimme für Isar, Lech und Loisach.</h2><p>Das Volksbegehren „Rechte der Natur“ war unser Ausgangspunkt. Dort begann auch ganz praktisch, was Kampagne bedeutet: Menschen überzeugen, Unterstützer gewinnen und Unterschriften sammeln.</p><div className="bavariaLinks"><Link href="/volksbegehren/bayern">Bayern ansehen →</Link><a href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Historische Originalseite →</a></div></div>
+        <div className="bavariaCopy"><p className="sectionLabel">Bayern · laufende Sammelphase</p><h2>Eine Stimme für Isar, Lech und Loisach.</h2><p>Das Volksbegehren „Rechte der Natur“ läuft weiter. Die Sammlung für den Zulassungsantrag ist nicht abgeschlossen; die gemeindliche Bestätigung des Stimmrechts und die Einreichung stehen noch aus.</p><div className="bavariaLinks"><Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link><a href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Bisherige Kampagnenseite →</a></div></div>
       </section>
 
-      <section className="campaignCall"><span className="tiny">Der nächste Schritt</span><h2>Rechte der Natur brauchen Mitstreiter.</h2><p>Ob juristische Prüfung, Landesnetzwerk, Veranstaltungen, Kommunikation oder später die Unterschriftensammlung: Eine Kampagne lebt davon, dass Menschen Verantwortung übernehmen.</p><div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Ich will mitmachen →</Link></div></section>
+      <section className="campaignCall"><span className="tiny">Der nächste Schritt</span><h2>Rechte der Natur brauchen Mitstreiter.</h2><p>Ob juristische Prüfung, Landesnetzwerk, Veranstaltungen, Kommunikation oder die laufende Unterschriftensammlung in Bayern: Eine Kampagne lebt davon, dass Menschen Verantwortung übernehmen.</p><div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Ich will mitmachen →</Link></div></section>
 
       <section className="join"><p className="sectionLabel">Weiterlesen</p><h2>Die Kampagne hat mehrere Ebenen.</h2><div className="joinLinks"><Link href="/aktuelles">Was sich gerade bewegt <span>→</span></Link><Link href="/weltweit">Internationale Erfahrungen <span>→</span></Link><Link href="/deutschland">Die 16 Bundesländer <span>→</span></Link><Link href="/ueber-uns">Wer wir sind und wie wir arbeiten <span>→</span></Link></div></section>
 
