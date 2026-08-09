@@ -3,6 +3,7 @@ import SiteHeader from "../../components/SiteHeader";
 import styles from "./page.module.css";
 
 const milestones = [
+  { year: "2019", title: "Die Idee entsteht", text: "Hans Leo Bader entwickelt die Idee für eine bayerische Initiative zu den Rechten der Natur. Daraus entsteht in den folgenden Jahren das Volksbegehren." },
   { year: "24.09.2021", title: "Start der Unterschriftensammlung", text: "Seit diesem Tag werden Unterstützungsunterschriften für den Antrag auf Zulassung des Volksbegehrens gesammelt." },
   { year: "heute", title: "Die Antragsphase läuft weiter", text: "Der Zulassungsantrag ist noch nicht eingereicht. Die Kampagne sammelt weiter und verfolgt bewusst ein politisches Sammelziel deutlich oberhalb des gesetzlichen Minimums." },
   { year: "parallel", title: "Kampagne und fachliche Weiterentwicklung", text: "Während die Sammlung weiterläuft, werden internationale Erfahrungen, rechtliche Fragen und institutionelle Wirkungsbedingungen genauer ausgewertet." },
@@ -77,17 +78,17 @@ export default function BayernPage() {
       </section>
 
       <section className={styles.timeline}>
-        <div className={styles.sectionHead}><p className={styles.label}>Seit 2021</p><h2>Die Kampagne läuft – und entwickelt sich weiter.</h2></div>
+        <div className={styles.sectionHead}><p className={styles.label}>Seit 2019</p><h2>Aus einer Idee wurde eine laufende Kampagne.</h2></div>
         <div className={styles.timelineGrid}>{milestones.map(m => <article key={m.year}><strong>{m.year}</strong><h3>{m.title}</h3><p>{m.text}</p></article>)}</div>
       </section>
 
       <section className={styles.today} id="menschen">
-        <div><p className={styles.label}>Menschen und Verantwortung</p><h2>Wer hinter der Initiative steht.</h2></div>
+        <div><p className={styles.label}>Entstehung und Mitwirkung</p><h2>Wer die Initiative angestoßen hat – und wie weitere Mitstreiter dazukamen.</h2></div>
         <div className={styles.todayText}>
-          <p><strong>Hans Leo Bader</strong> initiierte und koordiniert das bayerische Volksbegehren. Die historische Kampagnenseite weist ihn als Verantwortlichen der Seite und Ansprechpartner aus.</p>
-          <p><strong>Emmanuel Schlichter</strong> gehört zu den Mitinitiatoren des Volksbegehrens und veröffentlichte bereits 2021 auf der Kampagnenseite eine juristische Einführung zu den Rechten der Natur. Er arbeitet heute daneben in eigenständigen Rechte-der-Natur-Strukturen weiter.</p>
-          <p>Die Bayern-Kampagne ist zugleich Teil einer größeren Rechte-der-Natur-Bewegung und suchte von Beginn an Vernetzung in Gesellschaft, Gemeinden und Umweltbewegung.</p>
-          <p className={styles.note}>Formale Vertreter- oder Beauftragtenangaben aus dem amtlichen Original-Antragsformular werden auf der neuen Seite erst dann als solche bezeichnet, wenn sie direkt aus der maßgeblichen Formularfassung verifiziert sind. Rollen aus Verein, Netzwerk und Volksbegehren werden nicht miteinander vermischt.</p>
+          <p><strong>Hans Leo Bader</strong> entwickelte 2019 die Idee für die bayerische Rechte-der-Natur-Initiative, initiierte daraus das Volksbegehren und koordiniert die Kampagne. Die historische Kampagnenseite weist ihn als Verantwortlichen und Ansprechpartner aus.</p>
+          <p>Im weiteren Aufbau kamen zusätzliche Mitstreiter mit unterschiedlichen fachlichen und praktischen Hintergründen hinzu. Dazu gehörte zeitweise auch <strong>Emmanuel Schlichter</strong>, der sich bereits als Student wissenschaftlich mit den Rechten der Natur beschäftigt hatte und 2021 auf der Kampagnenseite einen juristischen Erklärbeitrag veröffentlichte.</p>
+          <p>Seine zeitweilige Mitarbeit begründet keine gemeinsame Urheberschaft an der 2019 entstandenen Kampagnenidee. Die neue Seite unterscheidet deshalb bewusst zwischen Initiierung, späterer Mitwirkung und formalen Rollen.</p>
+          <p className={styles.note}>Spätere interne Konflikte oder persönliche Gründe für das Ausscheiden einzelner Mitwirkender gehören nicht in die öffentliche Kampagnendarstellung. Formale Vertreter- oder Beauftragtenangaben aus amtlichen Unterlagen werden separat und nur nach direkter Prüfung der maßgeblichen Dokumente ausgewiesen.</p>
         </div>
       </section>
 
