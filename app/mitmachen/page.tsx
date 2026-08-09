@@ -1,3 +1,5 @@
+import "../participation.css";
+
 const paths=[
   {title:"Mitdenken",text:"Du kennst ein Bundesland, einen Naturraum, ein Verfahren oder eine juristische Besonderheit, die wir berücksichtigen sollten? Hinweise sind willkommen – aber wir trennen Anregung und Beleg sauber."},
   {title:"Mitprüfen",text:"Rechte der Natur brauchen belastbare Grundlagen. Wer juristisch, wissenschaftlich oder institutionell beitragen kann, hilft uns besonders bei Länderprüfungen, internationalen Fällen und Quellenchecks."},
