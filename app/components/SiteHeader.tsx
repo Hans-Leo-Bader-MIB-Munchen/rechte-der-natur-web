@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import BrandMark from "./BrandMark";
 
 const nav = [
   ["Weltweit", "/weltweit"],
@@ -12,12 +12,16 @@ const nav = [
 export default function SiteHeader({ section }: { section?: string }) {
   return (
     <header className="siteHeader">
-      <Link className="brand" href="/" aria-label="Rechte der Natur – Startseite">
-        <BrandMark />
-        <span className="brandWords">
-          <strong>Rechte der Natur</strong>
-          <small>{section || "Kampagne"}</small>
-        </span>
+      <Link className="brand brandOfficial" href="/" aria-label="Rechte der Natur – Die Volksbegehren – Startseite">
+        <Image
+          className="brandLogoHorizontal"
+          src="/brand/logo_D_laengs.png"
+          alt="Rechte der Natur – Die Volksbegehren"
+          width={2380}
+          height={399}
+          priority
+        />
+        {section ? <span className="brandSection">{section}</span> : null}
       </Link>
       <nav aria-label="Hauptnavigation">
         {nav.map(([label, href]) => (
