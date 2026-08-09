@@ -15,22 +15,22 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
   return (
     <main className={styles.page}>
-      <SiteHeader section={entwurf.name} claimLead="Frühere Initiative." claimTrail="Ein Entwurf als neuer Startpunkt." />
+      <SiteHeader section={entwurf.name} claimLead="Vorarbeit ist da." claimTrail="Jetzt kann der Landesweg weiterwachsen." />
 
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{entwurf.name} · früherer Textentwurf</p>
-        <h1>Ein früherer Entwurf als Ausgangspunkt für einen neuen Landesweg.</h1>
+        <p className={styles.eyebrow}>{entwurf.name} · Vorarbeit</p>
+        <h1>Ein Textentwurf als Startpunkt für die weitere Entwicklung.</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
       <section className={styles.content}>
         <div className={styles.intro}>
           <div>
-            <p className={styles.label}>Dokumentierter Arbeitsstand</p>
+            <p className={styles.label}>Textentwurf</p>
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
-            <p>Der folgende Wortlaut stammt aus dem damaligen Entwurf der Initiative. Er wird hier als historischer Arbeitsstand dokumentiert und bildet Material für eine heutige rechtliche und politische Weiterentwicklung.</p>
+            <p>Für {entwurf.name} liegt bereits ein konkreter Verfassungstext vor. Er schafft eine belastbare Grundlage, auf der die weitere rechtliche und politische Entwicklung aufbauen kann.</p>
           </div>
         </div>
 
@@ -44,17 +44,17 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
         <div className={styles.today}>
           <div>
-            <p className={styles.label}>Heutige Weiterentwicklung</p>
-            <h2>Der Entwurf ist Startmaterial, kein Endpunkt.</h2>
+            <p className={styles.label}>Weiterentwicklung</p>
+            <h2>Aus Vorarbeit kann ein neuer Landesweg wachsen.</h2>
           </div>
           <div>
-            <p>Für einen heutigen Landesweg werden die jeweilige Landesverfassung, das Verfahren direkter Demokratie sowie Fragen von Vertretung, institutioneller Einbindung und tatsächlicher Wirksamkeit neu geprüft.</p>
-            <p>Damit bleibt die damalige Vorarbeit sichtbar und kann zugleich mit dem heutigen Wissen weiterentwickelt werden.</p>
+            <p>Der nächste Schritt verbindet den vorhandenen Entwurf mit der heutigen Verfassungslage, dem jeweiligen Verfahren direkter Demokratie und den Erfahrungen aus der Systemischen Rechtsentwicklung.</p>
+            <p>Daraus kann ein tragfähiger Text mit passender Vertretung, institutioneller Einbindung und klarer Kampagnenstruktur entstehen.</p>
           </div>
         </div>
 
         <div className={styles.actions}>
-          <Link className={styles.button} href="/deutschland">Zurück zur Deutschlandseite</Link>
+          <Link className={styles.button} href="/deutschland">Alle Bundesländer ansehen</Link>
           <Link className={styles.textLink} href="/mitmachen">Landesweg mit aufbauen →</Link>
         </div>
       </section>
