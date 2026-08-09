@@ -14,11 +14,17 @@ const nav = [
 
 export default function SiteHeader({ section }: { section?: string }) {
   const [open, setOpen] = useState(false);
+  const activeLabel = section || "Die Volksbegehren";
 
   return (
     <header className="siteHeader">
       <div className="headerTopline">
-        <Link className="brand brandOfficial" href="/" aria-label="Rechte der Natur – Die Volksbegehren – Startseite" onClick={() => setOpen(false)}>
+        <Link
+          className="brand brandOfficial"
+          href="/"
+          aria-label="Rechte der Natur – Die Volksbegehren – Startseite"
+          onClick={() => setOpen(false)}
+        >
           <Image
             className="brandLogoHorizontal"
             src="/brand/logo_D_laengs.png"
@@ -49,6 +55,12 @@ export default function SiteHeader({ section }: { section?: string }) {
         ))}
         <Link className="navAction" href="/mitmachen" onClick={() => setOpen(false)}>Mitmachen</Link>
       </nav>
+
+      <div className="heritageStrip headerStrip" aria-label={`Aktiver Bereich: ${activeLabel}`}>
+        <span className="headerStripClaim">Gib der Natur Recht.</span>
+        <span className="heritageColors" aria-hidden="true"><i/><i/><i/><i/></span>
+        <span className="headerStripActive">{activeLabel}</span>
+      </div>
     </header>
   );
 }
