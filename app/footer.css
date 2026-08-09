@@ -21,8 +21,10 @@ main > footer{display:none!important}
 .siteFooterNav a,.siteFooterLegal a{font-size:.9rem;text-decoration:none;width:max-content;max-width:100%;text-underline-offset:4px;overflow-wrap:normal}
 .siteFooterNav a:hover,.siteFooterLegal a:hover{text-decoration:underline}
 .siteFooterLegal{justify-self:end}
-.siteFooterBottom{width:100%;max-width:1240px;margin:0 auto;padding:20px 32px 34px;border-top:1px solid rgba(73,107,53,.12);display:flex;justify-content:space-between;gap:24px;font-size:.78rem;color:var(--earth)}
+.siteFooterBottom{width:100%;max-width:1240px;margin:0 auto;padding:20px 32px 26px;border-top:1px solid rgba(73,107,53,.12);display:flex;justify-content:space-between;gap:24px;font-size:.78rem;color:var(--earth)}
 .siteFooterBottom a{color:var(--deep);text-decoration:none}
+.siteFooterNetwork{width:100%;border-top:1px solid rgba(73,107,53,.12);padding:24px 32px 30px;display:flex;justify-content:center;align-items:center;background:#fff}
+.siteFooterNetwork img{display:block;width:min(100%,980px);height:auto;object-fit:contain}
 
 .legalPage{background:#fff;color:var(--deep)}
 .legalHero{background:var(--deep);color:#fff;text-align:center;padding:72px max(32px,calc((100vw - 980px)/2)) 76px}
@@ -40,11 +42,13 @@ main > footer{display:none!important}
   .siteFooterInner{grid-template-columns:1fr 1fr;gap:30px 40px}
   .siteFooterBrand{grid-column:1/-1}
   .siteFooterLegal{justify-self:start}
+  .siteFooterNetwork img{width:min(100%,760px)}
 }
 @media(max-width:620px){
   .siteFooterInner{grid-template-columns:1fr;padding:38px 20px 26px}
   .siteFooterBrand{grid-column:auto}
-  .siteFooterBottom{padding:18px 20px 28px;flex-direction:column;gap:10px}
+  .siteFooterBottom{padding:18px 20px 24px;flex-direction:column;gap:10px}
+  .siteFooterNetwork{padding:20px 16px 24px}
   .legalHero{padding:52px 20px 58px}
   .legalContent{padding:54px 20px 70px}
 }
