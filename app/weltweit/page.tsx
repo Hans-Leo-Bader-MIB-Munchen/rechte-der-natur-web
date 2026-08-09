@@ -18,6 +18,45 @@ const lenses = [
   ["Wirkung", "Verändert sich eine konkrete Entscheidung, ein Vollzug oder der Zustand des Ökosystems tatsächlich?"],
 ];
 
+const focusCases = [
+  {
+    id: "mar-menor",
+    region: "Spanien · 2022",
+    title: "Mar Menor",
+    subtitle: "Rechte brauchen Institutionen.",
+    intro: "Die Lagune Mar Menor erhielt durch Gesetz eigene Rechte. Damit bleibt es nicht bei einer abstrakten Anerkennung: Vertretung, Aufsicht und institutionelle Zuständigkeiten gehören zum Modell.",
+    points: [
+      ["Rechtsform", "Gesetzliche Anerkennung eigener Rechte der Lagune."],
+      ["Organisation", "Vertretung und Aufsicht werden institutionell geordnet."],
+      ["Lernpunkt", "Rechte werden belastbar, wenn klar ist, wer sie wahrnimmt und wie sie in Verfahren wirken."],
+    ],
+  },
+  {
+    id: "whanganui",
+    region: "Aotearoa / Neuseeland · 2017",
+    title: "Whanganui",
+    subtitle: "Rechtspersönlichkeit und Vertretung gehören zusammen.",
+    intro: "Der Whanganui erhielt eine eigene Rechtspersönlichkeit innerhalb einer gesetzlich geregelten Vertretungsordnung. Der Fluss wird damit rechtlich als eigenständige Einheit behandelt und erhält eine konkrete Stimme im Recht.",
+    points: [
+      ["Rechtsform", "Gesetzlich geregelte eigene Rechtspersönlichkeit."],
+      ["Vertretung", "Die Interessen des Flusses werden durch eine eigene Vertretungsordnung wahrgenommen."],
+      ["Lernpunkt", "Die Anerkennung wird durch eine dauerhaft angelegte Vertretungsstruktur handlungsfähig."],
+    ],
+  },
+  {
+    id: "ecuador",
+    region: "Ecuador · seit 2008",
+    title: "Natur in der Verfassung",
+    subtitle: "Verfassungsrang schafft einen starken Bezugspunkt.",
+    intro: "Ecuador verankerte Rechte der Natur auf Verfassungsebene. Seitdem zeigt sich ihre Bedeutung besonders dort, wo Gerichte diese Rechte auf konkrete Konflikte anwenden – etwa im Fall Los Cedros.",
+    points: [
+      ["Rechtsform", "Rechte der Natur stehen unmittelbar in der Verfassung."],
+      ["Anwendung", "Gerichtliche Entscheidungen konkretisieren, was diese Rechte in einzelnen Fällen bedeuten."],
+      ["Lernpunkt", "Verfassungsrang eröffnet einen starken Maßstab; seine Wirkung entsteht in Anwendung, Verfahren und Entscheidungen."],
+    ],
+  },
+];
+
 export default function Weltweit() {
   return (
     <main className={styles.page}>
@@ -28,7 +67,7 @@ export default function Weltweit() {
           <p className={styles.eyebrow}>Weltweit</p>
           <h1>Die Idee hat viele Formen angenommen.</h1>
           <p className={styles.lead}>Verfassungen, Gesetze und Gerichte haben Natur in unterschiedlichen Rechtsordnungen eine eigenständige Stellung gegeben. Für eine Kampagne in Deutschland ist besonders wichtig, welche Elemente wirken und welche Anpassungen ein eigener deutscher Weg braucht.</p>
-          <div className={styles.actions}><a className={styles.button} href="#faelle">Fälle entdecken</a><Link className={styles.textLink} href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div>
+          <div className={styles.actions}><a className={styles.button} href="#schwerpunkte">Drei Fälle genauer</a><Link className={styles.textLink} href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div>
         </div>
       </section>
 
@@ -38,6 +77,30 @@ export default function Weltweit() {
       </section>
 
       <section className={styles.lenses}>{lenses.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><h3>{title}</h3><p>{text}</p></article>)}</section>
+
+      <section className={styles.focus} id="schwerpunkte">
+        <div className={styles.focusHead}>
+          <p className={styles.label}>Drei Fälle genauer</p>
+          <h2>Drei Rechtswege zeigen drei unterschiedliche Stärken.</h2>
+          <p>Entscheidend ist weniger, ein Modell zu kopieren, als zu verstehen, wie Anerkennung, Vertretung und Institutionen miteinander verbunden werden.</p>
+        </div>
+        <div className={styles.focusList}>
+          {focusCases.map((c, index) => (
+            <article className={styles.focusCase} id={c.id} key={c.id}>
+              <div className={styles.focusNumber}>{String(index + 1).padStart(2,"0")}</div>
+              <div className={styles.focusCopy}>
+                <p className={styles.focusRegion}>{c.region}</p>
+                <h3>{c.title}</h3>
+                <strong>{c.subtitle}</strong>
+                <p>{c.intro}</p>
+              </div>
+              <dl className={styles.focusFacts}>
+                {c.points.map(([term, text]) => <div key={term}><dt>{term}</dt><dd>{text}</dd></div>)}
+              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className={styles.cases} id="faelle">
         <div className={styles.sectionHead}><p className={styles.label}>Falllandschaft</p><h2>Sechs Fälle. Sechs unterschiedliche rechtliche Konstruktionen.</h2><p>Die Auswahl spannt ein Spektrum unterschiedlicher rechtlicher Konstruktionen auf.</p></div>
