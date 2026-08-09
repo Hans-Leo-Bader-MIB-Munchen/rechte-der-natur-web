@@ -12,6 +12,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
   const { land } = await params;
   const entwurf = landesEntwurfNachSlug[land];
   if (!entwurf) notFound();
+  const mailSubject = encodeURIComponent(`Landesweg ${entwurf.name} mit aufbauen`);
 
   return (
     <main className={styles.page}>
@@ -62,7 +63,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
         <div className={styles.actions}>
           <Link className={styles.button} href="/deutschland">Alle Bundesländer ansehen</Link>
-          <Link className={styles.textLink} href="/mitmachen">Landesweg mit aufbauen →</Link>
+          <a className={styles.textLink} href={`mailto:info@dubistdieer.de?subject=${mailSubject}`}>Landesweg mit aufbauen →</a>
         </div>
       </section>
     </main>
