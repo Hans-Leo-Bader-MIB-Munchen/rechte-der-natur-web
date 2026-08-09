@@ -148,13 +148,13 @@
 
   /* Global cap catches CSS-module heroes such as Bayern. */
   main h1 {
-    font-size: clamp(3.1rem, 4.4vw, 4.6rem) !important;
-    line-height: .97 !important;
+    font-size: clamp(2.8rem, 3.9vw, 4.1rem) !important;
+    line-height: .99 !important;
   }
 
   .hero h1 {
-    font-size: clamp(3.3rem, 4.7vw, 4.8rem) !important;
-    line-height: .96 !important;
+    font-size: clamp(3rem, 4.1vw, 4.3rem) !important;
+    line-height: .98 !important;
   }
 
   .worldHero h1,
@@ -163,15 +163,15 @@
   .joinHero h1,
   .aboutHero h1,
   .hubHero h1 {
-    font-size: clamp(2.9rem, 3.8vw, 4rem) !important;
-    line-height: .98 !important;
+    font-size: clamp(2.65rem, 3.35vw, 3.6rem) !important;
+    line-height: 1 !important;
   }
 
   /* Sections should read as sections, not as a sequence of new hero screens. */
   main h2 {
-    font-size: clamp(1.8rem, 2.5vw, 2.75rem) !important;
-    line-height: 1.1 !important;
-    letter-spacing: -.03em !important;
+    font-size: clamp(1.7rem, 2.15vw, 2.45rem) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.025em !important;
   }
 }
 
@@ -224,24 +224,24 @@
 
 @media (max-width: 900px) {
   main h1 {
-    font-size: clamp(2.5rem, 8.5vw, 3.7rem) !important;
-    line-height: 1 !important;
-    letter-spacing: -.04em !important;
+    font-size: clamp(2.35rem, 7.8vw, 3.35rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -.035em !important;
   }
 
   main h2 {
-    font-size: clamp(1.7rem, 5.4vw, 2.45rem) !important;
-    line-height: 1.1 !important;
-    letter-spacing: -.025em !important;
+    font-size: clamp(1.6rem, 4.9vw, 2.2rem) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.02em !important;
   }
 }
 
 @media (max-width: 520px) {
   main h1 {
-    font-size: clamp(2.25rem, 9.8vw, 3.1rem) !important;
+    font-size: clamp(2.1rem, 9vw, 2.85rem) !important;
   }
 
   main h2 {
-    font-size: clamp(1.6rem, 6.7vw, 2.15rem) !important;
+    font-size: clamp(1.5rem, 6vw, 1.95rem) !important;
   }
 }
