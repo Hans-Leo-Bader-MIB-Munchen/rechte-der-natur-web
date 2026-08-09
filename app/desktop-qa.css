@@ -1,0 +1,223 @@
+/* Desktop design QA pass 1 — shared rhythm and alignment. */
+
+@media (min-width: 901px) {
+  :root {
+    --desktop-content: 1240px;
+    --desktop-gutter: 40px;
+  }
+
+  /* Fixed header: same visual axis as the page content. */
+  .siteHeader {
+    min-height: 92px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 42px;
+    padding: 0 !important;
+  }
+
+  .siteHeader > .headerTopline {
+    display: flex !important;
+    align-items: center;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 0 0 max(var(--desktop-gutter), calc((100vw - var(--desktop-content)) / 2)) !important;
+  }
+
+  .siteHeader > .mainNav {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 max(var(--desktop-gutter), calc((100vw - var(--desktop-content)) / 2)) 0 0 !important;
+    justify-content: flex-end;
+    gap: 22px;
+  }
+
+  .brandOfficial {
+    min-width: 0;
+    gap: 16px;
+  }
+
+  .brandLogoHorizontal {
+    width: 280px;
+  }
+
+  .brandSection {
+    max-width: 118px;
+    font-size: .64rem;
+    line-height: 1.3;
+  }
+
+  .mainNav a {
+    font-size: .86rem;
+  }
+
+  .siteHeader .navAction {
+    padding: 10px 17px;
+  }
+
+  /* Shared content width. Full-width colour bands remain full width. */
+  .hero,
+  .plainIdea,
+  .explainGrid,
+  .world,
+  .germanyLead,
+  .campaignIdea,
+  .stateSection,
+  .bavariaFeature,
+  .join,
+  footer,
+  .deHero,
+  .dePrinciple,
+  .deThree,
+  .deMap,
+  .statusSection,
+  .deBayern,
+  .hubHero,
+  .hubPrinciple,
+  .hubTemplate,
+  .hubBayern,
+  .hubFooter,
+  .newsHero,
+  .joinHero,
+  .aboutHero {
+    max-width: var(--desktop-content) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Hub map stays full-bleed, but its inner grid follows the content axis. */
+  .hubMap {
+    padding-left: var(--desktop-gutter) !important;
+    padding-right: var(--desktop-gutter) !important;
+  }
+
+  .hubMap > * {
+    max-width: var(--desktop-content) !important;
+  }
+
+  /* A calmer vertical rhythm. */
+  .hubHero {
+    padding-top: 78px;
+    padding-bottom: 88px;
+  }
+
+  .hubPrinciple,
+  .hubMap,
+  .hubTemplate {
+    padding-top: 82px;
+    padding-bottom: 92px;
+  }
+
+  .hubSectionHead {
+    margin-bottom: 38px;
+  }
+
+  /* 16-state cards: less blocky, more information density. */
+  .hubStates {
+    gap: 14px;
+  }
+
+  .hubState {
+    min-height: 180px;
+    padding: 20px 22px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.72);
+  }
+
+  .hubState h3 {
+    margin: 26px 0 8px;
+    font-size: 1.22rem;
+  }
+
+  .hubStateActive {
+    background: var(--pale);
+  }
+
+  /* Bayern process cards: long numbers need labels, not tiny circles. */
+  .steps {
+    gap: 16px !important;
+  }
+
+  .steps article {
+    min-height: 245px !important;
+    padding: 28px 30px !important;
+    border-radius: 18px !important;
+  }
+
+  .steps span {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    min-width: 72px;
+    height: 38px !important;
+    padding: 0 12px;
+    border-radius: 999px !important;
+    white-space: nowrap;
+    font-size: .86rem;
+    line-height: 1;
+  }
+
+  .steps h3 {
+    margin: 44px 0 14px !important;
+    font-size: 1.55rem !important;
+  }
+
+  .steps p {
+    margin-bottom: 0;
+    line-height: 1.58 !important;
+  }
+
+  /* Keep large headings expressive without letting them dominate laptop screens. */
+  .worldHero h1,
+  .deHero h1,
+  .newsHero h1,
+  .joinHero h1,
+  .aboutHero h1,
+  .hubHero h1 {
+    font-size: clamp(3.8rem, 5.3vw, 6rem) !important;
+    line-height: .93 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1320px) {
+  :root {
+    --desktop-gutter: 32px;
+  }
+
+  .hero,
+  .plainIdea,
+  .explainGrid,
+  .world,
+  .germanyLead,
+  .campaignIdea,
+  .stateSection,
+  .bavariaFeature,
+  .join,
+  footer,
+  .deHero,
+  .dePrinciple,
+  .deThree,
+  .deMap,
+  .statusSection,
+  .deBayern,
+  .hubHero,
+  .hubPrinciple,
+  .hubTemplate,
+  .hubBayern,
+  .hubFooter,
+  .newsHero,
+  .joinHero,
+  .aboutHero {
+    padding-left: var(--desktop-gutter) !important;
+    padding-right: var(--desktop-gutter) !important;
+  }
+
+  .brandLogoHorizontal {
+    width: 245px;
+  }
+
+  .siteHeader > .mainNav {
+    gap: 16px;
+  }
+}
