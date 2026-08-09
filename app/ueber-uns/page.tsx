@@ -5,11 +5,31 @@ import BrandMark from "../components/BrandMark";
 export default function UeberUns() {
   return (
     <main className="aboutPage">
-      <SiteHeader section="Über uns" claimLead="Gib der Natur Recht." claimTrail="Aus einer Kampagne wächst eine Plattform." />
+      <SiteHeader section="Über uns" claimLead="Gib der Natur Recht." claimTrail="Menschen, Erfahrung und Verantwortung." />
 
-      <section className="aboutHero"><p className="eyebrow">Über uns</p><h1>Wir sind Kampagne. Und wir entwickeln sie weiter.</h1><p className="lead">Die Idee für die bayerische Initiative entstand 2019 bei Hans Leo Bader. Daraus entwickelte sich das Volksbegehren „Rechte der Natur“ in Bayern – und diese Kampagne läuft weiter. Heute verbinden wir Kampagnenerfahrung mit internationaler Recherche und der Frage, wie Rechte der Natur politisch tragfähig und rechtlich wirksam ausgestaltet werden können.</p></section>
+      <section className="aboutHero"><p className="eyebrow">Über uns</p><h1>Aus einer Idee wurde eine Kampagne für die Rechte der Natur.</h1><p className="lead">Die Initiative begann 2019. Heute verbindet „Rechte der Natur – Die Volksbegehren“ Kampagnenerfahrung, internationale Perspektiven und Menschen, die in den Bundesländern eigene Wege zu den Rechten der Natur entwickeln.</p></section>
 
-      <section className="aboutOrigin"><div><p className="sectionLabel">Herkunft und Gegenwart</p><h2>2019 begann die Idee. Bayern ist weiterhin aktiv.</h2></div><div><p>Hans Leo Bader entwickelte 2019 den Ausgangspunkt für die bayerische Rechte-der-Natur-Initiative und initiierte daraus das Volksbegehren. Im weiteren Aufbau kamen Mitstreiter mit unterschiedlichen fachlichen und praktischen Hintergründen hinzu.</p><p>Das Volksbegehren will Rechte der Natur in der Bayerischen Verfassung verankern. Dafür werden weiterhin Unterstützungsunterschriften für den Zulassungsantrag gesammelt.</p><p>Parallel ist eine größere Plattform entstanden: für neue Landesinitiativen, internationale Beispiele, aktuelle Entwicklungen und Menschen, die mitmachen wollen.</p><Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link></div></section>
+      <section className="aboutOrigin"><div><p className="sectionLabel">Herkunft und Gegenwart</p><h2>2019 begann die Idee. Bayern wurde der erste konkrete Weg.</h2></div><div><p>Hans Leo Bader entwickelte 2019 den Ausgangspunkt für die bayerische Rechte-der-Natur-Initiative und initiierte daraus das Volksbegehren. Im weiteren Aufbau kamen Mitstreiter mit unterschiedlichen fachlichen und praktischen Hintergründen hinzu.</p><p>In Bayern werden weiterhin Unterstützungsunterschriften für den Zulassungsantrag gesammelt. Gleichzeitig ist daraus eine bundesweite Kampagnenplattform entstanden, die unterschiedliche Landeswege ermöglicht.</p><Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link></div></section>
+
+      <section className="aboutPatrons" id="schirmherrschaft">
+        <div className="aboutPatronHead"><p className="sectionLabel">Schirmherrschaft der Volksbegehren</p><h2>Zwei internationale Erfahrungen begleiten die gesamte Kampagne.</h2><p>Alberto Acosta und Teresa Vicente haben die Schirmherrschaft für „Rechte der Natur – Die Volksbegehren“ übernommen. Ihre Schirmherrschaft gilt der gesamten Kampagne und ihren möglichen Wegen in allen 16 Bundesländern.</p></div>
+        <div className="aboutPatronGrid">
+          <article className="aboutPatronCard">
+            <div className="aboutPatronImage"><img src="https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2024/07/Acosta_Schirmherr.png" alt="Alberto Acosta, Schirmherr der Kampagne Rechte der Natur – Die Volksbegehren" /></div>
+            <div><p className="aboutPatronRole">Schirmherr</p><h3>Alberto Acosta</h3><p>Alberto Acosta Espinosa war 2007/08 Präsident der Verfassungsgebenden Versammlung Ecuadors. In dieser Zeit wurde die neue ecuadorianische Verfassung erarbeitet, die Rechte der Natur verfassungsrechtlich verankerte.</p><Link href="/weltweit#ecuador">Ecuador →</Link></div>
+          </article>
+          <article className="aboutPatronCard">
+            <div className="aboutPatronImage"><img src="https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2024/08/Teresa-Vicente.jpg" alt="Teresa Vicente, Schirmfrau der Kampagne Rechte der Natur – Die Volksbegehren" /></div>
+            <div><p className="aboutPatronRole">Schirmfrau</p><h3>Teresa Vicente</h3><p>Teresa Vicente ist Professorin für Rechtsphilosophie an der Universität Murcia. Sie führte die Bürgerbewegung an, aus der 2022 das spanische Gesetz hervorging, das dem Ökosystem Mar Menor eigene Rechte und Rechtspersönlichkeit zuerkannte.</p><Link href="/weltweit#mar-menor">Mar Menor →</Link></div>
+          </article>
+        </div>
+      </section>
+
+      <section className="aboutDelegates" id="beauftragte">
+        <div className="aboutDelegatesHead"><p className="sectionLabel">Beauftragte</p><h2>Menschen übernehmen Verantwortung für das Volksbegehren.</h2><p>Die Beauftragten begleiten die Initiative in unterschiedlichen Rollen. Der bestehende Bestand bleibt auf der historischen Kampagnenseite gepflegt und wird hier direkt eingebunden.</p></div>
+        <div className="aboutDelegatesFrame"><iframe src="https://gibdernaturrecht.muc-mib.de/beauftragt" title="Beauftragte des Volksbegehrens Rechte der Natur" loading="lazy" /></div>
+        <div className="aboutDelegatesFoot"><p><strong>Hauptbeauftragter: Hans Leo Bader.</strong> Für die formale Vertretung des bayerischen Zulassungsantrags ist der Hauptbeauftragte zuständig.</p><a href="https://gibdernaturrecht.muc-mib.de/beauftragt" target="_blank" rel="noreferrer">Beauftragte auf der historischen Seite öffnen ↗</a></div>
+      </section>
 
       <section className="aboutLayers"><article><span>01</span><h3>Kampagne</h3><p>Die Rechte-der-Natur-Plattform erklärt, mobilisiert, verbindet und unterstützt konkrete Volksbegehren und politische Initiativen.</p></article><article><span>02</span><h3>Netzwerk</h3><p>Die Arbeit lebt von Menschen und Organisationen, die Erfahrungen, Kontakte, Öffentlichkeit und praktische Kampagnenkraft einbringen.</p></article><article><span>03</span><h3>Fachliche Vertiefung</h3><p>Die Systemische Rechtsentwicklung untersucht Rechtsformen und Wirkungsbedingungen eigenständig. Ihre Aufgabe ist belastbare Erkenntnis und die Weiterentwicklung rechtlicher Lösungen.</p></article></section>
 
