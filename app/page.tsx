@@ -58,13 +58,6 @@ export default function Home() {
             </article>
           ))}
         </div>
-
-        <figure className={styles.ideaFigure}>
-          <div className={styles.natureFrame}>
-            <img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Kampagnenaktion zu den Rechten der Natur" />
-          </div>
-          <figcaption>Hans Leo Bader, Initiator der Volksbegehren, bei einer Sammelaktion für die Rechte der Natur.</figcaption>
-        </figure>
       </section>
 
       <section className={styles.stories} id="weltweit">
@@ -81,7 +74,19 @@ export default function Home() {
 
       <section className={styles.bayern}>
         <div className={styles.bayernInner}>
-          <div className={styles.bayernTop}><div><p className={styles.label}>Bayern · laufende Sammelphase</p><h2>Bayern sammelt weiter.</h2></div><p>Für den Zulassungsantrag werden weiter Unterstützungsunterschriften gesammelt. Ziel sind mindestens 250.000 Unterschriften – für Öffentlichkeit, gesellschaftlichen Rückhalt und eine starke Basis für die nächsten Verfahrensstufen.</p></div>
+          <div className={styles.bayernTop}>
+            <div className={styles.bayernCopy}>
+              <p className={styles.label}>Bayern · laufende Sammelphase</p>
+              <h2>Bayern sammelt weiter.</h2>
+              <p>Für den Zulassungsantrag werden weiter Unterstützungsunterschriften gesammelt. Ziel sind mindestens 250.000 Unterschriften – für Öffentlichkeit, gesellschaftlichen Rückhalt und eine starke Basis für die nächsten Verfahrensstufen.</p>
+            </div>
+            <figure className={styles.bayernFigure}>
+              <div className={styles.bayernPhoto}>
+                <img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Sammelaktion für die Rechte der Natur" />
+              </div>
+              <figcaption>Hans Leo Bader bei einer Sammelaktion für die Rechte der Natur.</figcaption>
+            </figure>
+          </div>
           <div className={styles.steps}>{steps.map(([num,title,text])=><article className={styles.step} key={num}><span className={styles.stepNum}>{num}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
           <div className={styles.bayernLinks}><Link className={styles.button} href="/volksbegehren/bayern">Zur Bayern-Kampagne</Link><a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">Unterschriften sammeln →</a></div>
         </div>
