@@ -78,7 +78,7 @@ export default function Home() {
           <h2>Viele tragen die Volksbegehren mit.</h2>
           <p>Menschen, Organisationen und Initiativen unterstützen die Ziele der Kampagne und machen die Rechte der Natur gemeinsam sichtbar.</p>
         </div>
-        <Link className={styles.button} href="/buendnispartner">Galerie ansehen →</Link>
+        <a className={styles.button} href="https://gibdernaturrecht.muc-mib.de/unterstuetzer" target="_blank" rel="noreferrer">Galerie ansehen →</a>
       </section>
 
       <section className={styles.join}><p className={styles.label}>Mitmachen</p><h2>Rechte der Natur brauchen Menschen.</h2><p>Ob Unterschriften sammeln, juristisch mitprüfen, Kontakte in einem Bundesland aufbauen, Veranstaltungen organisieren oder die Kampagne sichtbar machen: Aus einer Idee wird Bewegung, wenn Menschen Verantwortung übernehmen.</p><Link className={styles.button} href="/mitmachen">Ich will mitmachen →</Link></section>
