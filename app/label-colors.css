@@ -18,13 +18,32 @@
   color:var(--label-green) !important;
 }
 
+/* CSS-module labels used on Startseite and Bayern. */
+main[class*="_page__"] [class*="_label__"]{
+  color:var(--label-green) !important;
+}
+main[class*="_page__"] [class*="_sectionHead__"] [class*="_label__"]{
+  color:var(--label-blue) !important;
+}
+main[class*="_page__"] [class*="_bridge__"] [class*="_label__"]{
+  color:var(--label-orange) !important;
+}
+main[class*="_page__"] [class*="_archive__"] [class*="_label__"]{
+  color:var(--label-earth) !important;
+}
+main[class*="_page__"] [class*="_today__"] [class*="_label__"]{
+  color:var(--label-light) !important;
+}
+
 /* Dark hero surfaces keep a light, readable accent. */
 .newsHero .eyebrow,
 .joinHero .eyebrow,
 .aboutHero .eyebrow,
 .deHero .eyebrow,
 .worldHero .eyebrow,
-.hubHero .hubEyebrow{
+.hubHero .hubEyebrow,
+main[class*="_page__"] [class*="_hero__"] [class*="_kicker__"],
+main[class*="_page__"] [class*="_perspective__"] [class*="_eyebrow__"]{
   color:var(--label-light) !important;
 }
 
