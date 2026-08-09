@@ -21,7 +21,7 @@ export default function Volksbegehren() {
       <section className="hubHero">
         <p className="hubEyebrow">16 Länder · 16 unterschiedliche Wege</p>
         <h1>Ein Volksbegehren lässt sich nicht kopieren.</h1>
-        <p>Aber Wissen, Gestaltung, rechtliche Prüfung, Organisation und Kampagnenerfahrung lassen sich teilen. Bayern ist dabei kein abgeschlossener Fall: Dort läuft die Sammlung für den Zulassungsantrag weiter.</p>
+        <p>Aber Wissen, Gestaltung, rechtliche Prüfung, Organisation und Kampagnenerfahrung lassen sich teilen. Bayern ist dabei kein abgeschlossener Fall: Dort läuft die Antragsphase mit aktiver Unterschriftensammlung weiter.</p>
         <div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Mitstreiter werden</Link><Link className="textLink" href="/deutschland">Stand der 16 Länder →</Link></div>
       </section>
 
@@ -31,7 +31,7 @@ export default function Volksbegehren() {
       </section>
 
       <section className="hubMap">
-        <div className="hubSectionHead"><p>Deutschland</p><h2>Wo stehen die Länder?</h2><span>Arbeitsdarstellung · nur Bayern wird derzeit als laufende Sammelphase geführt.</span></div>
+        <div className="hubSectionHead"><p>Deutschland</p><h2>Wo stehen die Länder?</h2><span>Arbeitsdarstellung · Bayern befindet sich in der Antragsphase mit aktiver Sammlung.</span></div>
         <div className="hubStates">
           {federalStates.map(({name,status},i)=><article className={name === "Bayern" ? "hubState hubStateActive" : "hubState"} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><strong>{status}</strong>{name === "Bayern" ? <Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link> : <em>Prüfung und Aufbau folgen</em>}</article>)}
         </div>
@@ -44,7 +44,7 @@ export default function Volksbegehren() {
 
       <section className="hubBayern">
         <div className="hubBayernMark">BY</div>
-        <div><p>Laufende Kampagne</p><h2>Bayern sammelt weiter.</h2><p>Seit 2021 werden Unterstützungsunterschriften für den Zulassungsantrag gesammelt. Die Kampagne ist damit nicht Vergangenheit. Sie läuft weiter – parallel zu der fachlichen Weiterentwicklung, mit der wir manche frühen Aussagen heute präziser formulieren.</p><Link href="/volksbegehren/bayern">Bayern ansehen →</Link></div>
+        <div><p>Antragsphase · aktive Sammlung</p><h2>Bayern sammelt weiter – bewusst weit über das gesetzliche Minimum hinaus.</h2><p>Für den Zulassungsantrag reichen formal 25.000 gültige Unterstützungsunterschriften. Die Bayern-Kampagne hat sich aber von Beginn an ein politisches Sammelziel von mindestens 250.000 Unterschriften gesetzt, bevor der Antrag eingereicht werden soll. Der Grund: Öffentlichkeit schaffen, einen breiten Diskurs auslösen und früh die gesellschaftliche Basis für die späteren Verfahrensstufen aufbauen.</p><Link href="/volksbegehren/bayern">Bayern und die Sammelstrategie ansehen →</Link></div>
       </section>
 
       <section className="hubCall"><p>Ein Land starten?</p><h2>Prüfen. Vernetzen. Mobilisieren.</h2><span>Wenn du in deinem Bundesland mitarbeiten, ein Netzwerk aufbauen oder eine spätere Unterschriftensammlung vorbereiten willst, brauchen wir genau dich.</span><div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Jetzt mitmachen →</Link></div></section>
