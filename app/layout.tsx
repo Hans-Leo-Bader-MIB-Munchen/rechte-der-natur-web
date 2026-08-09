@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./participation.css";
+import "./weltweit/weltweit.css";
 
 export const metadata: Metadata = {
-  title: "Rechte der Natur – Mitwelt im Recht neu denken",
+  title: "Rechte der Natur – Gib der Natur Recht",
   description:
-    "Rechte der Natur: Grundlagen, internationale Erfahrungen und die Frage, wie eine eigene rechtliche Stellung der Mitwelt tatsächlich wirksam werden kann.",
+    "Rechte der Natur: Kampagne, Volksbegehren, internationale Erfahrungen und Mitmachen für eine eigenständige rechtliche Stellung der Mitwelt.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
