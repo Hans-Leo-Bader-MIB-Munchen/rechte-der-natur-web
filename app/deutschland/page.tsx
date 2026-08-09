@@ -42,7 +42,8 @@ export default function Deutschland() {
         <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Für sechs Länder liegen bereits dokumentierte Textentwürfe als Vorarbeit vor. In den übrigen Ländern beginnt der Aufbau am Startpunkt. Bayern sammelt Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
         <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=>{
           const draftSlug = draftByState[name];
-          return <article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}>
+          const stateTone = name === "Bayern" ? styles.active : draftSlug ? styles.prepared : styles.start;
+          return <article className={`${styles.stateCard} ${stateTone}`} key={name}>
             <span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>
             {name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : draftSlug ? <Link href={`/deutschland/${draftSlug}`}><strong>Vorarbeit vorhanden</strong><br/><small>Textentwurf ansehen →</small></Link> : <strong>{status}</strong>}
           </article>;
@@ -51,7 +52,7 @@ export default function Deutschland() {
 
       <section className={styles.status}>
         <div className={styles.sectionHead}><p className={styles.label}>Vom Startpunkt zur Kampagne</p><h2>Jedes Land hat seinen nächsten Schritt.</h2><p>Die Landkarte unterscheidet bewusst nur die derzeit tatsächlich belegten Stufen.</p></div>
-        <div className={styles.statusGrid}>{status.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+        <div className={styles.statusGrid}>{status.map(([title,text],i)=><article className={i === 0 ? styles.legendStart : i === 1 ? styles.legendPrepared : styles.legendActive} key={title}><span>{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
       </section>
 
       <section className={styles.bayern}><div><p className={styles.label}>Bayern · laufende Kampagne</p><h2>Hier wird weiter gesammelt.</h2></div><div><p>Für den Zulassungsantrag werden weiterhin Unterstützungsunterschriften gesammelt. Danach werden die Stimmrechte gemeindlich bestätigt und der vollständige Zulassungsantrag eingereicht. Es folgen die gesetzlich vorgesehenen Verfahrensstufen.</p><Link className={styles.button} href="/volksbegehren/bayern">Bayern ansehen →</Link></div></section>
