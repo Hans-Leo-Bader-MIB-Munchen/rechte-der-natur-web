@@ -17,7 +17,7 @@ export default function Home() {
         <div className="heroCopy">
           <p className="eyebrow">Rechte der Natur</p>
           <h1>Was wäre, wenn ein Fluss eigene Rechte hätte?</h1>
-          <p className="lead">Wir schützen Natur – und behandeln sie im Recht trotzdem meist als Sache, Eigentum oder Ressource. Wir wollen das verändern: mit einer laufenden Kampagne in Bayern und neuen Volksbegehren in weiteren Bundesländern.</p>
+          <p className="lead">Unser Recht behandelt Natur meist als Sache, Eigentum oder Ressource. Wir geben der Mitwelt eine eigene Stimme – mit der laufenden Kampagne in Bayern und neuen Volksbegehren in weiteren Bundesländern.</p>
           <div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Mitmachen</Link><a className="textLink" href="#idee">Erst einmal verstehen ↓</a></div>
         </div>
         <div className="heroNature" aria-hidden="true"><div className="sun"/><div className="river riverOne"/><div className="river riverTwo"/><div className="land landOne"/><div className="land landTwo"/><span>Isar</span><span>Loisach</span><span>Lech</span><div className="heroSeal"><BrandMark/><em>Gib der Natur<br/>Recht.</em></div></div>
@@ -25,17 +25,17 @@ export default function Home() {
 
       <section className="plainIdea" id="idee">
         <p className="sectionLabel">Die Idee</p>
-        <h2>Natur soll nicht nur geschützt werden, weil sie uns nützt.</h2>
-        <p className="bigText">Ein Wald, ein Fluss oder ein Ökosystem kann einen eigenen Wert haben – und dieser Wert kann im Recht eine eigene Stimme bekommen. Wir sprechen deshalb von <strong>Mitwelt</strong>: Natur ist nicht bloß die „Umwelt“ des Menschen.</p>
+        <h2>Natur hat einen eigenen Wert – und verdient eine eigene Stimme im Recht.</h2>
+        <p className="bigText">Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
       </section>
 
       <section className="explainGrid">
-        <article><span className="symbol">01</span><h3>Eigene Rechte</h3><p>Natur wird nicht nur zum Objekt menschlicher Interessen. Ihre Existenz, Regeneration und ökologischen Funktionen können selbst rechtlich zählen.</p></article>
+        <article><span className="symbol">01</span><h3>Eigene Rechte</h3><p>Natur kann Trägerin eigener Rechte sein. Ihre Existenz, Regeneration und ökologischen Funktionen bekommen damit eigenständiges rechtliches Gewicht.</p></article>
         <article><span className="symbol">02</span><h3>Eine Stimme im Recht</h3><p>Menschen oder Institutionen können die Rechte eines Flusses, Waldes oder Ökosystems vertreten und in Entscheidungen einbringen.</p></article>
         <article><span className="symbol">03</span><h3>Dann wird es praktisch</h3><p>Rechte müssen politisch erstritten, institutionell verankert und tatsächlich genutzt werden. Genau dafür braucht es Kampagnen, Bündnisse und Mitstreiter.</p></article>
       </section>
 
-      <section className="questionBand"><p>Der Perspektivwechsel</p><h2>Nicht nur: „Was dürfen wir mit der Natur tun?“</h2><strong>Sondern: „Was braucht sie, um zu leben?“</strong></section>
+      <section className="questionBand"><p>Der Perspektivwechsel</p><h2>Die entscheidende Frage:</h2><strong>„Was braucht Natur, um zu leben?“</strong></section>
 
       <section className="world" id="weltweit">
         <div className="sectionIntro"><p className="sectionLabel">Weltweit</p><h2>Andere haben längst angefangen.</h2><p>Rechte der Natur existieren bereits in unterschiedlichen Rechtsordnungen. Wir schauen genau hin, was daraus für Kampagnen in Deutschland gelernt werden kann.</p><div className="heroActions"><Link className="buttonPrimary" href="/weltweit">Zur weltweiten Falllandschaft</Link></div></div>
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="germanyLead" id="deutschland">
-        <div className="germanyLeadCopy"><p className="sectionLabel">Deutschland</p><h2>16 Länder. Viele Wege. Eine Kampagne, die wachsen kann.</h2><p>Bayern ist der laufende Ausgangspunkt. Dort befinden wir uns in der Antragsphase und sammeln aktiv weiter. Gleichzeitig bauen wir eine gemeinsame Plattform auf, auf der für weitere Bundesländer geprüft werden kann, welcher Weg trägt.</p><div className="heroActions"><Link className="buttonPrimary" href="/deutschland">Die 16 Länder ansehen</Link><Link className="textLink" href="/volksbegehren">Wie Volksbegehren entstehen →</Link></div></div>
+        <div className="germanyLeadCopy"><p className="sectionLabel">Deutschland</p><h2>16 Länder. Viele Wege. Eine Kampagne, die wachsen kann.</h2><p>Bayern ist der laufende Ausgangspunkt. Dort sammeln wir aktiv für den Zulassungsantrag. Gleichzeitig wächst eine gemeinsame Plattform, auf der weitere Bundesländer ihren eigenen tragfähigen Weg entwickeln können.</p><div className="heroActions"><Link className="buttonPrimary" href="/deutschland">Die 16 Länder ansehen</Link><Link className="textLink" href="/volksbegehren">Wie Volksbegehren entstehen →</Link></div></div>
         <div className="sixteen">16</div>
       </section>
 
@@ -54,7 +54,7 @@ export default function Home() {
 
       <section className="campaignCall"><span className="tiny">Der nächste Schritt</span><h2>Rechte der Natur brauchen Mitstreiter.</h2><p>Ob juristische Prüfung, Landesnetzwerk, Veranstaltungen, Kommunikation oder die laufende Unterschriftensammlung in Bayern: Eine Kampagne lebt davon, dass Menschen Verantwortung übernehmen.</p><div className="heroActions"><Link className="buttonPrimary" href="/mitmachen">Ich will mitmachen →</Link></div></section>
 
-      <section className="join"><p className="sectionLabel">Weiterlesen</p><h2>Die Kampagne hat mehrere Ebenen.</h2><div className="joinLinks"><Link href="/aktuelles">Was sich gerade bewegt <span>→</span></Link><Link href="/weltweit">Internationale Erfahrungen <span>→</span></Link><Link href="/deutschland">Die 16 Bundesländer <span>→</span></Link><Link href="/ueber-uns">Wer wir sind und wie wir arbeiten <span>→</span></Link></div></section>
+      <section className="join"><p className="sectionLabel">Weiterlesen</p><h2>Eine Kampagne, viele Zugänge.</h2><div className="joinLinks"><Link href="/aktuelles">Was sich gerade bewegt <span>→</span></Link><Link href="/weltweit">Internationale Erfahrungen <span>→</span></Link><Link href="/deutschland">Die 16 Bundesländer <span>→</span></Link><Link href="/ueber-uns">Menschen und Idee hinter der Kampagne <span>→</span></Link></div></section>
 
       <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Kampagne</small></div></div><p>Eine Kampagne für eigene Rechte der Natur und eine andere Beziehung zur Mitwelt.</p><span>Entwurf · Preview</span></footer>
     </main>
