@@ -41,7 +41,11 @@ export default function Home() {
         <div className={styles.ideaIntro}>
           <p className={styles.label}>Die Idee</p>
           <h2 className={styles.ideaHeadline}><span>Natur hat einen eigenen Wert – und verdient</span><span>eine eigene Stimme im Recht.</span></h2>
-          <p className={styles.ideaText}>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
+          <p className={styles.ideaText}>
+            <span>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert.</span>
+            <span>Dieser Wert kann im Recht eine eigene Stimme bekommen.</span>
+            <span><strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</span>
+          </p>
           <div className={styles.ideaActions}><Link className={styles.button} href="/ueber-uns">Mehr zur Idee</Link></div>
         </div>
 
