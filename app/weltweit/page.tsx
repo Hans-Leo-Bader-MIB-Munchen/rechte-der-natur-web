@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 const cases = [
   { region: "Ecuador", title: "Natur in der Verfassung", type: "Verfassung", year: "2008", text: "Ecuador verankerte Rechte der Natur auf Verfassungsebene. Damit entstand ein verfassungsrechtlicher Bezugspunkt, dessen Wirkung sich in Anwendung und Rechtsprechung entfaltet." },
   { region: "Ecuador", title: "Los Cedros", type: "Gericht", year: "2021", text: "Im Fall des Schutzwalds Los Cedros wurde sichtbar, wie Rechte der Natur in einer konkreten gerichtlichen Entscheidung Bedeutung entfalten können." },
-  { region: "Kolumbien", title: "Río Atrato", type: "Gericht + Vertretung", year: "2016", text: "Der Atrato wurde als Rechtssubjekt anerkannt. Seine Vertretungsordnung verbindet die Anerkennung mit der konkreten Wahrnehmung der Flussinteressen." },
+  { region: "Kolumbien", title: "Vom Río Atrato zum System", type: "Gericht · Governance · Gesetzgebung", year: "2016 · 2025 · 2026", text: "Kolumbien zeigt eine Entwicklungslinie von der Anerkennung des Río Atrato als Rechtssubjekt über Vertretungs- und Governance-Strukturen bis zu Finanzierungsansätzen und dem Versuch, einen allgemeinen gesetzlichen Rahmen für Flussrechte zu schaffen." },
   { region: "Aotearoa / Neuseeland", title: "Whanganui", type: "Gesetz + Vertretung", year: "2017", text: "Der Whanganui erhielt eine eigene Rechtspersönlichkeit innerhalb einer gesetzlich geregelten Vertretungsordnung. Das Modell verbindet staatliches Recht mit einer eigenständigen Beziehung zwischen Menschen und Fluss." },
   { region: "Aotearoa / Neuseeland", title: "Te Urewera", type: "Gesetz + Governance", year: "2014", text: "Te Urewera wurde aus staatlichem Eigentum in eine eigenständige rechtliche Ordnung überführt. Die Konstruktion ordnet Verantwortung und Governance neu und erweitert den Blick auf unterschiedliche Naturgebilde." },
   { region: "Spanien", title: "Mar Menor", type: "Gesetz + Institutionen", year: "2022", text: "Die Lagune Mar Menor erhielt eigene Rechte. Der Fall zeigt besonders deutlich, wie Rechtsträgerschaft, Vertretung, Aufsicht und tatsächliche ökologische Wirkung zusammenwirken." },
@@ -103,7 +103,7 @@ export default function Weltweit() {
       </section>
 
       <section className={styles.cases} id="faelle">
-        <div className={styles.sectionHead}><p className={styles.label}>Falllandschaft</p><h2>Sechs Fälle. Sechs unterschiedliche rechtliche Konstruktionen.</h2><p>Die Auswahl zeigt ein breites Spektrum rechtlicher Konstruktionen.</p></div>
+        <div className={styles.sectionHead}><p className={styles.label}>Falllandschaft</p><h2>Sechs Fälle. Sechs unterschiedliche rechtliche Konstruktionen.</h2><p>Die Auswahl zeigt ein breites Spektrum rechtlicher Konstruktionen und Entwicklungswege.</p></div>
         <div className={styles.caseGrid}>{cases.map(c=><article className={styles.case} key={c.title}><div className={styles.meta}><span>{c.region}</span><strong>{c.year}</strong></div><h3>{c.title}</h3><em>{c.type}</em><p>{c.text}</p></article>)}</div>
       </section>
 
