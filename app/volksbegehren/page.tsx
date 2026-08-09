@@ -9,7 +9,7 @@ const template = [
   ["03", "Zieltext", "Was soll konkret geändert werden – und warum genau so?"],
   ["04", "Mitstreiter", "Wer trägt die Initiative vor Ort gesellschaftlich, fachlich und organisatorisch?"],
   ["05", "Mobilisierung", "Wie erreichen wir Menschen, gewinnen Unterstützer und organisieren die nötigen Unterschriften?"],
-  ["06", "Lernen", "Welche Erfahrungen aus Bayern und anderen Rechtsordnungen helfen – und wo braucht es Anpassungen?"],
+  ["06", "Lernen", "Welche Erfahrungen aus Bayern und anderen Rechtsordnungen lassen sich für diesen Landesweg weiterentwickeln?"],
 ];
 
 export default function Volksbegehren() {
@@ -21,19 +21,19 @@ export default function Volksbegehren() {
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Volksbegehren</p>
           <h1>16 Bundesländer. Viele mögliche Wege.</h1>
-          <p className={styles.heroText}>Jedes Bundesland hat eigene Regeln für direkte Demokratie. Verfassungen, Verfahren und Fristen unterscheiden sich – und damit auch der Weg zu einem Volksbegehren für die Rechte der Natur. Bayern ist unser laufender Ausgangspunkt.</p>
+          <p className={styles.heroText}>Jedes Bundesland hat eigene Regeln für direkte Demokratie. Verfassungen, Verfahren und Fristen prägen den jeweiligen Weg zu einem Volksbegehren für die Rechte der Natur. Bayern ist unser laufender Ausgangspunkt.</p>
           <div className={styles.actions}><Link className={styles.button} href="/mitmachen">Mitstreiter werden</Link><Link className={styles.textLink} href="/deutschland">Stand der 16 Bundesländer →</Link></div>
         </div>
       </section>
 
       <section className={styles.principle}>
         <div><p className={styles.label}>Die gemeinsame Idee</p><h2>Rechte der Natur dort verankern, wo Menschen unmittelbar über Landesrecht mitentscheiden können.</h2></div>
-        <div><p>Jedes Bundesland entwickelt seinen eigenen rechtlichen und politischen Weg. Was sich teilen lässt, sind Wissen, Kampagnenerfahrung, Gestaltung, Netzwerke und die Erfahrungen aus bereits laufenden Initiativen.</p><p>So wächst aus einer gemeinsamen Idee eine föderale Kampagne mit unterschiedlichen Landeswegen.</p></div>
+        <div><p>Jedes Bundesland entwickelt seinen eigenen rechtlichen und politischen Weg. Wissen, Kampagnenerfahrung, Gestaltung, Netzwerke und Erfahrungen aus laufenden Initiativen können gemeinsam genutzt werden.</p><p>So wächst aus einer gemeinsamen Idee eine föderale Kampagne mit unterschiedlichen Landeswegen.</p></div>
       </section>
 
       <section className={styles.statesSection}>
         <div className={styles.statesInner}>
-          <div className={styles.sectionHead}><p className={styles.label}>Deutschland</p><h2>Wo stehen die Bundesländer?</h2><span>Bayern befindet sich in der Antragsphase mit aktiver Sammlung. Für die übrigen Länder werden die jeweiligen rechtlichen und politischen Ausgangslagen aufgebaut und geprüft.</span></div>
+          <div className={styles.sectionHead}><p className={styles.label}>Deutschland</p><h2>Wo stehen die Bundesländer?</h2><span>Bayern befindet sich in der Antragsphase mit aktiver Sammlung. In den übrigen Ländern entstehen die jeweiligen rechtlichen und politischen Ausgangspunkte.</span></div>
           <div className={styles.states}>
             {federalStates.map(({name,status},i)=><article className={name === "Bayern" ? `${styles.state} ${styles.stateActive}` : styles.state} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><strong>{status}</strong>{name === "Bayern" ? <Link href="/volksbegehren/bayern">Zur laufenden Bayern-Kampagne →</Link> : <em>Nächster Schritt: Prüfung und Aufbau</em>}</article>)}
           </div>
@@ -52,7 +52,7 @@ export default function Volksbegehren() {
         </div>
       </section>
 
-      <section className={styles.call}><p className={styles.label}>Ein Bundesland starten?</p><h2>Prüfen. Vernetzen. Mobilisieren.</h2><span>Wer in seinem Bundesland mitarbeiten, ein Netzwerk aufbauen oder eine spätere Unterschriftensammlung vorbereiten will, kann Teil der gemeinsamen Kampagne werden.</span><div className={styles.actions}><Link className={styles.button} href="/mitmachen">Jetzt mitmachen →</Link></div></section>
+      <section className={styles.call}><p className={styles.label}>Ein Bundesland starten?</p><h2>Prüfen. Vernetzen. Mobilisieren.</h2><span>Menschen können in ihrem Bundesland mitarbeiten, Netzwerke aufbauen und eine spätere Unterschriftensammlung vorbereiten – als Teil der gemeinsamen Kampagne.</span><div className={styles.actions}><Link className={styles.button} href="/mitmachen">Jetzt mitmachen →</Link></div></section>
 
       <footer className={styles.footer}><Link href="/">Startseite</Link><Link href="/deutschland">Deutschland</Link><Link href="/mitmachen">Mitmachen</Link><span>Preview · interne Arbeitsfassung</span></footer>
     </main>
