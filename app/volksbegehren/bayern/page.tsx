@@ -5,8 +5,8 @@ import styles from "./page.module.css";
 const milestones = [
   { year: "2019", title: "Die Idee entsteht", text: "Hans Leo Bader entwickelt die Idee für eine bayerische Initiative zu den Rechten der Natur. Daraus entsteht in den folgenden Jahren das Volksbegehren." },
   { year: "24.09.2021", title: "Start der Unterschriftensammlung", text: "Seit diesem Tag werden Unterstützungsunterschriften für den Antrag auf Zulassung des Volksbegehrens gesammelt." },
-  { year: "heute", title: "Die Antragsphase läuft weiter", text: "Die Kampagne befindet sich in der Antragsphase, sammelt weiter und verfolgt bewusst ein politisches Sammelziel deutlich oberhalb des gesetzlichen Minimums." },
-  { year: "parallel", title: "Kampagne und fachliche Weiterentwicklung", text: "Während die Sammlung weiterläuft, werden internationale Erfahrungen, rechtliche Fragen und institutionelle Wirkungsbedingungen genauer ausgewertet." },
+  { year: "heute", title: "Die Antragsphase läuft weiter", text: "Die Kampagne sammelt weiter für das politische Ziel von mindestens 250.000 Unterschriften." },
+  { year: "parallel", title: "Kampagne und fachliche Weiterentwicklung", text: "Parallel fließen internationale Erfahrungen und neue Erkenntnisse zu Vertretung, Verfahren und institutioneller Wirkung in die Weiterentwicklung ein." },
 ];
 
 export default function BayernPage() {
@@ -19,7 +19,7 @@ export default function BayernPage() {
           <p className={styles.kicker}>Bayern · Antragsphase · aktive Unterschriftensammlung</p>
           <h1>Eine Stimme für Isar, Lech und Loisach.</h1>
           <p className={styles.lead}>Das Volksbegehren „Rechte der Natur“ läuft weiter. Seit dem 24. September 2021 sammeln wir Unterstützungsunterschriften für den Zulassungsantrag – mit dem Ziel, die Rechte der natürlichen Mitwelt in der Bayerischen Verfassung zu verankern.</p>
-          <div className={styles.actions}><a href="#sammeln">Unser Sammelziel</a><a className={styles.secondary} href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Bisherige Kampagnenseite ↗</a></div>
+          <div className={styles.actions}><a href="#sammeln">Unser Sammelziel</a><a className={styles.secondary} href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Kampagnenarchiv ↗</a></div>
         </div>
         <div className={styles.visual} aria-hidden="true"><span>Isar</span><span>Lech</span><span>Loisach</span><div className={styles.water}/><div className={styles.hill}/></div>
       </section>
@@ -30,7 +30,7 @@ export default function BayernPage() {
           <h2>Bayern sammelt weiter.</h2>
           <p>Für den Antrag auf Zulassung eines Volksbegehrens sind in Bayern mindestens 25.000 gültige Unterstützungsunterschriften von Stimmberechtigten erforderlich. Für die Einreichung muss das Stimmrecht der Unterzeichnenden durch die zuständigen Gemeinden bestätigt werden.</p>
           <p>Nach der Einreichung und Zulassung des Antrags folgt die gesetzliche 14-tägige Eintragungsfrist des eigentlichen Volksbegehrens.</p>
-          <p className={styles.note}>Der aktuelle Status lautet: Antragsphase mit laufender Unterschriftensammlung.</p>
+          <p className={styles.note}>Bayern befindet sich in der Antragsphase mit laufender Unterschriftensammlung.</p>
         </div>
       </section>
 
@@ -38,14 +38,14 @@ export default function BayernPage() {
         <div className={`${styles.sectionHead} ${styles.sectionHeadCompact}`}>
           <p className={styles.label}>Unser Sammelziel</p>
           <h2>25.000 sind das gesetzliche Minimum. 250.000 sind unser politisches Sammelziel.</h2>
-          <span>Unser Sammelziel liegt bewusst deutlich über der formalen Zulassungshürde.</span>
+          <span>250.000 Unterschriften schaffen Sichtbarkeit und gesellschaftlichen Rückhalt für die nächsten Schritte.</span>
         </div>
         <div className={styles.goalCards}>
           <article><span>25.000</span><h3>Zulassungshürde</h3><p>So viele gültige Unterstützungsunterschriften braucht der Zulassungsantrag mindestens.</p></article>
           <article><span>250.000</span><h3>Unser Sammelziel</h3><p>Der Antrag soll bei mindestens 250.000 gesammelten Unterschriften eingereicht werden. Dieses Ziel schafft Öffentlichkeit und eröffnet einen breiten gesellschaftlichen Diskurs.</p></article>
           <article><span>≈ 2,5 Mio.</span><h3>Der spätere Volksentscheid</h3><p>Eine Verfassungsänderung braucht die Mehrheit der abgegebenen Stimmen und zusätzlich die Zustimmung von mindestens 25 Prozent aller Stimmberechtigten. Deshalb beginnt gesellschaftliche Mobilisierung lange vor dem Volksentscheid.</p></article>
         </div>
-        <p className={styles.sourceNote}>Die Größenordnung von rund 2,5 Millionen Ja-Stimmen ist die politische Übersetzung des 25-Prozent-Zustimmungsquorums, wie sie die bisherige Kampagnenseite verwendet. Maßgeblich ist das gesetzliche Quorum; die absolute Zahl verändert sich mit der Zahl der Stimmberechtigten.</p>
+        <p className={styles.sourceNote}>Rund 2,5 Millionen Ja-Stimmen veranschaulichen das 25-Prozent-Zustimmungsquorum. Maßgeblich ist das gesetzliche Quorum; die absolute Zahl richtet sich nach der Zahl der Stimmberechtigten.</p>
       </section>
 
       <section className={styles.intro} id="ziel">
@@ -53,8 +53,8 @@ export default function BayernPage() {
         <div>
           <h2>Artikel 101 der Bayerischen Verfassung soll um die Rechte der natürlichen Mitwelt erweitert werden.</h2>
           <p>Der Kampagnenansatz verbindet die allgemeine Handlungsfreiheit mit den Rechten anderer und den Rechten der natürlichen Mitwelt. Damit wird Natur als Trägerin eigener Rechte in die verfassungsrechtliche Ordnung einbezogen.</p>
-          <p>Die ursprüngliche Begründung versteht das als Veränderung des rechtlichen Maßstabs für Gesetzgebung, Verwaltung und Rechtsprechung – bis hin zur Frage, wie Eigentum und andere Freiheitsrechte innerhalb ökologischer Grenzen ausgeübt werden können.</p>
-          <p className={styles.note}>Das verfassungsrechtliche Ziel bleibt bestehen. Vertretung, Einklagbarkeit und institutionelle Umsetzung entwickeln wir als eigenständige Gestaltungsfragen weiter.</p>
+          <p>Die Begründung verändert damit den rechtlichen Maßstab für Gesetzgebung, Verwaltung und Rechtsprechung – bis hin zur Frage, wie Eigentum und andere Freiheitsrechte innerhalb ökologischer Grenzen ausgeübt werden können.</p>
+          <p className={styles.note}>Vertretung, Einklagbarkeit und institutionelle Umsetzung ergänzen das verfassungsrechtliche Ziel als eigenständige Gestaltungsfragen.</p>
         </div>
       </section>
 
@@ -68,12 +68,12 @@ export default function BayernPage() {
       </section>
 
       <section className={styles.today} id="guides">
-        <div><p className={styles.label}>Unterschriften-Guides</p><h2>Die Sammlung war von Anfang an dezentral gedacht.</h2></div>
+        <div><p className={styles.label}>Unterschriften-Guides</p><h2>Die Sammlung lebt von Menschen vor Ort.</h2></div>
         <div className={styles.todayText}>
-          <p>Die bisherige Kampagne sucht in allen Postleitzahlregionen Bayerns Menschen, die als <strong>Unterschriften-Guides</strong> vor Ort sammeln und weitere Menschen ansprechen.</p>
+          <p>In allen Postleitzahlregionen Bayerns werden Menschen gesucht, die als <strong>Unterschriften-Guides</strong> vor Ort sammeln und weitere Menschen ansprechen.</p>
           <p>Die Guides erhalten Informationen und Original-Unterschriftenlisten. Auf einem Bogen sollen nur Personen unterschreiben, deren Stimmrecht von derselben Gemeindeverwaltung bestätigt werden kann.</p>
           <p>Die formalen Vorgaben verlangen Originalbögen. Diese werden über die Kampagne bereitgestellt.</p>
-          <a href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">Bisherige Informationen zum Unterschriftensammeln ↗</a>
+          <a href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">Informationen zum Unterschriftensammeln ↗</a>
         </div>
       </section>
 
@@ -96,7 +96,7 @@ export default function BayernPage() {
         <div className={styles.todayText}>
           <p>Aus der verfassungsrechtlichen Anerkennung ist ein umfassenderer Blick entstanden: <strong>Rechtsträgerschaft, Vertretung, Verfahren, institutionelle Aufnahme und tatsächliche Wirkung</strong> gehören zusammen.</p>
           <p>Vertretung, Einklagbarkeit und institutionelle Umsetzung behandeln wir heute als eigenständige Gestaltungsfragen.</p>
-          <p>Diese fachliche Weiterentwicklung stärkt die weiterhin laufende Kampagne.</p>
+          <p>Neue Erkenntnisse zu Rechtsträgerschaft, Vertretung, Verfahren und institutioneller Wirkung stärken die laufende Kampagne.</p>
         </div>
       </section>
 
@@ -108,8 +108,8 @@ export default function BayernPage() {
       </section>
 
       <section className={styles.archive}>
-        <div><p className={styles.label}>Bisheriger Bestand</p><h2>Die Geschichte bleibt erreichbar.</h2></div>
-        <div><p>Die bisherige WordPress-Seite bleibt als Referenz erreichbar. Dort finden sich Antrag und Begründung, Informationen zur Sammlung, Grundlagenmaterial, Presse, Veranstaltungen, Bündnispartner und die Entwicklung der Initiative.</p><a href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Bisherige Bayern-Seite öffnen ↗</a></div>
+        <div><p className={styles.label}>Kampagnenarchiv</p><h2>Die Geschichte der Bayern-Kampagne.</h2></div>
+        <div><p>Antrag und Begründung, Informationen zur Sammlung, Grundlagenmaterial, Presse, Veranstaltungen und frühere Kampagnenbeiträge sind im Kampagnenarchiv gebündelt.</p><a href="https://gibdernaturrecht.muc-mib.de/vb_bayern" target="_blank" rel="noreferrer">Kampagnenarchiv öffnen ↗</a></div>
       </section>
 
       <section className={styles.bridge}>
