@@ -4,9 +4,9 @@ import BrandMark from "./components/BrandMark";
 import styles from "./page.module.css";
 
 const stories = [
-  { place: "Spanien", title: "Mar Menor", text: "Eine Lagune bekommt eigene Rechte. Der Fall zeigt, wie Rechtsträgerschaft, Vertretung und Institutionen zusammenspielen müssen.", mark: "Wasser" },
-  { place: "Aotearoa / Neuseeland", title: "Whanganui", text: "Der Fluss besitzt Rechtspersönlichkeit innerhalb einer eigenen Vertretungsordnung – ein anderer Weg als klassischer Naturschutz.", mark: "Fluss" },
-  { place: "Ecuador", title: "Natur in der Verfassung", text: "Seit 2008 erkennt die Verfassung Rechte der Natur an. Entscheidend bleibt, wie diese Rechte in konkreten Entscheidungen wirksam werden.", mark: "Land" },
+  { place: "Spanien", title: "Mar Menor", text: "Eine Lagune bekommt eigene Rechte. Der Fall zeigt, wie Rechtsträgerschaft, Vertretung und Institutionen zusammenspielen müssen.", mark: "Wasser", href: "/weltweit#mar-menor" },
+  { place: "Aotearoa / Neuseeland", title: "Whanganui", text: "Der Fluss besitzt Rechtspersönlichkeit innerhalb einer eigenen Vertretungsordnung – ein anderer Weg als klassischer Naturschutz.", mark: "Fluss", href: "/weltweit#whanganui" },
+  { place: "Ecuador", title: "Natur in der Verfassung", text: "Seit 2008 erkennt die Verfassung Rechte der Natur an. Entscheidend bleibt, wie diese Rechte in konkreten Entscheidungen wirksam werden.", mark: "Land", href: "/weltweit#ecuador" },
 ];
 
 const steps = [
@@ -55,7 +55,7 @@ export default function Home() {
       <section className={styles.stories} id="weltweit">
         <div className={styles.storiesInner}>
           <div className={styles.sectionHead}><p className={styles.label}>Weltweit</p><h2>Viele Rechtswege. Viele Erfahrungen.</h2><p>Rechte der Natur existieren bereits in unterschiedlichen Rechtsordnungen. Diese Erfahrungen helfen, tragfähige Wege für Deutschland zu entwickeln.</p></div>
-          <div className={styles.storyGrid}>{stories.map(s=><article className={styles.story} key={s.title}><div className={styles.storyVisual}><span>{s.mark}</span></div><div className={styles.storyCopy}><span className={styles.place}>{s.place}</span><h3>{s.title}</h3><p>{s.text}</p><Link className={styles.storyLink} href="/weltweit">Mehr erfahren →</Link></div></article>)}</div>
+          <div className={styles.storyGrid}>{stories.map(s=><article className={styles.story} key={s.title}><div className={styles.storyVisual}><span>{s.mark}</span></div><div className={styles.storyCopy}><span className={styles.place}>{s.place}</span><h3>{s.title}</h3><p>{s.text}</p><Link className={styles.storyLink} href={s.href}>Mehr erfahren →</Link></div></article>)}</div>
         </div>
       </section>
 
