@@ -18,8 +18,7 @@ const labels = [
 export default function Aktuelles() {
   return (
     <main className="newsPage">
-      <SiteHeader section="Aktuelles" />
-      <section className="heritageStrip"><span>Was sich bewegt.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Geprüft – und trotzdem Kampagne.</span></section>
+      <SiteHeader section="Aktuelles" claimLead="Was sich bewegt." claimTrail="Geprüft – und trotzdem Kampagne." />
 
       <section className="newsHero"><p className="eyebrow">Aktuelles</p><h1>Was neu ist – und was daraus für die Kampagne folgt.</h1><p className="lead">Neue Urteile, Gesetze und Initiativen können unsere Arbeit verändern. Wir wollen schnell reagieren, aber nicht ungeprüft weitererzählen. Deshalb zeigen wir neben dem Inhalt auch, wie belastbar der jeweilige Stand ist.</p></section>
 

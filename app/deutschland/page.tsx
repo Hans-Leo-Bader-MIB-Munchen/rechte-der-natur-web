@@ -16,10 +16,7 @@ const status = [
 export default function Deutschland() {
   return (
     <main className="countryPage">
-      <SiteHeader section="Deutschland" />
-      <section className="heritageStrip">
-        <span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Deutschland neu denken.</span>
-      </section>
+      <SiteHeader section="Deutschland" claimLead="Gib der Natur Recht." claimTrail="Deutschland neu denken." />
 
       <section className="deHero">
         <div>

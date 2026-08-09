@@ -1,72 +1,107 @@
-/* Desktop: keep each page's original green campaign strip fixed beneath the main header. */
-.headerStrip{display:none!important}
+/* Header + campaign strip: single source of truth for height and offsets.
+   --header-height and --campaign-strip-height drive every offset below,
+   so the fixed header and the campaign strip can never drift apart. */
 
-.heritageStrip:not(.headerStrip){
-  display:flex!important;
-  position:fixed;
-  top:104px;
-  left:0;
-  right:0;
-  z-index:999;
-  width:100%;
-  max-width:none!important;
-  margin:0!important;
-  box-shadow:0 4px 12px rgba(38,62,28,.04);
+.headerStrip {
+  display: flex !important;
 }
 
-/* Desktop content must clear both fixed bars. */
-@media(min-width:901px){
-  body{padding-top:142px!important}
-}
-
-/* Mobile/tablet: the compact header strip lives inside the fixed header. */
-@media(max-width:900px){
-  .heritageStrip:not(.headerStrip){display:none!important}
-
-  .headerStrip{
-    grid-column:1/-1;
-    width:100%;
-    max-width:none!important;
-    min-height:36px;
-    margin:0!important;
-    padding:7px 14px!important;
-    background:var(--green);
-    color:#fff;
-    display:grid!important;
-    grid-template-columns:auto auto 1fr;
-    align-items:center;
-    gap:12px;
-    text-transform:uppercase;
-    letter-spacing:.09em;
-    font-size:.62rem;
-    font-weight:700;
-    line-height:1.2;
+@media (min-width: 901px) {
+  :root {
+    --header-height: 104px;
+    --campaign-strip-height: 38px;
   }
 
-  .headerStrip .heritageColors{display:flex;align-items:center;gap:4px}
-  .headerStrip .heritageColors i{display:block;width:15px;height:3px}
-  .headerStrip .heritageColors i:nth-child(1){background:var(--blue)}
-  .headerStrip .heritageColors i:nth-child(2){background:var(--orange)}
-  .headerStrip .heritageColors i:nth-child(3){background:#fff}
-  .headerStrip .heritageColors i:nth-child(4){background:var(--earth)}
-  .headerStripActive{display:block!important;justify-self:end;text-align:right;white-space:nowrap;max-width:46vw;overflow:hidden;text-overflow:ellipsis}
-  .headerStripClaim{white-space:nowrap}
+  body {
+    padding-top: calc(var(--header-height) + var(--campaign-strip-height)) !important;
+  }
+
+  .siteHeader {
+    min-height: var(--header-height) !important;
+  }
+
+  .headerStrip {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+    min-height: var(--campaign-strip-height);
+    box-shadow: 0 4px 12px rgba(38, 62, 28, .04);
+  }
+
+  /* Desktop shows the page's full two-part slogan; the short mobile
+     active-area label is not needed once the nav itself is visible. */
+  .headerStripTrail { display: inline; }
+  .headerStripActive { display: none; }
 }
 
-@media(max-width:680px){
-  .siteHeader .headerStrip > .headerStripActive{display:block!important}
+/* Mobile/tablet: the compact strip lives inside the single fixed header,
+   not as a second fixed element, so there is nothing to keep in sync. */
+@media (max-width: 900px) {
+  :root {
+    --header-height: 108px;
+    --campaign-strip-height: 0px;
+  }
+
+  body {
+    padding-top: var(--header-height) !important;
+  }
+
+  .headerStrip {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none !important;
+    min-height: 36px;
+    margin: 0 !important;
+    padding: 7px 14px !important;
+    background: var(--green);
+    color: #fff;
+    display: grid !important;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    font-size: .62rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .headerStrip .heritageColors { display: flex; align-items: center; gap: 4px; }
+  .headerStrip .heritageColors i { display: block; width: 15px; height: 3px; }
+  .headerStrip .heritageColors i:nth-child(1) { background: var(--blue); }
+  .headerStrip .heritageColors i:nth-child(2) { background: var(--orange); }
+  .headerStrip .heritageColors i:nth-child(3) { background: #fff; }
+  .headerStrip .heritageColors i:nth-child(4) { background: var(--earth); }
+  .headerStripTrail { display: none; }
+  .headerStripActive { display: block !important; justify-self: end; text-align: right; white-space: nowrap; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; }
+  .headerStripClaim { white-space: nowrap; }
 }
 
-@media(max-width:520px){
-  .headerStrip{grid-template-columns:auto auto minmax(0,1fr);gap:9px;padding:7px 12px!important;font-size:.57rem;letter-spacing:.075em}
-  .headerStripClaim{font-size:.56rem}
-  .headerStrip .heritageColors{gap:3px}
-  .headerStrip .heritageColors i{width:11px;height:3px}
-  .headerStripActive{display:block!important;max-width:none;overflow:visible;text-overflow:clip;white-space:normal;line-height:1.15}
+@media (max-width: 680px) {
+  :root {
+    --header-height: 102px;
+  }
+
+  body {
+    padding-top: var(--header-height) !important;
+  }
 }
 
-@media(max-width:380px){
-  .headerStripClaim{display:none}
-  .headerStrip{grid-template-columns:auto 1fr}
-  .headerStripActive{display:block!important;justify-self:end}
+@media (max-width: 520px) {
+  .headerStrip { grid-template-columns: auto auto minmax(0, 1fr); gap: 9px; padding: 7px 12px !important; font-size: .57rem; letter-spacing: .075em; }
+  .headerStripClaim { font-size: .56rem; }
+  .headerStrip .heritageColors { gap: 3px; }
+  .headerStrip .heritageColors i { width: 11px; height: 3px; }
+  .headerStripActive { display: block !important; max-width: none; overflow: visible; text-overflow: clip; white-space: normal; line-height: 1.15; }
+}
+
+@media (max-width: 380px) {
+  .headerStripClaim { display: none; }
+  .headerStrip { grid-template-columns: auto 1fr; }
+  .headerStripActive { display: block !important; justify-self: end; }
 }

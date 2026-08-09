@@ -21,8 +21,7 @@ const lenses = [
 export default function Weltweit() {
   return (
     <main className="worldPage">
-      <SiteHeader section="Weltweit" />
-      <section className="heritageStrip"><span>Rechte der Natur</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Viele Rechtswege. Viele Erfahrungen.</span></section>
+      <SiteHeader section="Weltweit" claimLead="Rechte der Natur" claimTrail="Viele Rechtswege. Viele Erfahrungen." />
 
       <section className="worldHero"><div><p className="eyebrow">Weltweit</p><h1>Die Idee hat viele Formen angenommen.</h1><p className="lead">Verfassungen, Gesetze und Gerichte haben Natur in unterschiedlichen Rechtsordnungen eine eigenständige Stellung gegeben. Für eine Kampagne in Deutschland ist dabei besonders wichtig zu verstehen, was wirklich funktioniert – und was sich nicht einfach übertragen lässt.</p><div className="heroActions"><a className="buttonPrimary" href="#faelle">Fälle entdecken</a><Link className="textLink" href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div></div><div className="worldOrb" aria-hidden="true"><span>Wald</span><span>Fluss</span><span>Lagune</span><span>Land</span></div></section>
 

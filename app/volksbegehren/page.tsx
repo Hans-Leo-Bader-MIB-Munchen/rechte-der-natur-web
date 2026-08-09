@@ -15,8 +15,7 @@ const template = [
 export default function Volksbegehren() {
   return (
     <main className="hubPage">
-      <SiteHeader section="Volksbegehren" />
-      <section className="heritageStrip"><span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Aus Prüfung wird Kampagne.</span></section>
+      <SiteHeader section="Volksbegehren" claimLead="Gib der Natur Recht." claimTrail="Aus Prüfung wird Kampagne." />
 
       <section className="hubHero">
         <p className="hubEyebrow">16 Länder · 16 unterschiedliche Wege</p>

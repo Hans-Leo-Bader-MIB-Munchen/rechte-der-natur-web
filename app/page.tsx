@@ -11,8 +11,7 @@ const stories = [
 export default function Home() {
   return (
     <main id="top">
-      <SiteHeader />
-      <section className="heritageStrip"><span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Eine Kampagne für die Mitwelt.</span></section>
+      <SiteHeader claimLead="Gib der Natur Recht." claimTrail="Eine Kampagne für die Mitwelt." />
 
       <section className="hero">
         <div className="heroCopy">

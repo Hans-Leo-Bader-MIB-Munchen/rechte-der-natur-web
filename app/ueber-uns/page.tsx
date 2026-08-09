@@ -5,8 +5,7 @@ import BrandMark from "../components/BrandMark";
 export default function UeberUns() {
   return (
     <main className="aboutPage">
-      <SiteHeader section="Über uns" />
-      <section className="heritageStrip"><span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Aus einer Kampagne wächst eine Plattform.</span></section>
+      <SiteHeader section="Über uns" claimLead="Gib der Natur Recht." claimTrail="Aus einer Kampagne wächst eine Plattform." />
 
       <section className="aboutHero"><p className="eyebrow">Über uns</p><h1>Wir sind Kampagne. Und wir entwickeln sie weiter.</h1><p className="lead">Die Idee für die bayerische Initiative entstand 2019 bei Hans Leo Bader. Daraus entwickelte sich das Volksbegehren „Rechte der Natur“ in Bayern – und diese Kampagne läuft weiter. Heute verbinden wir Kampagnenerfahrung mit internationaler Recherche und der Frage, wie Rechte der Natur politisch tragfähig und rechtlich wirksam ausgestaltet werden können.</p></section>
 

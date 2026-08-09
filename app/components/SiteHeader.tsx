@@ -12,9 +12,19 @@ const nav = [
   ["Über uns", "/ueber-uns"],
 ];
 
-export default function SiteHeader({ section }: { section?: string }) {
+export default function SiteHeader({
+  section,
+  claimLead,
+  claimTrail,
+}: {
+  section?: string;
+  claimLead?: string;
+  claimTrail?: string;
+}) {
   const [open, setOpen] = useState(false);
   const activeLabel = section || "Die Volksbegehren";
+  const desktopLead = claimLead || "Gib der Natur Recht.";
+  const desktopTrail = claimTrail || "Eine Kampagne für die Mitwelt.";
 
   return (
     <header className="siteHeader">
@@ -57,8 +67,9 @@ export default function SiteHeader({ section }: { section?: string }) {
       </nav>
 
       <div className="heritageStrip headerStrip" aria-label={`Aktiver Bereich: ${activeLabel}`}>
-        <span className="headerStripClaim">Gib der Natur Recht.</span>
+        <span className="headerStripClaim">{desktopLead}</span>
         <span className="heritageColors" aria-hidden="true"><i/><i/><i/><i/></span>
+        <span className="headerStripTrail">{desktopTrail}</span>
         <span className="headerStripActive">{activeLabel}</span>
       </div>
     </header>

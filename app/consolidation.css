@@ -6,9 +6,8 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  padding-top: 104px;
-}
+/* Header height and the resulting body offset are owned by header-strip.css
+   (--header-height / --campaign-strip-height) to avoid conflicting values. */
 
 main {
   overflow: visible;
@@ -42,15 +41,8 @@ span {
   overflow-wrap: break-word;
 }
 
-.worldHero h1,
-.deHero h1,
-.newsHero h1,
-.joinHero h1,
-.aboutHero h1,
-.hubHero h1 {
-  font-size: clamp(3.6rem, 6vw, 6.6rem);
-  line-height: 0.92;
-}
+/* H1 sizing for the two typographic groups (Leitseiten / Themenseiten)
+   is owned by desktop-qa.css to avoid two competing declarations. */
 
 .siteHeader {
   position: fixed;
@@ -189,10 +181,6 @@ span {
 }
 
 @media (max-width: 900px) {
-  body {
-    padding-top: 108px;
-  }
-
   .siteHeader {
     min-height: auto;
     display: block;
@@ -303,12 +291,7 @@ span {
   .statusSection,
   .deBayern,
   .hubPrinciple,
-  .hubBayern,
-  .bayernHero,
-  .bayernIntro,
-  .bayernLearn,
-  .bayernToday,
-  .bayernArchive {
+  .hubBayern {
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
@@ -331,26 +314,20 @@ span {
   .newsHero h1,
   .joinHero h1,
   .aboutHero h1,
-  .hubHero h1,
-  .bayernHero h1 {
+  .hubHero h1 {
     max-width: 100%;
     font-size: clamp(3.2rem, 11vw, 5rem);
     line-height: .94;
     letter-spacing: -.05em;
   }
 
-  .heroNature,
-  .bayernRiver {
+  .heroNature {
     width: 100%;
     max-width: 100%;
   }
 }
 
 @media (max-width: 680px) {
-  body {
-    padding-top: 102px;
-  }
-
   .siteHeader,
   .hero,
   .plainIdea,
@@ -362,19 +339,11 @@ span {
   .bavariaFeature,
   .join,
   footer,
-  .hubHeader,
   .hubHero,
   .hubPrinciple,
   .hubTemplate,
   .hubBayern,
   .hubFooter,
-  .bayernTop,
-  .bayernHero,
-  .bayernIntro,
-  .bayernPath,
-  .bayernToday,
-  .bayernArchive,
-  .bayernFooter,
   .deHero,
   .dePrinciple,
   .deThree,
@@ -445,8 +414,7 @@ span {
   .newsHero h1,
   .joinHero h1,
   .aboutHero h1,
-  .hubHero h1,
-  .bayernHero h1 {
+  .hubHero h1 {
     font-size: clamp(3rem, 14vw, 4.4rem);
     line-height: .96;
     letter-spacing: -.055em;
@@ -519,8 +487,7 @@ span {
   .newsHero h1,
   .joinHero h1,
   .aboutHero h1,
-  .hubHero h1,
-  .bayernHero h1 {
+  .hubHero h1 {
     font-size: clamp(2.8rem, 13.6vw, 3.8rem);
   }
 

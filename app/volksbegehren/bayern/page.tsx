@@ -12,7 +12,7 @@ const milestones = [
 export default function BayernPage() {
   return (
     <main className={styles.page}>
-      <SiteHeader section="Volksbegehren Bayern" />
+      <SiteHeader section="Volksbegehren Bayern" claimLead="Gib der Natur Recht." claimTrail="Bayern sammelt weiter." />
 
       <section className={styles.hero}>
         <div>
@@ -69,12 +69,12 @@ export default function BayernPage() {
       </section>
 
       <section className={styles.process} id="sammeln">
-        <div className={styles.sectionHead}>
+        <div className={`${styles.sectionHead} ${styles.sectionHeadCompact}`}>
           <p className={styles.label}>Warum nicht bei 25.000 aufhören?</p>
           <h2>25.000 sind das gesetzliche Minimum. 250.000 sind unser politisches Sammelziel.</h2>
           <span>Die historische Kampagnenstrategie ist bewusst ambitionierter als die formale Zulassungshürde.</span>
         </div>
-        <div className={styles.steps}>
+        <div className={styles.goalCards}>
           <article><span>25.000</span><h3>Zulassungshürde</h3><p>So viele gültige Unterstützungsunterschriften braucht der Zulassungsantrag mindestens.</p></article>
           <article><span>250.000</span><h3>Unser Sammelziel</h3><p>Wir wollen den Antrag erst einreichen, wenn mindestens 250.000 Unterschriften gesammelt sind – um Öffentlichkeit zu schaffen und einen breiten gesellschaftlichen Diskurs auszulösen.</p></article>
           <article><span>≈ 2,5 Mio.</span><h3>Der spätere Volksentscheid</h3><p>Eine Verfassungsänderung braucht am Ende nicht nur mehr Ja- als Nein-Stimmen, sondern zusätzlich die Zustimmung von mindestens 25 Prozent aller Stimmberechtigten. Deshalb muss gesellschaftliche Mobilisierung lange vor dem Volksentscheid beginnen.</p></article>

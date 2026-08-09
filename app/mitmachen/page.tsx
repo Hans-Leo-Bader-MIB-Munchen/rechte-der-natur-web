@@ -13,8 +13,7 @@ const paths = [
 export default function Mitmachen() {
   return (
     <main className="joinPage">
-      <SiteHeader section="Mitmachen" />
-      <section className="heritageStrip"><span>Gib der Natur Recht.</span><span className="heritageColors"><i/><i/><i/><i/></span><span>Mitdenken. Mitstreiten. Mitsammeln.</span></section>
+      <SiteHeader section="Mitmachen" claimLead="Gib der Natur Recht." claimTrail="Mitdenken. Mitstreiten. Mitsammeln." />
 
       <section className="joinHero">
         <p className="eyebrow">Mitmachen</p>
