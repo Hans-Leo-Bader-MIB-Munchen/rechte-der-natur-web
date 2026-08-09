@@ -6,12 +6,8 @@ import styles from "./page.module.css";
 
 const status = [
   ["Startpunkt", "Hier beginnt der Aufbau eines Landeswegs."],
-  ["Frühere Initiative", "Frühere Erfahrungen bilden einen Ausgangspunkt für die heutige Länderarbeit."],
-  ["Rechtliche Prüfung", "Verfassung, direkte Demokratie und mögliche Regelungswege werden zu einem tragfähigen Landesweg verbunden."],
-  ["Netzwerkaufbau", "Menschen und Organisationen im Land beginnen, einen tragfähigen Weg zu entwickeln."],
-  ["Vorbereitung", "Ziel, Text, Verfahren und Kampagnenstruktur sind so weit geklärt, dass eine Initiative vorbereitet werden kann."],
-  ["Laufende Sammelphase", "Die Kampagne sammelt Unterstützungsunterschriften für den Zulassungsantrag. Bayern befindet sich derzeit in dieser Phase."],
-  ["Aktive Kampagne", "Eine konkrete Initiative läuft – mit Organisation, Mobilisierung und der im jeweiligen Verfahren vorgesehenen Unterschriftensammlung."],
+  ["Vorarbeit vorhanden", "Textentwürfe oder frühere Initiative bilden eine konkrete Grundlage für die weitere Entwicklung."],
+  ["Aktive Sammlung", "Eine konkrete Kampagne sammelt Unterstützungsunterschriften für den nächsten Verfahrensschritt. Bayern befindet sich derzeit in dieser Phase."],
 ];
 
 const draftByState = Object.fromEntries(landesEntwuerfe.map((item) => [item.name, item.slug]));
@@ -43,18 +39,18 @@ export default function Deutschland() {
       </section>
 
       <section className={styles.map} id="laender">
-        <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Frühere Initiativen markieren vorhandene Erfahrungen. Für sechs Länder liegen bereits dokumentierte Textentwürfe vor. Bayern sammelt Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
+        <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Für sechs Länder liegen bereits dokumentierte Textentwürfe als Vorarbeit vor. In den übrigen Ländern beginnt der Aufbau am Startpunkt. Bayern sammelt Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
         <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=>{
           const draftSlug = draftByState[name];
           return <article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}>
             <span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>
-            {name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : draftSlug ? <Link href={`/deutschland/${draftSlug}`}><strong>Startpunkt</strong><br/><small>Textentwurf ansehen →</small></Link> : <strong>{status}</strong>}
+            {name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : draftSlug ? <Link href={`/deutschland/${draftSlug}`}><strong>Vorarbeit vorhanden</strong><br/><small>Textentwurf ansehen →</small></Link> : <strong>{status}</strong>}
           </article>;
         })}</div>
       </section>
 
       <section className={styles.status}>
-        <div className={styles.sectionHead}><p className={styles.label}>Vom Startpunkt zur Kampagne</p><h2>Jedes Land hat seinen nächsten Schritt.</h2><p>Die Landkarte zeigt vorhandene Erfahrungen, rechtliche Prüfungen, Netzwerke und konkrete Kampagnen.</p></div>
+        <div className={styles.sectionHead}><p className={styles.label}>Vom Startpunkt zur Kampagne</p><h2>Jedes Land hat seinen nächsten Schritt.</h2><p>Die Landkarte unterscheidet bewusst nur die derzeit tatsächlich belegten Stufen.</p></div>
         <div className={styles.statusGrid}>{status.map(([title,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
       </section>
 
