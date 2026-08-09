@@ -24,7 +24,7 @@ export default function Deutschland() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Deutschland</p>
-          <h1>Ein Land. 16 Bundesländer. Viele mögliche Wege.</h1>
+          <h1>Ein Land. 16 Bundesländer.<br className={styles.desktopBreak}/> Viele mögliche Wege.</h1>
           <p className={styles.lead}>Jedes Bundesland hat eigene Regeln für direkte Demokratie. Verfassungen, Verfahren und Fristen prägen den jeweiligen Weg zu einem Volksbegehren für die Rechte der Natur. Bayern ist dabei ein besonderer Fall: Hier kann die Sammlung der Unterstützungsunterschriften über einen längeren Zeitraum laufen, bevor der Zulassungsantrag eingereicht wird.</p>
           <div className={styles.actions}><a className={styles.button} href="#laender">Die Länder ansehen</a><Link className={styles.textLink} href="/volksbegehren">Zur Kampagnenidee →</Link></div>
         </div>
