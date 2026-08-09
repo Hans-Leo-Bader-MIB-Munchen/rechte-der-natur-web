@@ -25,7 +25,6 @@ export default function Home() {
       <section className={styles.perspective}>
         <div className={styles.perspectiveInner}>
           <p className={styles.eyebrow}>Der Perspektivwechsel</p>
-          <h1>Die entscheidende Frage:</h1>
           <p className={styles.question}>„Was braucht Natur, um zu leben?“</p>
           <p className={styles.perspectiveText}>Wenn diese Frage im Recht Gewicht bekommt, verändert sich unser Blick auf Flüsse, Wälder und Ökosysteme – und auf die Verantwortung, die wir für unsere gemeinsame Mitwelt tragen.</p>
         </div>
