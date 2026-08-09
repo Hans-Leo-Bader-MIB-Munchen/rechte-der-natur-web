@@ -40,7 +40,7 @@ export default function Home() {
       <section className={styles.idea} id="idee">
         <div className={styles.ideaIntro}>
           <p className={styles.label}>Die Idee</p>
-          <h2>Natur hat einen eigenen Wert – und verdient eine eigene Stimme im Recht.</h2>
+          <h2 className={styles.ideaHeadline}><span>Natur hat einen eigenen Wert – und verdient</span><span>eine eigene Stimme im Recht.</span></h2>
           <p className={styles.ideaText}>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
           <div className={styles.ideaActions}><Link className={styles.button} href="/ueber-uns">Mehr zur Idee</Link></div>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
 
       <section className={styles.stories} id="weltweit">
         <div className={styles.storiesInner}>
-          <div className={styles.sectionHead}><p className={styles.label}>Weltweit</p><h2>Viele Rechtswege. Viele Erfahrungen.</h2><p>Rechte der Natur existieren bereits in unterschiedlichen Rechtsordnungen. Diese Erfahrungen helfen, tragfähige Wege für Deutschland zu entwickeln.</p></div>
+          <div className={styles.sectionHead}><p className={styles.label}>Weltweit</p><h2>Vier Blickwinkel. Viele Entwicklungen.</h2><p>Von der Anerkennung über die Vertretung und Institutionen bis zur Wirkung in Entscheidungen: Entwicklungen aus verschiedenen Ländern zeigen, wie Rechte der Natur Gestalt annehmen.</p><Link className={styles.button} href="/weltweit">Mehr zur internationalen Entwicklung</Link></div>
           <div className={styles.storyGrid}>{stories.map(s=><article className={styles.story} key={s.title}><div className={styles.storyVisual}><span>{s.mark}</span></div><div className={styles.storyCopy}><span className={styles.place}>{s.place}</span><h3>{s.title}</h3><p>{s.text}</p><Link className={styles.storyLink} href={s.href}>Mehr erfahren →</Link></div></article>)}</div>
         </div>
       </section>
