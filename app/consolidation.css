@@ -18,15 +18,89 @@
   font-weight: 700;
 }
 
+.brandOfficial {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 250px;
+}
+
+.brandLogoHorizontal {
+  display: block;
+  width: min(300px, 28vw);
+  height: auto;
+  object-fit: contain;
+}
+
+.brandSection {
+  padding-left: 14px;
+  border-left: 1px solid var(--line);
+  color: var(--earth);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  max-width: 130px;
+}
+
+.brandMarkOfficial {
+  position: relative;
+  display: inline-flex;
+  width: 92px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandMarkOfficial > i,
+.brandMarkOfficial > b {
+  display: none !important;
+}
+
+.brandMarkOfficial img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.heroSeal .brandMarkOfficial {
+  width: 62px;
+}
+
+.bavariaNumber .brandMarkOfficial {
+  width: min(240px, 100%);
+  height: auto;
+}
+
+.footerIdentity .brandMarkOfficial {
+  width: 72px;
+}
+
 .hubCall .heroActions,
 .campaignCall .heroActions {
   justify-content: center;
   margin-top: 32px;
 }
 
+@media (max-width: 1100px) {
+  .brandLogoHorizontal {
+    width: 235px;
+  }
+
+  .brandSection {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .siteHeader nav {
     gap: 14px 18px;
+  }
+
+  .brandLogoHorizontal {
+    width: 260px;
   }
 }
 
@@ -38,5 +112,18 @@
   .aboutHero h1,
   .hubHero h1 {
     font-size: clamp(3.2rem, 15vw, 5.2rem);
+  }
+
+  .brandOfficial {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .brandLogoHorizontal {
+    width: min(320px, 82vw);
+  }
+
+  .footerIdentity .brandMarkOfficial {
+    width: 88px;
   }
 }
