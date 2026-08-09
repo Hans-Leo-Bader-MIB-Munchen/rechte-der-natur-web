@@ -40,6 +40,80 @@ Internationale Beispiele werden nicht als identische Rechtsmodelle dargestellt. 
 
 Die Kampagnenseite dient der Orientierung, Mobilisierung und Koordination. Die fachliche Vertiefung erfolgt eigenständig über die Systemische Rechtsentwicklung.
 
+## Publikations- und Rollenlogik der Plattformen
+
+Die verschiedenen Webangebote erfüllen bewusst unterschiedliche Funktionen. Sie sollen sich ergänzen und nicht dieselben Inhalte parallel pflegen.
+
+### 1. Rechte der Natur – Die Volksbegehren
+
+Funktion: Kampagnenraum, föderale Entwicklungsplattform und Aktivierung.
+
+Die neue Kampagnenseite bündelt insbesondere:
+
+- die Grundidee der Rechte der Natur in verständlicher Form;
+- internationale Beispiele zur Orientierung;
+- die Entwicklung möglicher Landeswege in Deutschland;
+- tatsächlich laufende Volksbegehren und Sammelphasen;
+- Mitmachen, Bündnispartner und Unterstützung;
+- ausgewählte aktuelle Entwicklungen mit unmittelbarer Kampagnenrelevanz.
+
+Die Kampagnenseite erhält **keinen klassischen Blog**. Sie soll nicht zu einem allgemeinen Nachrichten-, Debatten- oder Publikationsarchiv ausgebaut werden.
+
+Die Seite `/aktuelles` ist stattdessen eine **kuratierte Status- und Entwicklungsschicht**. Ein Eintrag wird dort nur aufgenommen, wenn er mindestens eine der folgenden Funktionen erfüllt:
+
+1. einen relevanten Status der Kampagne oder eines Landeswegs verändert;
+2. Orientierung für die Kampagnenentwicklung gibt;
+3. konkrete Aktivierung oder Beteiligung ermöglicht;
+4. eine strategisch wichtige Rechtsentwicklung sichtbar macht.
+
+Vertiefende Beiträge werden nicht doppelt veröffentlicht, sondern kurz eingeordnet und an die jeweils zuständige Plattform verlinkt.
+
+### 2. Systemische Rechtsentwicklung
+
+Funktion: methodische und rechtswissenschaftliche Vertiefung.
+
+Dort liegen insbesondere:
+
+- Fallanalysen und Quellenprüfungen;
+- methodische Entwicklung;
+- Working Papers und belastbare Veröffentlichungen;
+- vertiefende Einordnung internationaler und nationaler Rechtsentwicklungen;
+- der Resonanzraum für laufende fachliche Entwicklungen.
+
+Wenn ein Thema dort fachlich bearbeitet wird, verweist die Kampagnenseite nur mit einem knappen Status- oder Orientierungseintrag darauf. Beispiel: Kolumbien.
+
+### 3. Netzwerk Rechte der Natur
+
+Funktion: Netzwerk-, Debatten- und Informationsraum.
+
+Dort gehören insbesondere hin:
+
+- Netzwerkaktivitäten;
+- Veranstaltungen;
+- Stellungnahmen und Beiträge aus dem Netzwerk;
+- Debatten und vielfältige fachliche bzw. gesellschaftliche Perspektiven;
+- langfristig gewachsene Wissens- und Beitragsbestände.
+
+Die Kampagnenseite dupliziert diese Funktion nicht.
+
+### 4. Historische Kampagnenseite
+
+Funktion: stabile Referenz- und Archivschicht.
+
+Die bestehende historische Website und ihre bereits referenzierten URLs bleiben erreichbar. Sie werden nicht rückwirkend durch die neue Informationsarchitektur ersetzt. Wissenschaftlich oder öffentlich zitierte Inhalte und Links sollen dadurch dauerhaft nachvollziehbar bleiben.
+
+### Redaktionsgrundsatz
+
+**Netzwerk – Kampagne – Methode – Referenzschicht** sind unterschiedliche Funktionen.
+
+Neue Inhalte werden vor Veröffentlichung zuerst funktional zugeordnet. Es gilt:
+
+- keine unnötige Doppelpflege;
+- keine vollständigen Fachartikel auf der Kampagnenseite, wenn bereits eine fachlich zuständige Plattform existiert;
+- keine allgemeine Nachrichtenproduktion nur zur Befüllung von `/aktuelles`;
+- Verlinkung statt Duplizierung;
+- strukturelle Erweiterungen der Kampagnenseite nur, wenn sie Orientierung, Aktivierung oder einen realen Kampagnenprozess verbessert.
+
 ## Wiedervorlage
 
 Eine neue strukturelle Bearbeitung der Website erfolgt erst bei mindestens einem der folgenden Auslöser:
