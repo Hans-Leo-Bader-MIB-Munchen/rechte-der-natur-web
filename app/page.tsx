@@ -7,6 +7,7 @@ const stories = [
   { place: "Spanien", title: "Mar Menor", text: "Eine Lagune mit eigenen Rechten. Der Fall zeigt, wie Rechtsträgerschaft, Vertretung und Institutionen zusammenwirken.", mark: "Wasser", href: "/weltweit#mar-menor" },
   { place: "Aotearoa / Neuseeland", title: "Whanganui", text: "Der Fluss besitzt Rechtspersönlichkeit und eine eigene Vertretungsordnung. So bekommt er eine konkrete Stimme im Recht.", mark: "Fluss", href: "/weltweit#whanganui" },
   { place: "Ecuador", title: "Natur in der Verfassung", text: "Seit 2008 erkennt die Verfassung Rechte der Natur an. Gerichtliche Entscheidungen konkretisieren ihre Wirkung.", mark: "Land", href: "/weltweit#ecuador" },
+  { place: "Kolumbien", title: "Vom Río Atrato zum System", text: "Vom einzelnen Gewässer zur institutionellen Entwicklung: Kolumbien zeigt, wie Anerkennung, Vertretung und weitere gesetzliche Schritte aufeinander aufbauen können.", mark: "Gewässer", href: "/weltweit#kolumbien" },
 ];
 
 const steps = [
