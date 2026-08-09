@@ -55,6 +55,18 @@ const focusCases = [
       ["Lernpunkt", "Verfassungsrang eröffnet einen starken Maßstab; seine Wirkung entsteht in Anwendung, Verfahren und Entscheidungen."],
     ],
   },
+  {
+    id: "kolumbien",
+    region: "Kolumbien · 2016 → 2025 → 2026",
+    title: "Vom Río Atrato zum System",
+    subtitle: "Rechtsentwicklung kann institutionell wachsen.",
+    intro: "Mit dem Río Atrato beginnt eine gesicherte Entwicklungslinie aus Anerkennung, Vertretung und Governance. Weitere Schritte zu Finanzierung und einem allgemeinen gesetzlichen Rahmen für Flussrechte werden derzeit quellenbasiert geprüft.",
+    points: [
+      ["2016", "Gesichert: Anerkennung des Río Atrato als Rechtssubjekt mit Vertretungs- und Governance-Strukturen."],
+      ["2025/2026", "In Prüfung: weitere Institutionalisierung über Finanzierung und einen möglichen allgemeinen gesetzlichen Rahmen für Flussrechte."],
+      ["Lernpunkt", "Kolumbien zeigt, wie aus einzelnen Anerkennungen schrittweise eine breitere institutionelle Rechtsentwicklung entstehen kann."],
+    ],
+  },
 ];
 
 export default function Weltweit() {
@@ -67,7 +79,7 @@ export default function Weltweit() {
           <p className={styles.eyebrow}>Weltweit</p>
           <h1>Die Idee hat viele Formen angenommen.</h1>
           <p className={styles.lead}>Verfassungen, Gesetze und Gerichte haben Natur in unterschiedlichen Rechtsordnungen eine eigenständige Stellung gegeben. Für Deutschland zeigen diese Erfahrungen, welche Elemente tragen und wie ein eigener Weg gestaltet werden kann.</p>
-          <div className={styles.actions}><a className={styles.button} href="#schwerpunkte">Drei Fälle genauer</a><Link className={styles.textLink} href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div>
+          <div className={styles.actions}><a className={styles.button} href="#schwerpunkte">Vier Fälle genauer</a><Link className={styles.textLink} href="/deutschland">Was lernen wir daraus für Deutschland? →</Link></div>
         </div>
       </section>
 
@@ -80,9 +92,9 @@ export default function Weltweit() {
 
       <section className={styles.focus} id="schwerpunkte">
         <div className={styles.focusHead}>
-          <p className={styles.label}>Drei Fälle genauer</p>
-          <h2>Drei Rechtswege zeigen drei unterschiedliche Stärken.</h2>
-          <p>Anerkennung, Vertretung und Institutionen greifen auf unterschiedliche Weise ineinander. Daraus entstehen Lernpunkte für eigene Wege.</p>
+          <p className={styles.label}>Vier Fälle genauer</p>
+          <h2>Vier Rechtswege zeigen unterschiedliche Stärken und Entwicklungsformen.</h2>
+          <p>Anerkennung, Vertretung und Institutionen greifen auf unterschiedliche Weise ineinander. Kolumbien ergänzt diese Perspektive um eine Entwicklungslinie über mehrere Schritte hinweg.</p>
         </div>
         <div className={styles.focusList}>
           {focusCases.map((c, index) => (
