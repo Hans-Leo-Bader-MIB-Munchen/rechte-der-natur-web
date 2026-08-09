@@ -5,6 +5,7 @@ import "./weltweit/weltweit.css";
 import "./consolidation.css";
 import "./header-strip.css";
 import "./desktop-qa.css";
+import "./editorial-subpages.css";
 
 export const metadata: Metadata = {
   title: "Rechte der Natur – Die Volksbegehren",
