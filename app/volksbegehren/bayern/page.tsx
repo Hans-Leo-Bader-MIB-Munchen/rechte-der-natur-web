@@ -34,6 +34,40 @@ export default function BayernPage() {
         </div>
       </section>
 
+      <section className={styles.patrons} id="schirmherrschaft">
+        <div className={styles.patronHead}>
+          <p className={styles.label}>Schirmherrschaft</p>
+          <h2>Zwei internationale Wege. Eine gemeinsame Idee.</h2>
+          <p>Unser bayerisches Volksbegehren wird von zwei Menschen begleitet, die die Entwicklung der Rechte der Natur international wesentlich mitgeprägt haben.</p>
+        </div>
+        <div className={styles.patronGrid}>
+          <article className={styles.patronCard}>
+            <div className={styles.patronImage}>
+              <img src="https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2024/07/Acosta_Schirmherr.png" alt="Alberto Acosta, Schirmherr des Volksbegehrens Rechte der Natur in Bayern" />
+            </div>
+            <div className={styles.patronText}>
+              <p className={styles.patronRole}>Schirmherr</p>
+              <h3>Alberto Acosta</h3>
+              <p>Alberto Acosta Espinosa war 2007/08 Präsident der Verfassungsgebenden Versammlung Ecuadors. In dieser Zeit wurde die neue ecuadorianische Verfassung erarbeitet, die die Rechte der Natur verfassungsrechtlich verankerte.</p>
+              <p className={styles.patronLink}>Ecuador → Bayern</p>
+            </div>
+          </article>
+
+          <article className={styles.patronCard}>
+            <div className={styles.patronImage}>
+              <img src="https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2024/08/Teresa-Vicente.jpg" alt="Teresa Vicente, Schirmfrau des Volksbegehrens Rechte der Natur in Bayern" />
+            </div>
+            <div className={styles.patronText}>
+              <p className={styles.patronRole}>Schirmfrau</p>
+              <h3>Teresa Vicente</h3>
+              <p>Teresa Vicente ist Professorin für Rechtsphilosophie an der Universität Murcia. Sie führte die Bürgerbewegung an, aus der 2022 das spanische Gesetz hervorging, das dem Ökosystem Mar Menor eigene Rechte und Rechtspersönlichkeit zuerkannte.</p>
+              <p className={styles.patronLink}>Mar Menor → Bayern</p>
+            </div>
+          </article>
+        </div>
+        <p className={styles.patronFoot}>Ecuador und Mar Menor zeigen zwei unterschiedliche Wege, Rechte der Natur rechtlich zu verankern. Die Schirmherrschaft verbindet diese internationale Erfahrung unmittelbar mit der laufenden bayerischen Initiative.</p>
+      </section>
+
       <section className={styles.process} id="sammeln">
         <div className={styles.sectionHead}>
           <p className={styles.label}>Warum nicht bei 25.000 aufhören?</p>
