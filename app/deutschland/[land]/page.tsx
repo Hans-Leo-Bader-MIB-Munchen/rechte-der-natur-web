@@ -53,6 +53,13 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
           </div>
         </div>
 
+        <div className={styles.coordination}>
+          <p className={styles.label}>Gemeinsam in den Ländern</p>
+          <h2>Wir koordinieren und unterstützen die Landeswege.</h2>
+          <p>Diese Webseite ist die gemeinsame Kampagnenzentrale für die Volksbegehren Rechte der Natur. Wir bündeln Vorarbeiten und Erfahrungen, unterstützen Initiativen in den Bundesländern bei der Weiterentwicklung ihrer Texte und Verfahren und verbinden Menschen, die vor Ort einen Landesweg aufbauen wollen.</p>
+          <p>Die konkrete Initiative entsteht im jeweiligen Bundesland. Wir sorgen dafür, dass Wissen, Materialien, Kontakte und Erfahrungen aus den anderen Ländern gemeinsam genutzt werden können.</p>
+        </div>
+
         <div className={styles.actions}>
           <Link className={styles.button} href="/deutschland">Alle Bundesländer ansehen</Link>
           <Link className={styles.textLink} href="/mitmachen">Landesweg mit aufbauen →</Link>
