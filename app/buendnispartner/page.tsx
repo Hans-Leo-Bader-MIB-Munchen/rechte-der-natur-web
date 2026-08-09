@@ -105,7 +105,7 @@ export default function BuendnispartnerPage() {
         <p>Wer die Ziele der Volksbegehren mittragen und sichtbar unterstützen möchte, kann sich direkt bei der Kampagne melden.</p>
         <div className={styles.actions}>
           <Link className={styles.button} href="/mitmachen">Mitmachen</Link>
-          <a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterstuetzen" target="_blank" rel="noreferrer">Bisherige Unterstützer-Seite →</a>
+          <a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterstuetzer" target="_blank" rel="noreferrer">Historische Unterstützer-Seite →</a>
         </div>
       </section>
 
