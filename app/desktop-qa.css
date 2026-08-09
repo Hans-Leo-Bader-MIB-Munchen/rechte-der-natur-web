@@ -6,6 +6,10 @@
     --desktop-gutter: 40px;
   }
 
+  body {
+    padding-top: 130px !important;
+  }
+
   /* Fixed header: same visual axis as the page content. */
   .siteHeader {
     min-height: 92px !important;
@@ -53,6 +57,10 @@
 
   .siteHeader .navAction {
     padding: 10px 17px;
+  }
+
+  .heritageStrip:not(.headerStrip) {
+    top: 92px !important;
   }
 
   /* Shared content width. Full-width colour bands remain full width. */
