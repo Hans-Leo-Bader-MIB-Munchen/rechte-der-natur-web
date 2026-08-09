@@ -1,8 +1,41 @@
 /* Consolidation layer for the tech1 preview. */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 main {
   overflow: visible;
   overflow-x: clip;
+}
+
+main > *,
+section,
+article,
+header,
+footer,
+nav,
+div {
+  min-width: 0;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+strong,
+span {
+  overflow-wrap: break-word;
 }
 
 .worldHero h1,
@@ -19,19 +52,36 @@ main {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(73,107,53,.12);
-  box-shadow: 0 8px 24px rgba(73,107,53,.05);
+  box-shadow: 0 4px 18px rgba(38,62,28,.06);
 }
 
-.siteHeader nav a {
+.headerTopline {
+  display: contents;
+}
+
+.mainNav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mainNav a {
   white-space: nowrap;
+  text-decoration: none;
+  font-size: .9rem;
 }
 
 .siteHeader .navAction {
   font-weight: 700;
+}
+
+.menuToggle {
+  display: none;
 }
 
 .brandOfficial {
@@ -105,11 +155,11 @@ main {
     gap: 18px;
   }
 
-  .siteHeader nav {
+  .mainNav {
     gap: 12px 16px;
   }
 
-  .siteHeader nav a {
+  .mainNav a {
     font-size: .84rem;
   }
 
@@ -125,79 +175,332 @@ main {
 @media (max-width: 900px) {
   .siteHeader {
     min-height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    display: block;
+    padding: 0;
+  }
+
+  .headerTopline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 10px 20px;
   }
 
   .brandOfficial {
     min-width: 0;
-    width: 100%;
+    width: auto;
+    flex: 1 1 auto;
   }
 
   .brandLogoHorizontal {
-    width: min(255px, 66vw);
+    width: min(245px, 58vw);
   }
 
-  .siteHeader nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 10px;
-    padding: 4px 0 6px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overscroll-behavior-x: contain;
-  }
-
-  .siteHeader nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .siteHeader nav a {
-    flex: 0 0 auto;
+  .menuToggle {
+    appearance: none;
+    border: 1px solid var(--green);
+    background: #fff;
+    color: var(--deep);
+    border-radius: 999px;
+    min-height: 42px;
+    padding: 8px 13px 8px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font: inherit;
     font-size: .82rem;
-    padding: 7px 2px;
+    font-weight: 700;
+    cursor: pointer;
+    flex: 0 0 auto;
   }
 
-  .siteHeader .navAction {
-    padding: 7px 13px;
+  .menuIcon {
+    display: grid;
+    gap: 3px;
+    width: 16px;
   }
-}
 
-@media (max-width: 680px) {
+  .menuIcon i {
+    display: block;
+    width: 16px;
+    height: 1.5px;
+    background: currentColor;
+    transition: transform .18s ease, opacity .18s ease;
+    transform-origin: center;
+  }
+
+  .menuToggle[aria-expanded="true"] .menuIcon i:nth-child(1) {
+    transform: translateY(4.5px) rotate(45deg);
+  }
+
+  .menuToggle[aria-expanded="true"] .menuIcon i:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuToggle[aria-expanded="true"] .menuIcon i:nth-child(3) {
+    transform: translateY(-4.5px) rotate(-45deg);
+  }
+
+  .mainNav {
+    display: none;
+    width: 100%;
+    padding: 8px 20px 18px;
+    border-top: 1px solid rgba(73,107,53,.09);
+    background: rgba(255,255,255,.99);
+  }
+
+  .mainNavOpen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .mainNav a {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-size: .9rem;
+    white-space: normal;
+  }
+
+  .mainNav .navAction {
+    grid-column: 1 / -1;
+    justify-content: center;
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+  }
+
+  .hero,
+  .germanyLead,
+  .campaignIdea,
+  .bavariaFeature,
+  .deHero,
+  .statusSection,
+  .deBayern,
+  .hubPrinciple,
+  .hubBayern,
+  .bayernHero,
+  .bayernIntro,
+  .bayernLearn,
+  .bayernToday,
+  .bayernArchive {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .explainGrid,
+  .storyGrid,
+  .templateGrid,
+  .pathGrid,
+  .deThree {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .stateGrid,
+  .hubStates {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .hero h1,
   .worldHero h1,
   .deHero h1,
   .newsHero h1,
   .joinHero h1,
   .aboutHero h1,
-  .hubHero h1 {
-    font-size: clamp(3.2rem, 15vw, 5.2rem);
+  .hubHero h1,
+  .bayernHero h1 {
+    max-width: 100%;
+    font-size: clamp(3.2rem, 11vw, 5rem);
+    line-height: .94;
+    letter-spacing: -.05em;
+  }
+
+  .heroNature,
+  .bayernRiver {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .siteHeader,
+  .hero,
+  .plainIdea,
+  .explainGrid,
+  .world,
+  .germanyLead,
+  .campaignIdea,
+  .stateSection,
+  .bavariaFeature,
+  .join,
+  footer,
+  .hubHeader,
+  .hubHero,
+  .hubPrinciple,
+  .hubTemplate,
+  .hubBayern,
+  .hubFooter,
+  .bayernTop,
+  .bayernHero,
+  .bayernIntro,
+  .bayernPath,
+  .bayernToday,
+  .bayernArchive,
+  .bayernFooter,
+  .deHero,
+  .dePrinciple,
+  .deThree,
+  .statusSection,
+  .deBayern {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
   }
 
   .siteHeader {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .headerTopline {
+    padding: 9px 14px;
   }
 
   .brandLogoHorizontal {
-    width: min(238px, 72vw);
+    width: min(215px, 62vw);
   }
 
-  .siteHeader nav {
-    margin-left: -2px;
-    padding-bottom: 5px;
+  .menuToggle {
+    min-height: 40px;
+    padding: 7px 11px;
   }
 
-  .siteHeader nav a {
-    font-size: .78rem;
+  .menuToggleText {
+    display: none;
+  }
+
+  .mainNav {
+    padding: 8px 14px 14px;
+  }
+
+  .mainNavOpen {
+    grid-template-columns: 1fr;
+  }
+
+  .mainNav .navAction {
+    grid-column: auto;
+  }
+
+  .heritageStrip {
+    min-height: 34px;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px 14px;
+    font-size: .63rem;
+    letter-spacing: .09em;
+    white-space: normal;
+    overflow: hidden;
+  }
+
+  .heritageStrip > span:last-child {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 46px !important;
+    padding-bottom: 64px !important;
+    gap: 38px;
+  }
+
+  .hero h1,
+  .worldHero h1,
+  .deHero h1,
+  .newsHero h1,
+  .joinHero h1,
+  .aboutHero h1,
+  .hubHero h1,
+  .bayernHero h1 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+    line-height: .96;
+    letter-spacing: -.055em;
+  }
+
+  .lead,
+  .bigText,
+  .sectionIntro > p:last-child,
+  .germanyLeadCopy > p:last-child,
+  .campaignCopy p,
+  .bavariaCopy > p,
+  .campaignCall p {
+    font-size: 1.08rem !important;
+    line-height: 1.58 !important;
+  }
+
+  .heroActions {
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .heroActions .buttonPrimary,
+  .heroActions .textLink {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stateGrid,
+  .hubStates {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .stateCard,
+  .hubState,
+  .story,
+  .explainGrid article,
+  .templateGrid article,
+  .pathGrid article,
+  .deThree article {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sixteen,
+  .deBig16 {
+    max-width: 100%;
+    font-size: clamp(8rem, 42vw, 12rem);
+    line-height: .72;
+    text-align: left;
+  }
+
+  .heroNature {
+    height: 360px;
+    border-radius: 150px 150px 12px 12px;
   }
 
   .footerIdentity .brandMarkOfficial {
-    width: 88px;
+    width: 82px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brandLogoHorizontal {
+    width: min(190px, 60vw);
+  }
+
+  .hero h1,
+  .worldHero h1,
+  .deHero h1,
+  .newsHero h1,
+  .joinHero h1,
+  .aboutHero h1,
+  .hubHero h1,
+  .bayernHero h1 {
+    font-size: clamp(2.8rem, 13.6vw, 3.8rem);
+  }
+
+  .heroNature {
+    height: 320px;
   }
 }
