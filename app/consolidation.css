@@ -1,0 +1,42 @@
+/* Consolidation layer for the tech1 preview. */
+
+.worldHero h1,
+.deHero h1,
+.newsHero h1,
+.joinHero h1,
+.aboutHero h1,
+.hubHero h1 {
+  font-size: clamp(3.6rem, 6vw, 6.6rem);
+  line-height: 0.92;
+}
+
+.siteHeader nav a {
+  white-space: nowrap;
+}
+
+.siteHeader .navAction {
+  font-weight: 700;
+}
+
+.hubCall .heroActions,
+.campaignCall .heroActions {
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .siteHeader nav {
+    gap: 14px 18px;
+  }
+}
+
+@media (max-width: 680px) {
+  .worldHero h1,
+  .deHero h1,
+  .newsHero h1,
+  .joinHero h1,
+  .aboutHero h1,
+  .hubHero h1 {
+    font-size: clamp(3.2rem, 15vw, 5.2rem);
+  }
+}
