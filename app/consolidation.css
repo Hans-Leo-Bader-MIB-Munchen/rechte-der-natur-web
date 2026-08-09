@@ -10,6 +10,16 @@
   line-height: 0.92;
 }
 
+.siteHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(73,107,53,.12);
+}
+
 .siteHeader nav a {
   white-space: nowrap;
 }
@@ -84,9 +94,21 @@
   margin-top: 32px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
+  .siteHeader {
+    gap: 18px;
+  }
+
+  .siteHeader nav {
+    gap: 12px 16px;
+  }
+
+  .siteHeader nav a {
+    font-size: .84rem;
+  }
+
   .brandLogoHorizontal {
-    width: 235px;
+    width: 225px;
   }
 
   .brandSection {
@@ -95,12 +117,49 @@
 }
 
 @media (max-width: 900px) {
-  .siteHeader nav {
-    gap: 14px 18px;
+  .siteHeader {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  .brandOfficial {
+    min-width: 0;
+    width: 100%;
   }
 
   .brandLogoHorizontal {
-    width: 260px;
+    width: min(255px, 66vw);
+  }
+
+  .siteHeader nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding: 4px 0 6px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+  }
+
+  .siteHeader nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .siteHeader nav a {
+    flex: 0 0 auto;
+    font-size: .82rem;
+    padding: 7px 2px;
+  }
+
+  .siteHeader .navAction {
+    padding: 7px 13px;
   }
 }
 
@@ -114,13 +173,22 @@
     font-size: clamp(3.2rem, 15vw, 5.2rem);
   }
 
-  .brandOfficial {
-    min-width: 0;
-    width: 100%;
+  .siteHeader {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .brandLogoHorizontal {
-    width: min(320px, 82vw);
+    width: min(238px, 72vw);
+  }
+
+  .siteHeader nav {
+    margin-left: -2px;
+    padding-bottom: 5px;
+  }
+
+  .siteHeader nav a {
+    font-size: .78rem;
   }
 
   .footerIdentity .brandMarkOfficial {
