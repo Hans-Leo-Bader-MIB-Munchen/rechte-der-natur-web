@@ -41,7 +41,7 @@ export default function Deutschland() {
 
       <section className={styles.map} id="laender">
         <div className={styles.sectionHead}><p className={styles.label}>Landkarte</p><h2>16 Bundesländer. 16 unterschiedliche Ausgangspunkte.</h2><p>Frühere Initiativen markieren vorhandene Erfahrungen. Bayern sammelt bereits Unterstützungsunterschriften für den Zulassungsantrag.</p></div>
-        <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=><article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>{name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : <strong>{status}</strong>}</article>)}</div>
+        <div className={styles.stateGrid}>{federalStates.map(({name,status},i)=><article className={`${styles.stateCard} ${name === "Bayern" ? styles.active : ""}`} key={name}><span>{String(i+1).padStart(2,"0")}</span><h3>{name}</h3><p>{status}</p>{name === "Bayern" ? <Link href="/volksbegehren/bayern"><strong>Zur laufenden Kampagne →</strong></Link> : status === "Frühere Initiative" ? <div><strong>Startpunkt</strong><br/><small>Textentwurf</small></div> : <strong>{status}</strong>}</article>)}</div>
       </section>
 
       <section className={styles.status}>
