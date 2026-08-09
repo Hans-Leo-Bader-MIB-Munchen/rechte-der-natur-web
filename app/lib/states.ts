@@ -1,5 +1,5 @@
 export type StateStatus =
-  | "Referenzfall"
+  | "Laufende Sammelphase"
   | "Historische Spur"
   | "Noch offen"
   | "Rechtliche Prüfung"
@@ -9,7 +9,7 @@ export type StateStatus =
 
 export const federalStates: { name: string; status: StateStatus }[] = [
   { name: "Baden-Württemberg", status: "Historische Spur" },
-  { name: "Bayern", status: "Referenzfall" },
+  { name: "Bayern", status: "Laufende Sammelphase" },
   { name: "Berlin", status: "Historische Spur" },
   { name: "Brandenburg", status: "Noch offen" },
   { name: "Bremen", status: "Noch offen" },
