@@ -10,7 +10,7 @@ export default function Volksbegehren() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Laufende Volksbegehren</p>
-          <h1>Wo aus Vorarbeit eine Kampagne wird.</h1>
+          <h1><span>Wo aus Vorarbeit</span><br className={styles.desktopBreak} /><span> eine Kampagne wird.</span></h1>
           <p className={styles.heroText}>Hier zeigen wir die Landesinitiativen, die den Schritt in die konkrete Kampagne und Unterschriftensammlung gegangen sind. Weitere Landeswege entwickeln wir gemeinsam auf der Deutschland-Seite weiter.</p>
           <div className={styles.actions}>
             <Link className={styles.button} href="/volksbegehren/bayern">Bayern unterstützen</Link>
