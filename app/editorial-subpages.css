@@ -1,0 +1,120 @@
+/* Shared editorial treatment for Aktuelles, Mitmachen and Über uns. Scoped to page roots. */
+
+.newsPage,.joinPage,.aboutPage{background:#fff;color:var(--deep)}
+
+.newsPage .newsHero,.joinPage .joinHero,.aboutPage .aboutHero{
+  max-width:none!important;
+  margin:0!important;
+  padding:76px max(32px,calc((100vw - 1240px)/2)) 82px!important;
+  background:var(--deep);
+  color:#fff;
+  text-align:center;
+}
+.newsPage .newsHero .eyebrow,.joinPage .joinHero .eyebrow,.aboutPage .aboutHero .eyebrow{
+  color:#d5ed96;
+  margin-bottom:14px;
+}
+.newsPage .newsHero h1,.joinPage .joinHero h1,.aboutPage .aboutHero h1{
+  max-width:960px!important;
+  margin:0 auto 22px!important;
+  color:#b9dc69!important;
+  font-size:clamp(2.5rem,3.5vw,3.65rem)!important;
+  line-height:1.02!important;
+  letter-spacing:-.04em!important;
+  font-weight:500!important;
+}
+.newsPage .newsHero .lead,.joinPage .joinHero .lead,.aboutPage .aboutHero .lead{
+  max-width:820px!important;
+  margin:0 auto!important;
+  font-size:1.08rem!important;
+  line-height:1.7!important;
+  color:#fff!important;
+}
+.joinPage .joinHero .heroActions{justify-content:center;margin-top:28px}
+
+/* Aktuelles */
+.newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge{
+  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
+}
+.newsPage .newsItems{padding-top:78px;padding-bottom:84px;display:grid;gap:16px}
+.newsPage .newsItem{display:grid;grid-template-columns:165px 1fr;gap:28px;padding:24px 26px;border:1px solid rgba(73,107,53,.12);border-radius:18px;background:#fbfaf5}
+.newsPage .newsMeta{display:flex;flex-direction:column;gap:8px;font-size:.78rem;color:var(--earth)}
+.newsPage .newsMeta strong{color:var(--deep);text-transform:uppercase;letter-spacing:.09em;font-size:.68rem}
+.newsPage .newsBody{position:relative}
+.newsPage .newsNo{position:absolute;right:0;top:0;color:var(--green);font-size:.72rem}
+.newsPage .newsBody h2{margin:0 42px 10px 0!important;font-size:1.55rem!important;line-height:1.18!important;letter-spacing:-.02em!important}
+.newsPage .newsBody p{margin:0 0 14px;max-width:760px;line-height:1.62}
+.newsPage .newsBody a,.newsPage .newsPending{font-size:.9rem;font-weight:700}
+.newsPage .newsLabels{padding-top:72px;padding-bottom:84px;border-top:1px solid var(--line)}
+.newsPage .newsLabels .stateHeader{max-width:720px;margin-bottom:32px}
+.newsPage .newsLabels .stateHeader h2{font-size:clamp(1.9rem,2.4vw,2.55rem)!important}
+.newsPage .labelGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.newsPage .labelGrid article{padding:22px;background:#fafaf6;border-radius:16px;border-top:4px solid var(--green)}
+.newsPage .labelGrid article:nth-child(2){border-top-color:var(--blue)}
+.newsPage .labelGrid article:nth-child(3){border-top-color:var(--orange)}
+.newsPage .labelGrid article:nth-child(4){border-top-color:var(--earth)}
+.newsPage .labelGrid h3{margin:18px 0 8px;font-size:1.08rem}
+.newsPage .labelGrid p{margin:0;line-height:1.55;font-size:.92rem}
+.newsPage .newsBridge{padding-top:74px;padding-bottom:88px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;border-top:1px solid var(--line)}
+.newsPage .newsBridge h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
+.newsPage .newsBridge>div:last-child p{font-size:1.05rem;line-height:1.68}
+
+/* Mitmachen */
+.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact{
+  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
+}
+.joinPage .joinWays{padding-top:78px;padding-bottom:84px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.joinPage .joinWays article{background:#fafaf6;border-radius:16px;padding:22px;border-top:4px solid var(--green)}
+.joinPage .joinWays article:nth-child(2){border-top-color:var(--blue)}
+.joinPage .joinWays article:nth-child(3){border-top-color:var(--orange)}
+.joinPage .joinWays article:nth-child(4){border-top-color:var(--earth)}
+.joinPage .joinWays article:nth-child(5){border-top-color:var(--green)}
+.joinPage .joinWays span{font-size:.7rem;color:var(--earth)}
+.joinPage .joinWays h2{font-size:1.18rem!important;margin:28px 0 10px!important;line-height:1.15!important}
+.joinPage .joinWays p{margin:0;font-size:.92rem;line-height:1.58}
+.joinPage .joinRule,.joinPage .joinStates{padding-top:78px;padding-bottom:86px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;border-top:1px solid var(--line)}
+.joinPage .joinRule h2,.joinPage .joinStates h2,.joinPage .joinContact h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
+.joinPage .joinRule>div:last-child p,.joinPage .joinStates>div:first-child p,.joinPage .joinContact>p:not(.sectionLabel){font-size:1.04rem;line-height:1.68}
+.joinPage .joinSteps{display:grid;gap:10px}
+.joinPage .joinSteps span{display:block;padding:14px 16px;border-radius:12px;background:#eef5e6;font-weight:700;font-size:.92rem}
+.joinPage .joinContact{margin-top:0;margin-bottom:82px;padding-top:68px;padding-bottom:72px;text-align:center;background:#fbfaf5;border-radius:22px}
+.joinPage .joinContact>p:not(.sectionLabel){max-width:760px;margin-left:auto;margin-right:auto}
+.joinPage .joinContact .heroActions{justify-content:center}
+
+/* Über uns */
+.aboutPage .aboutOrigin,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{
+  max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px;
+}
+.aboutPage .aboutOrigin,.aboutPage .aboutSeparation{padding-top:78px;padding-bottom:86px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;border-top:1px solid var(--line)}
+.aboutPage .aboutOrigin h2,.aboutPage .aboutSeparation h2,.aboutPage .aboutOpen h2{font-size:clamp(2rem,2.7vw,2.8rem)!important}
+.aboutPage .aboutOrigin>div:last-child p,.aboutPage .aboutSeparation>div:last-child p,.aboutPage .aboutOpen>p:not(.sectionLabel){font-size:1.04rem;line-height:1.68}
+.aboutPage .aboutLayers{padding-top:76px;padding-bottom:84px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.aboutPage .aboutLayers article{padding:26px;background:#fafaf6;border-radius:18px;border-top:4px solid var(--green)}
+.aboutPage .aboutLayers article:nth-child(2){border-top-color:var(--blue)}
+.aboutPage .aboutLayers article:nth-child(3){border-top-color:var(--orange)}
+.aboutPage .aboutLayers span{font-size:.7rem;color:var(--earth)}
+.aboutPage .aboutLayers h3{margin:32px 0 10px;font-size:1.3rem}
+.aboutPage .aboutLayers p{margin:0;line-height:1.6}
+.aboutPage .aboutPrinciples{padding-top:72px;padding-bottom:78px;border-top:1px solid var(--line)}
+.aboutPage .aboutPrinciples>div{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.aboutPage .aboutPrinciples strong{display:flex;align-items:center;min-height:96px;padding:16px;border-radius:14px;background:#eef5e6;font-size:.95rem;line-height:1.45}
+.aboutPage .aboutOpen{margin-bottom:82px;padding-top:68px;padding-bottom:72px;text-align:center;background:#fbfaf5;border-radius:22px}
+.aboutPage .aboutOpen>p:not(.sectionLabel){max-width:780px;margin-left:auto;margin-right:auto}
+.aboutPage .aboutOpen .heroActions{justify-content:center}
+
+.newsPage footer,.joinPage footer,.aboutPage footer{max-width:1240px;margin:0 auto;padding:0 32px 48px}
+
+@media(max-width:1000px){
+  .joinPage .joinWays{grid-template-columns:repeat(2,1fr)}
+  .newsPage .labelGrid{grid-template-columns:repeat(2,1fr)}
+  .aboutPage .aboutPrinciples>div{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .newsPage .newsHero,.joinPage .joinHero,.aboutPage .aboutHero{padding:54px 20px 60px!important}
+  .newsPage .newsItems,.newsPage .newsLabels,.newsPage .newsBridge,.joinPage .joinWays,.joinPage .joinRule,.joinPage .joinStates,.joinPage .joinContact,.aboutPage .aboutOrigin,.aboutPage .aboutLayers,.aboutPage .aboutSeparation,.aboutPage .aboutPrinciples,.aboutPage .aboutOpen{padding-left:20px;padding-right:20px}
+  .newsPage .newsItem,.newsPage .newsBridge,.joinPage .joinRule,.joinPage .joinStates,.aboutPage .aboutOrigin,.aboutPage .aboutSeparation{grid-template-columns:1fr}
+  .newsPage .newsItem{gap:14px}
+  .newsPage .newsMeta{flex-direction:row;justify-content:space-between}
+  .joinPage .joinWays,.newsPage .labelGrid,.aboutPage .aboutLayers,.aboutPage .aboutPrinciples>div{grid-template-columns:1fr}
+  .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
+}
