@@ -83,12 +83,11 @@ export default function BayernPage() {
       </section>
 
       <section className={styles.today} id="menschen">
-        <div><p className={styles.label}>Entstehung und Mitwirkung</p><h2>Wer die Initiative angestoßen hat – und wie weitere Mitstreiter dazukamen.</h2></div>
+        <div><p className={styles.label}>Initiierung und Verantwortung</p><h2>Idee, Kampagne und formale Verantwortung.</h2></div>
         <div className={styles.todayText}>
-          <p><strong>Hans Leo Bader</strong> entwickelte 2019 die Idee für die bayerische Rechte-der-Natur-Initiative, initiierte daraus das Volksbegehren und koordiniert die Kampagne. Die historische Kampagnenseite weist ihn als Verantwortlichen und Ansprechpartner aus.</p>
-          <p>Im weiteren Aufbau kamen zusätzliche Mitstreiter mit unterschiedlichen fachlichen und praktischen Hintergründen hinzu. Dazu gehörte zeitweise auch <strong>Emmanuel Schlichter</strong>, der sich bereits als Student wissenschaftlich mit den Rechten der Natur beschäftigt hatte und 2021 auf der Kampagnenseite einen juristischen Erklärbeitrag veröffentlichte.</p>
-          <p>Seine zeitweilige Mitarbeit begründet keine gemeinsame Urheberschaft an der 2019 entstandenen Kampagnenidee. Die neue Seite unterscheidet deshalb bewusst zwischen Initiierung, späterer Mitwirkung und formalen Rollen.</p>
-          <p className={styles.note}>Spätere interne Konflikte oder persönliche Gründe für das Ausscheiden einzelner Mitwirkender gehören nicht in die öffentliche Kampagnendarstellung. Formale Vertreter- oder Beauftragtenangaben aus amtlichen Unterlagen werden separat und nur nach direkter Prüfung der maßgeblichen Dokumente ausgewiesen.</p>
+          <p><strong>Hans Leo Bader</strong> entwickelte 2019 die Idee für die bayerische Rechte-der-Natur-Initiative und initiierte daraus das Volksbegehren.</p>
+          <p><strong>Hans Leo Bader ist zugleich Hauptbeauftragter des Volksbegehrens.</strong> Damit liegt bei ihm die maßgebliche formale Vertretung des Zulassungsantrags im Verfahren. Die Rolle als Hauptbeauftragter ist von der Entstehungsgeschichte und von der Mitarbeit weiterer Unterstützer zu unterscheiden.</p>
+          <p>Im Aufbau der Kampagne wirkten und wirken weitere Menschen mit unterschiedlichen fachlichen und praktischen Hintergründen mit. Einzelne frühere Beiträge dokumentieren diese Mitarbeit, begründen aber keine gemeinsame Urheberschaft an der 2019 entstandenen Kampagnenidee.</p>
         </div>
       </section>
 
