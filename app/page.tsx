@@ -38,9 +38,12 @@ export default function Home() {
           <p className={styles.ideaText}>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
           <div className={styles.ideaActions}><Link className={styles.button} href="/ueber-uns">Mehr zur Idee</Link></div>
         </div>
-        <div className={styles.natureFrame}>
-          <img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Kampagnenaktion zu den Rechten der Natur" />
-        </div>
+        <figure className={styles.ideaFigure}>
+          <div className={styles.natureFrame}>
+            <img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Kampagnenaktion zu den Rechten der Natur" />
+          </div>
+          <figcaption>Hans Leo Bader, Initiator der Volksbegehren, bei einer Sammelaktion für die Rechte der Natur.</figcaption>
+        </figure>
       </section>
 
       <section className={styles.principles}>
