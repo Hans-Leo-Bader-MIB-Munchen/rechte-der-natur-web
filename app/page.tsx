@@ -18,6 +18,12 @@ const steps = [
   ["05", "Volksentscheid", "Am Ende entscheidet die Bevölkerung über die Verfassungsänderung."],
 ];
 
+const orientations = [
+  { icon: "◉", title: "Flüsse anerkennen", text: "Flüsse sind mehr als Ressourcen. Rechte können ihre Eigenbelange rechtlich sichtbar und vertretbar machen.", tone: "water" },
+  { icon: "✿", title: "Ökosysteme stärken", text: "Wälder, Moore, Lagunen und andere Ökosysteme brauchen Schutz, Regeneration und eine Stimme in Entscheidungen.", tone: "ecosystem" },
+  { icon: "◆", title: "Natur in Entscheidungen einbeziehen", text: "Rechte der Natur verändern nicht nur Begriffe, sondern Verfahren, Institutionen und die Abwägung konkreter Entscheidungen.", tone: "decision" },
+];
+
 export default function Home() {
   return (
     <main id="top" className={styles.page}>
@@ -32,24 +38,29 @@ export default function Home() {
       </section>
 
       <section className={styles.idea} id="idee">
-        <div>
+        <div className={styles.ideaIntro}>
           <p className={styles.label}>Die Idee</p>
           <h2>Natur hat einen eigenen Wert – und verdient eine eigene Stimme im Recht.</h2>
           <p className={styles.ideaText}>Ein Wald, ein Fluss oder ein Ökosystem hat einen eigenen Wert. Dieser Wert kann im Recht eine eigene Stimme bekommen. <strong>Mitwelt</strong> beschreibt diese gemeinsame Welt, in der Natur um ihrer selbst willen zählt.</p>
           <div className={styles.ideaActions}><Link className={styles.button} href="/ueber-uns">Mehr zur Idee</Link></div>
         </div>
+
+        <div className={styles.orientationGrid}>
+          {orientations.map((item) => (
+            <article className={styles.orientation} key={item.title}>
+              <div className={`${styles.orientationIcon} ${styles[item.tone]}`}>{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+
         <figure className={styles.ideaFigure}>
           <div className={styles.natureFrame}>
             <img src="/brand/IMG_6256_16zu9.jpg" alt="Hans Leo Bader mit der Frage ‚Was bedeutet Natur für mich?‘ bei einer Kampagnenaktion zu den Rechten der Natur" />
           </div>
           <figcaption>Hans Leo Bader, Initiator der Volksbegehren, bei einer Sammelaktion für die Rechte der Natur.</figcaption>
         </figure>
-      </section>
-
-      <section className={styles.principles}>
-        <article><span>01</span><h3>Eigene Rechte</h3><p>Natur kann Trägerin eigener Rechte sein. Ihre Existenz, Regeneration und ökologischen Funktionen bekommen damit eigenständiges rechtliches Gewicht.</p></article>
-        <article><span>02</span><h3>Eine Stimme im Recht</h3><p>Menschen oder Institutionen können die Rechte eines Flusses, Waldes oder Ökosystems vertreten und in Entscheidungen einbringen.</p></article>
-        <article><span>03</span><h3>Rechte werden praktisch</h3><p>Rechte entfalten Wirkung durch Vertretung, Verfahren, Institutionen und Menschen, die sie politisch und praktisch tragen.</p></article>
       </section>
 
       <section className={styles.stories} id="weltweit">
