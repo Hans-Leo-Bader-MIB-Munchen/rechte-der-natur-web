@@ -23,8 +23,8 @@ main > footer{display:none!important}
 .siteFooterLegal{justify-self:end}
 .siteFooterBottom{width:100%;max-width:1240px;margin:0 auto;padding:20px 32px 26px;border-top:1px solid rgba(73,107,53,.12);display:flex;justify-content:space-between;gap:24px;font-size:.78rem;color:var(--earth)}
 .siteFooterBottom a{color:var(--deep);text-decoration:none}
-.siteFooterNetwork{width:100%;border-top:1px solid rgba(73,107,53,.12);padding:24px 32px 30px;display:flex;justify-content:center;align-items:center;background:#fff}
-.siteFooterNetwork img{display:block;width:min(100%,980px);height:auto;object-fit:contain}
+.siteFooterNetwork{width:100%!important;min-height:120px!important;border-top:1px solid rgba(73,107,53,.12);padding:24px 32px 30px!important;display:flex!important;justify-content:center!important;align-items:center!important;background:#fff!important;visibility:visible!important;opacity:1!important;overflow:visible!important}
+.siteFooterNetwork img{display:block!important;width:min(100%,980px)!important;max-width:980px!important;height:auto!important;object-fit:contain!important;visibility:visible!important;opacity:1!important}
 
 .legalPage{background:#fff;color:var(--deep)}
 .legalHero{background:var(--deep);color:#fff;text-align:center;padding:72px max(32px,calc((100vw - 980px)/2)) 76px}
@@ -38,17 +38,21 @@ main > footer{display:none!important}
 .legalContent a{font-weight:700;text-underline-offset:5px}
 .legalNote{margin-top:48px;padding:20px 22px;border-radius:16px;background:#f7f8f3;border-left:4px solid var(--green)}
 
+@media(min-width:901px){
+  .siteFooterNetwork{display:flex!important;min-height:140px!important;padding:28px 32px 34px!important}
+  .siteFooterNetwork img{display:block!important;width:min(72vw,980px)!important;max-width:980px!important}
+}
 @media(max-width:900px){
   .siteFooterInner{grid-template-columns:1fr 1fr;gap:30px 40px}
   .siteFooterBrand{grid-column:1/-1}
   .siteFooterLegal{justify-self:start}
-  .siteFooterNetwork img{width:min(100%,760px)}
+  .siteFooterNetwork img{width:min(100%,760px)!important}
 }
 @media(max-width:620px){
   .siteFooterInner{grid-template-columns:1fr;padding:38px 20px 26px}
   .siteFooterBrand{grid-column:auto}
   .siteFooterBottom{padding:18px 20px 24px;flex-direction:column;gap:10px}
-  .siteFooterNetwork{padding:20px 16px 24px}
+  .siteFooterNetwork{padding:20px 16px 24px!important}
   .legalHero{padding:52px 20px 58px}
   .legalContent{padding:54px 20px 70px}
 }
