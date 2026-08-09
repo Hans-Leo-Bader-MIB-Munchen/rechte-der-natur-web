@@ -1,0 +1,133 @@
+/* Unified subpage hero treatment: exactly mirrors the homepage hero palette, foliage and diagonal transition. */
+.worldHero,
+.deHero,
+.hubHero,
+.newsHero,
+.joinHero,
+.aboutHero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg,#12361d 0%,#173f24 100%) !important;
+  color: #fff !important;
+  padding-bottom: 118px !important;
+}
+
+.worldHero::before,
+.deHero::before,
+.hubHero::before,
+.newsHero::before,
+.joinHero::before,
+.aboutHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70px 34px at 2% 76%,rgba(139,177,72,.48) 0 58%,transparent 61%),
+    radial-gradient(ellipse 92px 42px at 7% 88%,rgba(91,137,49,.34) 0 56%,transparent 60%),
+    radial-gradient(ellipse 68px 32px at 98% 25%,rgba(152,188,76,.42) 0 58%,transparent 61%),
+    radial-gradient(ellipse 96px 44px at 94% 12%,rgba(103,151,54,.3) 0 56%,transparent 60%),
+    radial-gradient(circle at 12% 20%,rgba(209,228,156,.09) 0 4%,transparent 8%),
+    radial-gradient(circle at 88% 74%,rgba(209,228,156,.08) 0 4%,transparent 9%);
+  filter: blur(4px);
+  opacity: .9;
+  z-index: 0;
+}
+
+.worldHero::after,
+.deHero::after,
+.hubHero::after,
+.newsHero::after,
+.joinHero::after,
+.aboutHero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 58px;
+  background: #fff;
+  clip-path: polygon(0 100%,100% 28%,100% 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.worldHero > *,
+.deHero > *,
+.hubHero > *,
+.newsHero > *,
+.joinHero > *,
+.aboutHero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.worldHero h1,
+.deHero h1,
+.hubHero h1,
+.newsHero h1,
+.joinHero h1,
+.aboutHero h1 {
+  color: #b9dc69 !important;
+}
+
+.worldHero .eyebrow,
+.deHero .eyebrow,
+.hubHero .hubEyebrow,
+.newsHero .eyebrow,
+.joinHero .eyebrow,
+.aboutHero .eyebrow {
+  color: #d5ed96 !important;
+}
+
+@media (max-width: 900px) {
+  .worldHero,
+  .deHero,
+  .hubHero,
+  .newsHero,
+  .joinHero,
+  .aboutHero { padding-bottom: 92px !important; }
+
+  .worldHero::before,
+  .deHero::before,
+  .hubHero::before,
+  .newsHero::before,
+  .joinHero::before,
+  .aboutHero::before { opacity: .62; }
+
+  .worldHero::after,
+  .deHero::after,
+  .hubHero::after,
+  .newsHero::after,
+  .joinHero::after,
+  .aboutHero::after {
+    height: 40px;
+    clip-path: polygon(0 100%,100% 42%,100% 100%);
+  }
+}
+
+@media (max-width: 680px) {
+  .worldHero,
+  .deHero,
+  .hubHero,
+  .newsHero,
+  .joinHero,
+  .aboutHero { padding-bottom: 72px !important; }
+
+  .worldHero::before,
+  .deHero::before,
+  .hubHero::before,
+  .newsHero::before,
+  .joinHero::before,
+  .aboutHero::before { opacity: .38; }
+
+  .worldHero::after,
+  .deHero::after,
+  .hubHero::after,
+  .newsHero::after,
+  .joinHero::after,
+  .aboutHero::after {
+    height: 26px;
+    clip-path: polygon(0 100%,100% 55%,100% 100%);
+  }
+}
