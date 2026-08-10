@@ -40,6 +40,11 @@ export default function UeberUns() {
         <article><span>03</span><div className="aboutLayerLogo"><img src="/brand/SR_Logo_rund.png" alt="Logo Systemische Rechtsentwicklung" /></div><h3>Fachliche Vertiefung</h3><p>Die Systemische Rechtsentwicklung untersucht Rechtsformen und Wirkungsbedingungen eigenständig. Ihre Aufgabe ist belastbare Erkenntnis und die Weiterentwicklung rechtlicher Lösungen.</p></article>
       </section>
 
+      <section style={{ maxWidth: "1240px", margin: "0 auto", padding: "0 32px 84px", textAlign: "center" }} aria-label="Kooperationen">
+        <p style={{ margin: "0 0 22px", fontWeight: 700 }}>u.a. in Kooperation mit:</p>
+        <img src="/brand/Kooperation_mit.jpg" alt="Kooperationspartner" style={{ display: "block", width: "100%", maxWidth: "1100px", height: "auto", margin: "0 auto" }} />
+      </section>
+
       <section className="aboutSeparation"><div><p className="sectionLabel">Kampagne und Facharbeit</p><h2>Zwei Rollen, die sich gegenseitig stärken.</h2></div><div><p>Diese Plattform gewinnt Menschen für Rechte der Natur und bringt konkrete Kampagnen voran.</p><p>Die Systemische Rechtsentwicklung vertieft die fachlichen Fragen eigenständig und entwickelt daraus belastbare rechtliche und institutionelle Lösungen.</p><a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Zur Systemischen Rechtsentwicklung →</a></div></section>
 
       <section className="aboutPrinciples"><p className="sectionLabel">Was uns wichtig ist</p><div><strong>Menschen gewinnen.</strong><strong>Quellen ernst nehmen.</strong><strong>Wirkung ins Zentrum stellen.</strong><strong>Mitwelt als eigenständigen Wert anerkennen.</strong><strong>Mit neuem Wissen weiterlernen.</strong></div></section>
