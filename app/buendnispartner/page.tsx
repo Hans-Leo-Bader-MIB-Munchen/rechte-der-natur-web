@@ -3,6 +3,8 @@ import SiteHeader from "../components/SiteHeader";
 import BrandMark from "../components/BrandMark";
 import styles from "./page.module.css";
 
+const partnerMailto = "mailto:info@dubistdieer.de?subject=B%C3%BCndnispartner%20werden%20%E2%80%93%20Rechte%20der%20Natur&body=Wir%20m%C3%B6chten%20gerne%20B%C3%BCndnispartner%20der%20Volksbegehren%20Rechte%20der%20Natur%20werden.%0A%0AOrganisation%20%2F%20Initiative%3A%0AAnsprechperson%3A%0AWebsite%3A%0A%0AUnser%20Logo%20schicken%20wir%20im%20Anhang%20mit.%0A%0AViele%20Gr%C3%BC%C3%9Fe";
+
 const gallery = [
   "https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2024/08/Teresa-Vicente-1024x576.jpg",
   "https://gibdernaturrecht.muc-mib.de/wp-content/uploads/2023/12/030-1024x576.jpg",
@@ -104,7 +106,7 @@ export default function BuendnispartnerPage() {
         <h2>Bündnispartner oder Unterstützer werden.</h2>
         <p>Organisationen, Initiativen und Menschen können die Ziele der Volksbegehren sichtbar mittragen und Teil des Bündnisses werden.</p>
         <div className={styles.actions}>
-          <Link className={styles.button} href="/mitmachen">Mitmachen</Link>
+          <a className={styles.button} href={partnerMailto}>Bündnispartner werden</a>
           <a className={styles.textLink} href="https://gibdernaturrecht.muc-mib.de/unterstuetzer" target="_blank" rel="noreferrer">Zur bisherigen Unterstützerseite →</a>
         </div>
       </section>
