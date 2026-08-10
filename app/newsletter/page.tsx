@@ -23,7 +23,7 @@ export default function NewsletterPage() {
         <p className="sectionLabel">Anmeldung</p>
         <h2>Newsletter abonnieren.</h2>
         <p>Die Anmeldung wird über unseren bestehenden Brevo-Newsletter-Verteiler abgewickelt. Nach der Anmeldung erhältst du die dort eingerichtete Bestätigung.</p>
-        <div style={{ width: "100%", maxWidth: 640, margin: "28px auto 0" }}>
+        <div style={{ width: "100%", maxWidth: 900, margin: "28px auto 0" }}>
           <iframe
             title="Newsletter-Anmeldung Rechte der Natur"
             src={brevoFormUrl}
@@ -32,9 +32,9 @@ export default function NewsletterPage() {
             allowFullScreen
             style={{
               display: "block",
-              width: "100%",
-              maxWidth: "540px",
-              height: "820px",
+              width: "760px",
+              maxWidth: "100%",
+              height: "980px",
               marginLeft: "auto",
               marginRight: "auto",
               border: 0,
