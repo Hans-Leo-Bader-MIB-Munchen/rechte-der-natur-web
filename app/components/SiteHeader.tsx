@@ -9,7 +9,6 @@ const nav = [
   ["Deutschland", "/deutschland"],
   ["Volksbegehren", "/volksbegehren"],
   ["Aktuelles", "/aktuelles"],
-  ["Über uns", "/ueber-uns"],
   ["Unterstützen", "/unterstuetzen"],
 ];
 
@@ -23,9 +22,15 @@ export default function SiteHeader({
   claimTrail?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const activeLabel = section || "Die Volksbegehren";
   const desktopLead = claimLead || "Gib der Natur Recht.";
   const desktopTrail = claimTrail || "Eine Kampagne für die Mitwelt.";
+
+  const closeMenus = () => {
+    setOpen(false);
+    setAboutOpen(false);
+  };
 
   return (
     <header className="siteHeader">
@@ -34,7 +39,7 @@ export default function SiteHeader({
           className="brand brandOfficial"
           href="/"
           aria-label="Rechte der Natur – Die Volksbegehren – Startseite"
-          onClick={() => setOpen(false)}
+          onClick={closeMenus}
         >
           <Image
             className="brandLogoHorizontal"
@@ -53,7 +58,10 @@ export default function SiteHeader({
           aria-expanded={open}
           aria-controls="main-navigation"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
-          onClick={() => setOpen(value => !value)}
+          onClick={() => {
+            setOpen(value => !value);
+            if (open) setAboutOpen(false);
+          }}
         >
           <span className="menuToggleText">Menü</span>
           <span className="menuIcon" aria-hidden="true"><i/><i/><i/></span>
@@ -61,10 +69,31 @@ export default function SiteHeader({
       </div>
 
       <nav id="main-navigation" className={open ? "mainNav mainNavOpen" : "mainNav"} aria-label="Hauptnavigation">
-        {nav.map(([label, href]) => (
-          <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
+        {nav.slice(0, 4).map(([label, href]) => (
+          <Link key={href} href={href} onClick={closeMenus}>{label}</Link>
         ))}
-        <Link className="navAction" href="/mitmachen" onClick={() => setOpen(false)}>Mitmachen</Link>
+
+        <div className={aboutOpen ? "navDropdown navDropdownOpen" : "navDropdown"}>
+          <button
+            className="navDropdownToggle"
+            type="button"
+            aria-expanded={aboutOpen}
+            aria-controls="about-submenu"
+            onClick={() => setAboutOpen(value => !value)}
+          >
+            Über uns <span aria-hidden="true">⌄</span>
+          </button>
+          <div id="about-submenu" className="navDropdownMenu">
+            <Link href="/ueber-uns" onClick={closeMenus}>Über uns</Link>
+            <a href="https://www.rechte-der-natur.de" target="_blank" rel="noreferrer" onClick={closeMenus}>Netzwerk Rechte der Natur ↗</a>
+            <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer" onClick={closeMenus}>Systemische Rechtsentwicklung ↗</a>
+          </div>
+        </div>
+
+        {nav.slice(4).map(([label, href]) => (
+          <Link key={href} href={href} onClick={closeMenus}>{label}</Link>
+        ))}
+        <Link className="navAction" href="/mitmachen" onClick={closeMenus}>Mitmachen</Link>
       </nav>
 
       <div className="heritageStrip headerStrip" aria-label={`Aktiver Bereich: ${activeLabel}`}>
