@@ -24,8 +24,8 @@ export default function SiteFooter() {
         </nav>
 
         <nav className="siteFooterLegal" aria-label="Service und Rechtliches">
-          <a href="https://gibdernaturrecht.muc-mib.de/contact-us" target="_blank" rel="noreferrer">Kontakt ↗</a>
-          <a href="https://gibdernaturrecht.muc-mib.de/contact-us" target="_blank" rel="noreferrer">Impressum ↗</a>
+          <a href="mailto:info@dubistdieer.de">Kontakt</a>
+          <Link href="/impressum">Impressum</Link>
           <Link href="/datenschutz">Datenschutz</Link>
         </nav>
       </div>
