@@ -31,6 +31,12 @@ const paths = [
     action: "Zur fachlichen Arbeit →",
     external: true,
   },
+  {
+    title: "Newsletter abonnieren",
+    text: "Neuigkeiten zu den Volksbegehren, internationalen Entwicklungen, Systemischer Rechtsentwicklung und unserer Arbeit direkt per E-Mail erhalten.",
+    href: "/newsletter",
+    action: "Zum Newsletter →",
+  },
 ];
 
 export default function Mitmachen() {
@@ -40,8 +46,8 @@ export default function Mitmachen() {
 
       <section className="joinHero">
         <p className="eyebrow">Mitmachen</p>
-        <h1>Vier Wege, jetzt konkret mitzumachen.</h1>
-        <p className="lead">In Bayern läuft die Unterschriftensammlung. In anderen Bundesländern können neue Wege entstehen. Organisationen können das Bündnis stärken, Fachleute die rechtliche und institutionelle Arbeit vertiefen.</p>
+        <h1>Fünf Wege, jetzt konkret mitzumachen.</h1>
+        <p className="lead">In Bayern läuft die Unterschriftensammlung. In anderen Bundesländern können neue Wege entstehen. Organisationen können das Bündnis stärken, Fachleute die rechtliche und institutionelle Arbeit vertiefen – und über den Newsletter bleibst du über die nächsten Schritte auf dem Laufenden.</p>
         <div className="heroActions"><a className="buttonPrimary" href="#wege">Meinen Einstieg wählen</a><Link className="textLink" href="/deutschland">Die 16 Bundesländer ansehen →</Link></div>
       </section>
 
@@ -53,7 +59,7 @@ export default function Mitmachen() {
 
       <section className="joinRule"><div><p className="sectionLabel">Unser Anspruch</p><h2>Überzeugung und Sorgfalt gehören zusammen.</h2></div><div><p>Wir gewinnen Menschen für Rechte der Natur auf einer belastbaren Grundlage: mit klaren Zielen, guten Quellen und realistischen nächsten Schritten.</p><p>So entsteht eine Kampagne, die mobilisieren und dauerhaft tragen kann.</p></div></section>
 
-      <section className="joinContact"><p className="sectionLabel">Direkt loslegen</p><h2>Der nächste Schritt ist nur einen Klick entfernt.</h2><p>Wer in Bayern sammeln, ein Bundesland aufbauen oder als Organisation mittragen will, findet hier direkt den passenden Einstieg.</p><div className="heroActions"><a className="buttonPrimary" href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">In Bayern sammeln →</a><Link className="textLink" href="/deutschland">Bundesland auswählen →</Link><a className="textLink" href={partnerMailto}>Bündnispartner werden →</a></div></section>
+      <section className="joinContact"><p className="sectionLabel">Direkt loslegen</p><h2>Der nächste Schritt ist nur einen Klick entfernt.</h2><p>Wer in Bayern sammeln, ein Bundesland aufbauen, als Organisation mittragen oder einfach informiert bleiben will, findet hier direkt den passenden Einstieg.</p><div className="heroActions"><a className="buttonPrimary" href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">In Bayern sammeln →</a><Link className="textLink" href="/deutschland">Bundesland auswählen →</Link><a className="textLink" href={partnerMailto}>Bündnispartner werden →</a><Link className="textLink" href="/newsletter">Newsletter abonnieren →</Link></div></section>
 
       <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Mitmachen</small></div></div><p>Mitstreiter, Wissen und Kampagnenkraft zusammenbringen.</p><span>Entwurf · Preview</span></footer>
     </main>
