@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: "/brand/IMG_6256_16zu9.jpg",
-        width: 1600,
-        height: 900,
-        alt: "Rechte der Natur – Die Volksbegehren",
+        url: "/brand/OpenGraphGrafik.png",
+        width: 1200,
+        height: 630,
+        alt: "Rechte der Natur – Die Volksbegehren – rechtedernatur.de",
       },
     ],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/brand/IMG_6256_16zu9.jpg"],
+    images: ["/brand/OpenGraphGrafik.png"],
   },
 };
 
