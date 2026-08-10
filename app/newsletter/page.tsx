@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
-import SiteFooter from "../components/SiteFooter";
 
 const brevoFormUrl = "https://03d1bbc7.sibforms.com/v2/serve/MUIFAEZHtmq9J2FBXbhrsrZ9WZuGP52DCEMTVYD96pL3ssK-HJEASZhpXPkBzoBbDx3PEYqdcu-Edvn2nxNLgp8DtyJGn4aZPHVA3xRcliI-WxSuqbQ0y-AF9HANFA2GhGyUaUx7dN6wP-dckXhRkqr9PEi5o3txhBj-RDnXx57C1aqNewX18NzoGWwSpXJiQB9rv3d7aB45MzCg";
 
@@ -64,8 +63,6 @@ export default function NewsletterPage() {
           <a className="buttonPrimary" href="#anmeldung">Jetzt Newsletter abonnieren ↑</a>
         </div>
       </section>
-
-      <SiteFooter />
     </main>
   );
 }
