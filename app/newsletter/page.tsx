@@ -26,13 +26,20 @@ export default function NewsletterPage() {
         <div style={{ width: "100%", maxWidth: 640, margin: "28px auto 0" }}>
           <iframe
             title="Newsletter-Anmeldung Rechte der Natur"
-            width="540"
-            height="305"
             src={brevoFormUrl}
             frameBorder="0"
-            scrolling="auto"
+            scrolling="no"
             allowFullScreen
-            style={{ display: "block", width: "100%", maxWidth: "540px", marginLeft: "auto", marginRight: "auto", border: 0 }}
+            style={{
+              display: "block",
+              width: "100%",
+              maxWidth: "540px",
+              height: "820px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              border: 0,
+              overflow: "hidden",
+            }}
           />
         </div>
         <p style={{ marginTop: 18, fontSize: "0.95rem" }}>Du kannst dich jederzeit über den Abmeldelink in jeder Newsletter-E-Mail wieder austragen. Weitere Informationen findest du in unseren <Link href="/datenschutz">Datenschutzhinweisen</Link>.</p>
