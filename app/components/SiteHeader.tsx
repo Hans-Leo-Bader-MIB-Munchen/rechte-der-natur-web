@@ -85,6 +85,7 @@ export default function SiteHeader({
           </button>
           <div id="about-submenu" className="navDropdownMenu">
             <Link href="/ueber-uns" onClick={closeMenus}>Über uns</Link>
+            <Link href="/newsletter" onClick={closeMenus}>Newsletter</Link>
             <a href="https://www.rechte-der-natur.de" target="_blank" rel="noreferrer" onClick={closeMenus}>Netzwerk Rechte der Natur ↗</a>
             <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer" onClick={closeMenus}>Systemische Rechtsentwicklung ↗</a>
           </div>
