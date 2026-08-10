@@ -5,6 +5,7 @@ import "./participation.css";
 import "./weltweit/weltweit.css";
 import "./consolidation.css";
 import "./header-strip.css";
+import "./header-submenu.css";
 import "./desktop-qa.css";
 import "./editorial-subpages.css";
 import "./label-colors.css";
