@@ -2,6 +2,8 @@ import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 import BrandMark from "../components/BrandMark";
 
+const partnerMailto = "mailto:info@dubistdieer.de?subject=B%C3%BCndnispartner%20werden%20%E2%80%93%20Rechte%20der%20Natur&body=Wir%20m%C3%B6chten%20gerne%20B%C3%BCndnispartner%20der%20Volksbegehren%20Rechte%20der%20Natur%20werden.%0A%0AOrganisation%20%2F%20Initiative%3A%0AAnsprechperson%3A%0AWebsite%3A%0A%0AUnser%20Logo%20schicken%20wir%20im%20Anhang%20mit.%0A%0AViele%20Gr%C3%BC%C3%9Fe";
+
 const paths = [
   {
     title: "In Bayern sammeln",
@@ -51,7 +53,7 @@ export default function Mitmachen() {
 
       <section className="joinRule"><div><p className="sectionLabel">Unser Anspruch</p><h2>Überzeugung und Sorgfalt gehören zusammen.</h2></div><div><p>Wir gewinnen Menschen für Rechte der Natur auf einer belastbaren Grundlage: mit klaren Zielen, guten Quellen und realistischen nächsten Schritten.</p><p>So entsteht eine Kampagne, die mobilisieren und dauerhaft tragen kann.</p></div></section>
 
-      <section className="joinContact"><p className="sectionLabel">Direkt loslegen</p><h2>Der nächste Schritt ist nur einen Klick entfernt.</h2><p>Wer in Bayern sammeln, ein Bundesland aufbauen oder als Organisation mittragen will, findet hier direkt den passenden Einstieg.</p><div className="heroActions"><a className="buttonPrimary" href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">In Bayern sammeln →</a><Link className="textLink" href="/deutschland">Bundesland auswählen →</Link><Link className="textLink" href="/buendnispartner">Bündnispartner werden →</Link></div></section>
+      <section className="joinContact"><p className="sectionLabel">Direkt loslegen</p><h2>Der nächste Schritt ist nur einen Klick entfernt.</h2><p>Wer in Bayern sammeln, ein Bundesland aufbauen oder als Organisation mittragen will, findet hier direkt den passenden Einstieg.</p><div className="heroActions"><a className="buttonPrimary" href="https://gibdernaturrecht.muc-mib.de/unterschriften-sammeln" target="_blank" rel="noreferrer">In Bayern sammeln →</a><Link className="textLink" href="/deutschland">Bundesland auswählen →</Link><a className="textLink" href={partnerMailto}>Bündnispartner werden →</a></div></section>
 
       <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Mitmachen</small></div></div><p>Mitstreiter, Wissen und Kampagnenkraft zusammenbringen.</p><span>Entwurf · Preview</span></footer>
     </main>
