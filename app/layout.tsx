@@ -13,10 +13,39 @@ import "./footer.css";
 import "./unterstuetzen/unterstuetzen.css";
 import "./hero-unified.css";
 
+const siteTitle = "Rechte der Natur – Die Volksbegehren";
+const siteDescription =
+  "Rechte der Natur – Die Volksbegehren: laufende Kampagne in Bayern, neue Landesinitiativen, internationale Erfahrungen und Mitmachen für eine eigenständige rechtliche Stellung der Mitwelt.";
+
 export const metadata: Metadata = {
-  title: "Rechte der Natur – Die Volksbegehren",
-  description:
-    "Rechte der Natur – Die Volksbegehren: laufende Kampagne in Bayern, neue Landesinitiativen, internationale Erfahrungen und Mitmachen für eine eigenständige rechtliche Stellung der Mitwelt.",
+  metadataBase: new URL("https://rechtedernatur.de"),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    url: "https://rechtedernatur.de",
+    siteName: siteTitle,
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/brand/IMG_6256_16zu9.jpg",
+        width: 1600,
+        height: 900,
+        alt: "Rechte der Natur – Die Volksbegehren",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/brand/IMG_6256_16zu9.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
