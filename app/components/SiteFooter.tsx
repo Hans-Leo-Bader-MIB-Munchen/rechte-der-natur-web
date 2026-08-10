@@ -16,6 +16,8 @@ export default function SiteFooter() {
         <nav className="siteFooterNav" aria-label="Weitere Seiten">
           <Link href="/buendnispartner">Bündnispartner & Unterstützer</Link>
           <Link href="/ueber-uns">Über uns</Link>
+          <a href="https://www.rechte-der-natur.de" target="_blank" rel="noreferrer">Netzwerk Rechte der Natur ↗</a>
+          <a href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Systemische Rechtsentwicklung ↗</a>
           <Link href="/mitmachen">Mitmachen</Link>
           <Link href="/unterstuetzen">Unterstützen</Link>
           <a href="https://gibdernaturrecht.muc-mib.de/" target="_blank" rel="noreferrer">Historische Kampagnenseite ↗</a>
