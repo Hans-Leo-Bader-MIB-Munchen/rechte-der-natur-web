@@ -14,7 +14,21 @@ export default function NewsletterPage() {
         <p className="lead">Neuigkeiten zu den Volksbegehren, internationalen Entwicklungen, Systemischer Rechtsentwicklung und unserer Arbeit.</p>
         <div className="heroActions">
           <a className="buttonPrimary" href="#anmeldung">Newsletter abonnieren ↓</a>
+          <a className="textLink" href="#archiv">Zum Archiv →</a>
           <Link className="textLink" href="/datenschutz">Hinweise zum Datenschutz →</Link>
+        </div>
+      </section>
+
+      <section className="joinContact" id="archiv">
+        <p className="sectionLabel">Archiv</p>
+        <h2>Versandte Newsletter dauerhaft nachlesen.</h2>
+        <p>Nach dem Versand sichern wir jede Ausgabe zusätzlich als eigene Archivfassung auf rechtedernatur.de. Damit bleiben die Inhalte unabhängig von der Versandplattform erhalten und teilbar.</p>
+        <div style={{marginTop:24}}>
+          <Link href="/newsletter/2026-08-11" style={{display:'block',padding:'24px 26px',borderRadius:18,background:'#eef5e6',borderTop:'4px solid #8abb45',color:'#496b35',textDecoration:'none'}}>
+            <span style={{display:'block',fontSize:12,fontWeight:700,letterSpacing:'.12em',textTransform:'uppercase',color:'#8abb45',marginBottom:8}}>11. August 2026</span>
+            <strong style={{display:'block',fontSize:24,lineHeight:1.15,marginBottom:8}}>Es war eine Weile ruhig. Inzwischen ist einiges entstanden.</strong>
+            <span style={{fontSize:15,lineHeight:1.6}}>Volksbegehren, neuer Webauftritt, Systemische Rechtsentwicklung, ZukunftsCheck und weitere Entwicklungslinien.</span>
+          </Link>
         </div>
       </section>
 
