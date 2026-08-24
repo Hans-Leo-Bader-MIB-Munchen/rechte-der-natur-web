@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import BrandMark from "./components/BrandMark";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const stories = [
   { place: "Spanien", title: "Mar Menor", text: "Eine Lagune mit eigenen Rechten. Der Fall zeigt, wie Rechtsträgerschaft, Vertretung und Institutionen zusammenwirken.", mark: "Wasser", href: "/weltweit#mar-menor" },
