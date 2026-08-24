@@ -22,8 +22,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rechtedernatur.de"),
   title: siteTitle,
   description: siteDescription,
-  alternates: {
-    canonical: "/",
+  robots: {
+    index: true,
+    follow: true,
   },
   openGraph: {
     type: "website",

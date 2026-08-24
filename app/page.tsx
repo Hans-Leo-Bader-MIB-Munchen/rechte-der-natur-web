@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import BrandMark from "./components/BrandMark";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const stories = [
   { place: "Spanien", title: "Mar Menor", text: "Eine Lagune mit eigenen Rechten. Der Fall zeigt, wie Rechtsträgerschaft, Vertretung und Institutionen zusammenwirken.", mark: "Wasser", href: "/weltweit#mar-menor" },
@@ -32,7 +39,7 @@ export default function Home() {
       <section className={styles.perspective}>
         <div className={styles.perspectiveInner}>
           <p className={styles.eyebrow}>Der Perspektivwechsel</p>
-          <p className={styles.question}>„Was braucht Natur, um zu leben?“</p>
+          <h1 className={styles.question}>„Was braucht Natur, um zu leben?“</h1>
           <p className={styles.perspectiveText}>Wenn diese Frage im Recht Gewicht bekommt, verändert sich unser Blick auf Flüsse, Wälder und Ökosysteme – und auf die Verantwortung, die wir für unsere gemeinsame Mitwelt tragen.</p>
         </div>
       </section>
