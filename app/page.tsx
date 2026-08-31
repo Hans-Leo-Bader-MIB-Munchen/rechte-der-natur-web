@@ -99,6 +99,53 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.impact} id="vom-recht-zur-wirkung">
+        <div className={styles.impactInner}>
+          <div className={styles.impactIntro}>
+            <p className={styles.label}>Vom Recht zur Wirkung</p>
+            <h2>Rechte der Natur sollen nicht erst im Konflikt wirksam werden.</h2>
+            <p>Rechte zu formulieren ist ein wichtiger Schritt. Entscheidend ist aber auch, wie ökologische Belange in Verfahren, Institutionen und konkreten Entscheidungen tatsächlich wirksam werden. Deshalb arbeiten wir auf mehreren miteinander verbundenen Ebenen weiter.</p>
+          </div>
+
+          <div className={styles.impactGrid}>
+            <article className={styles.impactCard}>
+              <span className={styles.impactNumber}>01</span>
+              <p className={styles.impactKicker}>Volksbegehren</p>
+              <h3>Recht weiterentwickeln</h3>
+              <p>In den Bundesländern arbeiten Bürgerinnen und Bürger daran, Rechte der Natur demokratisch weiterzuentwickeln und in den jeweiligen Rechtsordnungen zu verankern.</p>
+              <div className={styles.impactLinks}>
+                <Link className={styles.textLink} href="/deutschland">Zu den 16 Bundesländern →</Link>
+                <Link className={styles.impactSecondaryLink} href="/volksbegehren">Mehr zu den Volksbegehren →</Link>
+              </div>
+            </article>
+
+            <article className={styles.impactCard}>
+              <span className={styles.impactNumber}>02</span>
+              <p className={styles.impactKicker}>Systemische Rechtsentwicklung</p>
+              <h3>Strukturen verstehen</h3>
+              <p>An konkreten rechtlichen und institutionellen Fällen untersuchen wir, wo Schutzmechanismen funktionieren, wo sie zu spät greifen und wie Recht, Verfahren, Zuständigkeiten und ökologische Zusammenhänge besser zusammenspielen können.</p>
+              <div className={styles.impactLinks}>
+                <a className={styles.textLink} href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Systemische Rechtsentwicklung →</a>
+              </div>
+            </article>
+
+            <article className={styles.impactCard}>
+              <span className={styles.impactNumber}>03</span>
+              <p className={styles.impactKicker}>ZukunftsCheck</p>
+              <h3>Früher prüfen</h3>
+              <p>Der ZukunftsCheck setzt vor wesentlichen Festlegungen an. Er hilft, Ausgangslagen, Unterlagen, Rollen, Zuständigkeiten, offene Fragen, Widersprüche und erkennbare Abhängigkeiten strukturiert sichtbar zu machen.</p>
+              <p className={styles.impactNote}>Er ersetzt keine Fachplanung oder Entscheidung.</p>
+              <span className={styles.impactPending}>Mehr zum ZukunftsCheck · in Vorbereitung</span>
+            </article>
+          </div>
+
+          <div className={styles.impactChain} aria-label="Wirkungskette">
+            <strong>Recht weiterentwickeln</strong><span aria-hidden="true">→</span><strong>Strukturen verstehen</strong><span aria-hidden="true">→</span><strong>Zusammenhänge früher prüfen</strong>
+          </div>
+          <p className={styles.impactClosing}>Damit ökologische Belange nicht erst sichtbar werden, wenn ein Konflikt bereits entstanden ist.</p>
+        </div>
+      </section>
+
       <section className={styles.partners}>
         <div>
           <p className={styles.label}>Bündnispartner & Unterstützer</p>
