@@ -99,15 +99,16 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
   const entwurf = landesEntwurfNachSlug[land];
   if (!entwurf) notFound();
   const herleitung = herleitungNachLand[entwurf.slug];
+  const istBayern = entwurf.slug === "bayern";
   const mailSubject = encodeURIComponent(`Landesweg ${entwurf.name} mit aufbauen`);
 
   return (
     <main className={styles.page}>
-      <SiteHeader section={entwurf.name} claimLead="Intern geprüfter Normstand." claimTrail="Externe Gegenprüfung folgt." />
+      <SiteHeader section={entwurf.name} claimLead={istBayern ? "Rechtswissenschaftlich begleitet." : "Intern geprüfter Normstand."} claimTrail={istBayern ? "Jetzt folgt die Bewährung im Verfahren." : "Externe Gegenprüfung folgt."} />
 
       <section className={styles.hero}>
         <p className={styles.eyebrow}>{entwurf.name} · 16-Länder-Arbeitsstand</p>
-        <h1>Ein projektintern geprüfter Entwurf für die weitere Entwicklung.</h1>
+        <h1>{istBayern ? "Ein rechtswissenschaftlich begleiteter Ansatz in seiner heutigen Weiterentwicklung." : "Ein projektintern geprüfter Entwurf für die weitere Entwicklung."}</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
@@ -118,7 +119,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
-            <p><strong>Prüfstand:</strong> projektintern geprüft; eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen.</p>
+            {istBayern ? <p><strong>Prüfstand:</strong> Der bayerische Ansatz wurde bereits rechtswissenschaftlich begleitet und veröffentlicht diskutiert. Die heutige Fassung entwickelt diese Linie weiter. Ihre endgültige verfassungsrechtliche Bewährungsprobe erfolgt im späteren Zulassungs- und Verfassungsänderungsverfahren.</p> : <p><strong>Prüfstand:</strong> projektintern geprüft; eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen.</p>}
             <p><strong>Rechtlicher Ansatz:</strong> {oeffentlicherAnsatz(entwurf.architektur)}</p>
             <p><strong>Weg zur Verfassungsänderung:</strong> {oeffentlicherVerfahrensweg(entwurf.verfahrensklasse)}</p>
           </div>
@@ -143,6 +144,13 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
           </div>
         </div> : null}
 
+        {istBayern ? <div className={styles.coordination}>
+          <p className={styles.label}>Rechtswissenschaftliche Vorgeschichte</p>
+          <h2>Begleitet, diskutiert und weiterentwickelt.</h2>
+          <p>Der bayerische Ansatz war bereits Gegenstand einer rechtswissenschaftlichen Analyse von Elena Sofia Ewering und Andreas Gutmann in der DÖV. Schon in der Entstehungsphase hatte Klaus Bosselmann darauf hingewiesen, dass die Eigenrechtsposition der Natur im Normtext ausdrücklich über den Begriff „Rechte“ sichtbar werden müsse; seine Korrespondenz begründet zudem die Verwendung von „Mitwelt“ dogmatisch.</p>
+          <p>Die heute vorgeschlagene Fassung ist nicht identisch mit der damals veröffentlicht analysierten Formulierung. Sie ist eine spätere Präzisierung dieser Entwicklung. Deshalb wird nicht behauptet, dass exakt der heutige Wortlaut bereits extern begutachtet wurde. Die nächste entscheidende Prüfung erfolgt mit dem konkreten Text im tatsächlichen Zulassungs- und Verfassungsänderungsverfahren.</p>
+        </div> : null}
+
         <div className={styles.today}>
           <div>
             <p className={styles.label}>Was dieser Entwurf leistet</p>
@@ -159,12 +167,12 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
           <p className={styles.label}>Stand der 16-Länder-Arbeit</p>
           <h2>Ein gemeinsames Ziel – 16 verfassungsrechtlich unterschiedliche Wege.</h2>
           <p>Die Entwürfe wurden projektintern mit dem geltenden Aufbau und Wortlaut der jeweiligen Landesverfassung abgeglichen. Frühere Fassungen wurden dort korrigiert, wo sie nicht mehr zum aktuellen Verfassungstext oder zum gewählten Ansatz passten.</p>
-          <p>Eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen. Auch die konkreten gesetzlichen Voraussetzungen, Fristen und Quoren für einen späteren politischen oder direktdemokratischen Weg werden für jedes Bundesland gesondert geprüft.</p>
+          <p>{istBayern ? "Für Bayern besteht bereits eine eigenständige rechtswissenschaftliche Vorgeschichte; die heutige Weiterentwicklung wird sich im tatsächlichen Verfahren bewähren müssen. Für die übrigen Länder ist eine zusätzliche externe bzw. universitäre Gegenprüfung vorgesehen." : "Eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen. Auch die konkreten gesetzlichen Voraussetzungen, Fristen und Quoren für einen späteren politischen oder direktdemokratischen Weg werden für jedes Bundesland gesondert geprüft."}</p>
         </div>
 
         <div className={styles.actions}>
           <Link className={styles.button} href="/deutschland">Alle Bundesländer ansehen</Link>
-          {entwurf.slug === "bayern" ? <Link className={styles.textLink} href="/volksbegehren/bayern">Bayern: laufende Kampagne →</Link> : <a className={styles.textLink} href={`mailto:info@dubistdieer.de?subject=${mailSubject}`}>Landesweg mit aufbauen →</a>}
+          {istBayern ? <Link className={styles.textLink} href="/volksbegehren/bayern">Bayern: laufende Kampagne →</Link> : <a className={styles.textLink} href={`mailto:info@dubistdieer.de?subject=${mailSubject}`}>Landesweg mit aufbauen →</a>}
         </div>
       </section>
     </main>
