@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/aktuelles",
+    "/aktuelles/wir-muessen-schuetzen-was-wir-sind",
     "/buendnispartner",
     "/datenschutz",
     "/deutschland",
