@@ -16,22 +16,24 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
   return (
     <main className={styles.page}>
-      <SiteHeader section={entwurf.name} claimLead="Vorarbeit ist da." claimTrail="Jetzt kann der Landesweg weiterwachsen." />
+      <SiteHeader section={entwurf.name} claimLead="Geprüfter Normstand." claimTrail="Jetzt kann der Landesweg weiterwachsen." />
 
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{entwurf.name} · Vorarbeit vorhanden</p>
-        <h1>Ein Textentwurf als Grundlage für die weitere Entwicklung.</h1>
+        <p className={styles.eyebrow}>{entwurf.name} · 16-Länder-Schlussfassung</p>
+        <h1>Ein verfassungsrechtlich geprüfter Entwurf für die weitere Entwicklung.</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
       <section className={styles.content}>
         <div className={styles.intro}>
           <div>
-            <p className={styles.label}>Textentwurf</p>
+            <p className={styles.label}>Normvorschlag</p>
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
-            <p>Für {entwurf.name} liegt bereits ein konkreter Verfassungstext vor. Er schafft eine Grundlage, auf der die weitere rechtliche und politische Entwicklung aufbauen kann.</p>
+            <p><strong>Architektur:</strong> {entwurf.architektur}</p>
+            <p><strong>Materieller Eigenrechtsstatus:</strong> {entwurf.eigenrechtsstatus}</p>
+            <p><strong>Verfahrensklasse:</strong> {entwurf.verfahrensklasse}</p>
           </div>
         </div>
 
@@ -45,26 +47,26 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
         <div className={styles.today}>
           <div>
-            <p className={styles.label}>Weiterentwicklung</p>
-            <h2>Aus Vorarbeit kann ein neuer Landesweg wachsen.</h2>
+            <p className={styles.label}>Was dieser Entwurf leistet</p>
+            <h2>Eigene Rechte der natürlichen Mitwelt – landesspezifisch verankert.</h2>
           </div>
           <div>
-            <p>Der nächste Schritt verbindet den vorhandenen Entwurf mit der heutigen Verfassungslage, dem jeweiligen Verfahren direkter Demokratie und den Erfahrungen aus der Systemischen Rechtsentwicklung.</p>
-            <p>Dieser Entwurf verfolgt einen eigenständigen verfassungsrechtlichen Ansatz. Rechte der Natur können je nach Rechtsordnung unterschiedlich ausgestaltet werden – etwa als Verfassungsrecht, Rechtspersönlichkeit oder institutionelle Vertretungsordnung.</p>
-            <p>Daraus kann ein tragfähiger Text mit passender Vertretung, institutioneller Einbindung und klarer Kampagnenstruktur entstehen.</p>
+            <p>Die 16-Länder-Architektur verfolgt einen gemeinsamen materiellen Kern: Die natürliche Mitwelt soll als Trägerin eigener Rechte verfassungsrechtlich anerkannt werden. Die konkrete Normtechnik richtet sich nach der jeweiligen Landesverfassung.</p>
+            <p>Relationale Modelle verankern die Rechte der natürlichen Mitwelt in bestehenden Freiheits- und Schrankenbestimmungen. Positive Modelle schaffen eine eigenständige Statusnorm. Wo die Rechtsträgerschaft nur relational formuliert ist, bleibt ein Auslegungsvorbehalt bestehen.</p>
+            <p><strong>Wichtig:</strong> Materieller Eigenrechtsstatus und Prozessrecht sind getrennte Ebenen. Aus dem Verfassungstext folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung oder Verbandsklagebefugnisse. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
           </div>
         </div>
 
         <div className={styles.coordination}>
-          <p className={styles.label}>Gemeinsam in den Ländern</p>
-          <h2>Wir koordinieren und unterstützen die Landeswege.</h2>
-          <p>Diese Webseite ist die gemeinsame Kampagnenzentrale für die Volksbegehren Rechte der Natur. Wir bündeln Vorarbeiten und Erfahrungen, unterstützen Initiativen in den Bundesländern bei der Weiterentwicklung ihrer Texte und Verfahren und verbinden Menschen, die vor Ort einen Landesweg aufbauen wollen.</p>
-          <p>Die konkrete Initiative entsteht im jeweiligen Bundesland. Wir sorgen dafür, dass Wissen, Materialien, Kontakte und Erfahrungen aus den anderen Ländern gemeinsam genutzt werden können.</p>
+          <p className={styles.label}>Stand der 16-Länder-Arbeit</p>
+          <h2>16 Landesverfassungen, zwei Grundformen, ein gemeinsamer materieller Kern.</h2>
+          <p>Die Entwürfe wurden landesspezifisch gegen die jeweilige Verfassungsarchitektur geprüft und anschließend zu einer gemeinsamen 16-Länder-Schlussfassung konsolidiert. Dabei wurden überholte frühere Varianten nicht übernommen.</p>
+          <p>Die Verfahrensklasse beschreibt nur die grundsätzliche verfassungsänderungsrechtliche Einordnung. Sie ersetzt keine spätere landesspezifische Zulässigkeits- oder Kampagnenprüfung.</p>
         </div>
 
         <div className={styles.actions}>
           <Link className={styles.button} href="/deutschland">Alle Bundesländer ansehen</Link>
-          <a className={styles.textLink} href={`mailto:info@dubistdieer.de?subject=${mailSubject}`}>Landesweg mit aufbauen →</a>
+          {entwurf.slug === "bayern" ? <Link className={styles.textLink} href="/volksbegehren/bayern">Bayern: laufende Kampagne →</Link> : <a className={styles.textLink} href={`mailto:info@dubistdieer.de?subject=${mailSubject}`}>Landesweg mit aufbauen →</a>}
         </div>
       </section>
     </main>
