@@ -29,7 +29,7 @@ const verfahrenswegNachLand: Record<string, string> = {
   hamburg:
     "Art. 51: Erforderlich sind zwei übereinstimmende Beschlüsse mit mindestens 13 Tagen Abstand; jeweils müssen drei Viertel der gesetzlichen Mitgliederzahl anwesend sein und zwei Drittel der Anwesenden zustimmen.",
   hessen:
-    "Art. 123 Abs. 2 HV: Erforderlich sind ein Landtagsbeschluss mit mehr als der Hälfte der gesetzlichen Mitgliederzahl und anschließend eine obligatorische Volksabstimmung mit Mehrheit der Abstimmenden.",
+    "Besonderheit Hessen: Eine Verfassungsänderung kann nach geltendem Recht nicht – wie in den 15 anderen Ländern grundsätzlich möglich – durch ein bürgerinitiiertes Volksbegehren zur Verfassungsänderung auf den Weg gebracht werden. Art. 123 Abs. 2 HV verlangt zunächst einen Beschluss des Hessischen Landtags mit mehr als der Hälfte der gesetzlichen Mitgliederzahl; erst anschließend stimmt das Volk obligatorisch über diese Verfassungsänderung ab. Hessen ist damit im 16-Länder-Vergleich der einzige bestätigte Initiativsonderfall: parlamentarische Initiative, danach Volkszustimmung.",
   "mecklenburg-vorpommern":
     "Art. 56: Erforderlich ist eine Zweidrittelmehrheit der Mitglieder. Die materiellen Änderungsgrenzen zum Schutz der Menschenwürde und der Grundsätze des Art. 2 sind zu beachten.",
   niedersachsen:
