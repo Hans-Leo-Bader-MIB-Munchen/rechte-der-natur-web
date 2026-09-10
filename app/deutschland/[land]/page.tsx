@@ -8,6 +8,20 @@ export function generateStaticParams() {
   return landesEntwuerfe.map((item) => ({ land: item.slug }));
 }
 
+function oeffentlicherAnsatz(architektur: string) {
+  if (architektur.startsWith("Relationale")) {
+    return "Der Vorschlag knüpft an eine bestehende Freiheitsregel der Landesverfassung an und ergänzt dort ausdrücklich die Rechte der natürlichen Mitwelt.";
+  }
+  return "Der Vorschlag schafft eine eigenständige Verfassungsbestimmung, die der natürlichen Mitwelt eigene Rechte zuspricht.";
+}
+
+function oeffentlicherVerfahrensweg(verfahrensklasse: "V1" | "V2") {
+  if (verfahrensklasse === "V2") {
+    return "Eine Verfassungsänderung muss hier vom Landtag auf den Weg gebracht werden; anschließend ist die Zustimmung des Volkes erforderlich.";
+  }
+  return "Ein aus der Bevölkerung angestoßener Weg zu einer Verfassungsänderung ist grundsätzlich möglich. Die genauen Voraussetzungen unterscheiden sich je nach Bundesland und werden gesondert geprüft.";
+}
+
 export default async function LandesEntwurfSeite({ params }: { params: Promise<{ land: string }> }) {
   const { land } = await params;
   const entwurf = landesEntwurfNachSlug[land];
@@ -31,10 +45,9 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
-            <p><strong>Prüfstatus:</strong> intern geprüft; externe bzw. universitäre Gegenprüfung noch ausstehend</p>
-            <p><strong>Architektur:</strong> {entwurf.architektur}</p>
-            <p><strong>Materieller Eigenrechtsstatus:</strong> {entwurf.eigenrechtsstatus}</p>
-            <p><strong>Verfahrensklasse:</strong> {entwurf.verfahrensklasse}</p>
+            <p><strong>Prüfstand:</strong> projektintern geprüft; eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen.</p>
+            <p><strong>Rechtlicher Ansatz:</strong> {oeffentlicherAnsatz(entwurf.architektur)}</p>
+            <p><strong>Weg zur Verfassungsänderung:</strong> {oeffentlicherVerfahrensweg(entwurf.verfahrensklasse)}</p>
           </div>
         </div>
 
@@ -49,20 +62,20 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
         <div className={styles.today}>
           <div>
             <p className={styles.label}>Was dieser Entwurf leistet</p>
-            <h2>Eigene Rechte der natürlichen Mitwelt – landesspezifisch verankert.</h2>
+            <h2>Eigene Rechte der natürlichen Mitwelt – passend zur jeweiligen Landesverfassung.</h2>
           </div>
           <div>
-            <p>Die 16-Länder-Architektur verfolgt einen gemeinsamen materiellen Kern: Die natürliche Mitwelt soll als Trägerin eigener Rechte verfassungsrechtlich anerkannt werden. Die konkrete Normtechnik richtet sich nach der jeweiligen Landesverfassung.</p>
-            <p>Relationale Modelle verankern die Rechte der natürlichen Mitwelt in bestehenden Freiheits- und Schrankenbestimmungen. Positive Modelle schaffen eine eigenständige Statusnorm. Wo die Rechtsträgerschaft nur relational formuliert ist, bleibt ein Auslegungsvorbehalt bestehen.</p>
-            <p><strong>Wichtig:</strong> Materieller Eigenrechtsstatus und Prozessrecht sind getrennte Ebenen. Aus dem Verfassungstext folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung oder Verbandsklagebefugnisse. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
+            <p>Alle 16 Vorschläge verfolgen dasselbe Ziel: Die natürliche Mitwelt soll nicht nur geschützt, sondern als Trägerin eigener Rechte in der jeweiligen Landesverfassung anerkannt werden.</p>
+            <p>Wie das geschieht, hängt von der Verfassung des einzelnen Landes ab. Manche Länder können an eine bereits vorhandene Freiheitsregel anknüpfen; in anderen ist eine eigenständige Rechte-Bestimmung die klarere Lösung.</p>
+            <p><strong>Wichtig:</strong> Die Anerkennung eigener Rechte regelt noch nicht automatisch, wer diese Rechte vor Gericht geltend machen oder die natürliche Mitwelt vertreten kann. Solche Verfahrens- und Vertretungsfragen werden gesondert geprüft. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
           </div>
         </div>
 
         <div className={styles.coordination}>
           <p className={styles.label}>Stand der 16-Länder-Arbeit</p>
-          <h2>16 Landesverfassungen, zwei Grundformen, ein gemeinsamer materieller Kern.</h2>
-          <p>Die Entwürfe wurden projektintern landesspezifisch gegen die jeweilige Verfassungsarchitektur geprüft und anschließend zu einem gemeinsamen 16-Länder-Arbeitsstand konsolidiert. Dabei wurden überholte frühere Varianten nicht übernommen.</p>
-          <p>Vor einer verfahrens- oder kampagnenbezogenen Freigabe ist eine zusätzliche externe bzw. universitäre Gegenprüfung vorgesehen. Die Verfahrensklasse beschreibt nur die grundsätzliche verfassungsänderungsrechtliche Einordnung und ersetzt keine spätere landesspezifische Zulässigkeitsprüfung.</p>
+          <h2>Ein gemeinsames Ziel – 16 verfassungsrechtlich unterschiedliche Wege.</h2>
+          <p>Die Entwürfe wurden projektintern mit dem geltenden Aufbau und Wortlaut der jeweiligen Landesverfassung abgeglichen. Frühere Fassungen wurden dort korrigiert, wo sie nicht mehr zum aktuellen Verfassungstext oder zum gewählten Ansatz passten.</p>
+          <p>Eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen. Auch die konkreten gesetzlichen Voraussetzungen, Fristen und Quoren für einen späteren politischen oder direktdemokratischen Weg werden für jedes Bundesland gesondert geprüft.</p>
         </div>
 
         <div className={styles.actions}>
