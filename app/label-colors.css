@@ -32,7 +32,13 @@ main[class*="_page__"] [class*="_archive__"] [class*="_label__"]{
   color:var(--label-earth) !important;
 }
 main[class*="_page__"] [class*="_today__"] [class*="_label__"]{
-  color:var(--label-light) !important;
+  color:var(--label-green) !important;
+}
+
+/* Small homepage accents on light card surfaces also use contrast-safe green. */
+main[class*="_page__"] [class*="_impactKicker__"],
+main[class*="_page__"] [class*="_impactNumber__"]{
+  color:var(--label-green) !important;
 }
 
 /* Dark hero surfaces keep a light, readable accent. */
