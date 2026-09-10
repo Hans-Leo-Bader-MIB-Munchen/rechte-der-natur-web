@@ -1,22 +1,22 @@
 export type StateStatus =
   | "Aktive Sammlung"
-  | "Geprüfter Normstand";
+  | "Intern geprüfter Normstand";
 
 export const federalStates: { name: string; status: StateStatus }[] = [
-  { name: "Baden-Württemberg", status: "Geprüfter Normstand" },
+  { name: "Baden-Württemberg", status: "Intern geprüfter Normstand" },
   { name: "Bayern", status: "Aktive Sammlung" },
-  { name: "Berlin", status: "Geprüfter Normstand" },
-  { name: "Brandenburg", status: "Geprüfter Normstand" },
-  { name: "Bremen", status: "Geprüfter Normstand" },
-  { name: "Hamburg", status: "Geprüfter Normstand" },
-  { name: "Hessen", status: "Geprüfter Normstand" },
-  { name: "Mecklenburg-Vorpommern", status: "Geprüfter Normstand" },
-  { name: "Niedersachsen", status: "Geprüfter Normstand" },
-  { name: "Nordrhein-Westfalen", status: "Geprüfter Normstand" },
-  { name: "Rheinland-Pfalz", status: "Geprüfter Normstand" },
-  { name: "Saarland", status: "Geprüfter Normstand" },
-  { name: "Sachsen", status: "Geprüfter Normstand" },
-  { name: "Sachsen-Anhalt", status: "Geprüfter Normstand" },
-  { name: "Schleswig-Holstein", status: "Geprüfter Normstand" },
-  { name: "Thüringen", status: "Geprüfter Normstand" },
+  { name: "Berlin", status: "Intern geprüfter Normstand" },
+  { name: "Brandenburg", status: "Intern geprüfter Normstand" },
+  { name: "Bremen", status: "Intern geprüfter Normstand" },
+  { name: "Hamburg", status: "Intern geprüfter Normstand" },
+  { name: "Hessen", status: "Intern geprüfter Normstand" },
+  { name: "Mecklenburg-Vorpommern", status: "Intern geprüfter Normstand" },
+  { name: "Niedersachsen", status: "Intern geprüfter Normstand" },
+  { name: "Nordrhein-Westfalen", status: "Intern geprüfter Normstand" },
+  { name: "Rheinland-Pfalz", status: "Intern geprüfter Normstand" },
+  { name: "Saarland", status: "Intern geprüfter Normstand" },
+  { name: "Sachsen", status: "Intern geprüfter Normstand" },
+  { name: "Sachsen-Anhalt", status: "Intern geprüfter Normstand" },
+  { name: "Schleswig-Holstein", status: "Intern geprüfter Normstand" },
+  { name: "Thüringen", status: "Intern geprüfter Normstand" },
 ];
