@@ -16,11 +16,11 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
   return (
     <main className={styles.page}>
-      <SiteHeader section={entwurf.name} claimLead="Geprüfter Normstand." claimTrail="Jetzt kann der Landesweg weiterwachsen." />
+      <SiteHeader section={entwurf.name} claimLead="Intern geprüfter Normstand." claimTrail="Externe Gegenprüfung folgt." />
 
       <section className={styles.hero}>
-        <p className={styles.eyebrow}>{entwurf.name} · 16-Länder-Schlussfassung</p>
-        <h1>Ein verfassungsrechtlich geprüfter Entwurf für die weitere Entwicklung.</h1>
+        <p className={styles.eyebrow}>{entwurf.name} · 16-Länder-Arbeitsstand</p>
+        <h1>Ein projektintern geprüfter Entwurf für die weitere Entwicklung.</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
@@ -31,6 +31,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
+            <p><strong>Prüfstatus:</strong> intern geprüft; externe bzw. universitäre Gegenprüfung noch ausstehend</p>
             <p><strong>Architektur:</strong> {entwurf.architektur}</p>
             <p><strong>Materieller Eigenrechtsstatus:</strong> {entwurf.eigenrechtsstatus}</p>
             <p><strong>Verfahrensklasse:</strong> {entwurf.verfahrensklasse}</p>
@@ -60,8 +61,8 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
         <div className={styles.coordination}>
           <p className={styles.label}>Stand der 16-Länder-Arbeit</p>
           <h2>16 Landesverfassungen, zwei Grundformen, ein gemeinsamer materieller Kern.</h2>
-          <p>Die Entwürfe wurden landesspezifisch gegen die jeweilige Verfassungsarchitektur geprüft und anschließend zu einer gemeinsamen 16-Länder-Schlussfassung konsolidiert. Dabei wurden überholte frühere Varianten nicht übernommen.</p>
-          <p>Die Verfahrensklasse beschreibt nur die grundsätzliche verfassungsänderungsrechtliche Einordnung. Sie ersetzt keine spätere landesspezifische Zulässigkeits- oder Kampagnenprüfung.</p>
+          <p>Die Entwürfe wurden projektintern landesspezifisch gegen die jeweilige Verfassungsarchitektur geprüft und anschließend zu einem gemeinsamen 16-Länder-Arbeitsstand konsolidiert. Dabei wurden überholte frühere Varianten nicht übernommen.</p>
+          <p>Vor einer verfahrens- oder kampagnenbezogenen Freigabe ist eine zusätzliche externe bzw. universitäre Gegenprüfung vorgesehen. Die Verfahrensklasse beschreibt nur die grundsätzliche verfassungsänderungsrechtliche Einordnung und ersetzt keine spätere landesspezifische Zulässigkeitsprüfung.</p>
         </div>
 
         <div className={styles.actions}>
