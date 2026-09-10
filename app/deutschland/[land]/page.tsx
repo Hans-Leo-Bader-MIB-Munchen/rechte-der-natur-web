@@ -104,18 +104,18 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
   return (
     <main className={styles.page}>
-      <SiteHeader section={entwurf.name} claimLead={istBayern ? "Rechtswissenschaftlich begleitet." : "Intern geprüfter Normstand."} claimTrail={istBayern ? "Jetzt folgt die Bewährung im Verfahren." : "Externe Gegenprüfung folgt."} />
+      <SiteHeader section={entwurf.name} claimLead={istBayern ? "Rechtswissenschaftlich begleitet." : "Projektintern geprüft."} claimTrail={istBayern ? "Jetzt folgt die Bewährung im Verfahren." : "Externe Gegenprüfung folgt."} />
 
       <section className={styles.hero}>
         <p className={styles.eyebrow}>{entwurf.name} · 16-Länder-Arbeitsstand</p>
-        <h1>{istBayern ? "Ein rechtswissenschaftlich begleiteter Ansatz in seiner heutigen Weiterentwicklung." : "Ein projektintern geprüfter Entwurf für die weitere Entwicklung."}</h1>
+        <h1>{istBayern ? "Ein rechtswissenschaftlich begleiteter Ansatz in seiner heutigen Weiterentwicklung." : "Ein verfassungsspezifisch hergeleiteter Entwurf für die weitere Prüfung."}</h1>
         <p className={styles.lead}>{entwurf.einordnung}</p>
       </section>
 
       <section className={styles.content}>
         <div className={styles.intro}>
           <div>
-            <p className={styles.label}>Normvorschlag</p>
+            <p className={styles.label}>1 · Wo soll die Verfassung geändert werden?</p>
             <h2>{entwurf.artikel}</h2>
           </div>
           <div>
@@ -135,13 +135,20 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
         {herleitung ? <div className={styles.today}>
           <div>
-            <p className={styles.label}>Warum genau diese Verfassungsstelle?</p>
-            <h2>Der Vorschlag folgt dem Aufbau dieses Landes – nicht einer bundesweiten Schablone.</h2>
+            <p className={styles.label}>2 · Warum ist gerade diese Stelle geeignet?</p>
+            <h2>Funktionsziel vor Rechtsform.</h2>
           </div>
           <div>
             <p>{herleitung.warum}</p>
-            <p><strong>Was wird geändert – und was bleibt?</strong> {herleitung.aenderung}</p>
+            <p>Der Vorschlag folgt damit dem Aufbau dieser Landesverfassung und nicht einer bundesweiten Schablone.</p>
           </div>
+        </div> : null}
+
+        {herleitung ? <div className={styles.coordination}>
+          <p className={styles.label}>3 · Was ändert sich rechtlich – und was bleibt bewusst unverändert?</p>
+          <h2>So viel Änderung wie nötig, so wenig Strukturumbau wie möglich.</h2>
+          <p>{herleitung.aenderung}</p>
+          <p>Die unmittelbare Funktion des Vorschlags ist die verfassungsrechtliche Anerkennung eigener Rechte der natürlichen Mitwelt. Institutionelle Zuständigkeiten, Vertretung, Beteiligung, gerichtliche Geltendmachung, Vollzug und Monitoring werden dadurch nicht automatisch festgelegt.</p>
         </div> : null}
 
         {istBayern ? <div className={styles.coordination}>
@@ -153,21 +160,20 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
 
         <div className={styles.today}>
           <div>
-            <p className={styles.label}>Was dieser Entwurf leistet</p>
-            <h2>Eigene Rechte der natürlichen Mitwelt – passend zur jeweiligen Landesverfassung.</h2>
+            <p className={styles.label}>4 · Welchen Prüfstand hat der Vorschlag?</p>
+            <h2>{istBayern ? "Bayern hat eine eigene rechtswissenschaftliche Vorgeschichte." : "Projektintern geprüft – externe Gegenprüfung vorgesehen."}</h2>
           </div>
           <div>
-            <p>Alle 16 Vorschläge verfolgen dasselbe Ziel: Die natürliche Mitwelt soll nicht nur geschützt, sondern als Trägerin eigener Rechte in der jeweiligen Landesverfassung anerkannt werden.</p>
-            <p>Wie das geschieht, hängt von der Verfassung des einzelnen Landes ab. Manche Länder können an eine bereits vorhandene Freiheitsregel anknüpfen; in anderen ist eine eigenständige Rechte-Bestimmung die klarere Lösung.</p>
-            <p><strong>Wichtig:</strong> Die Anerkennung eigener Rechte regelt noch nicht automatisch, wer diese Rechte vor Gericht geltend machen oder die natürliche Mitwelt vertreten kann. Solche Verfahrens- und Vertretungsfragen werden gesondert geprüft. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
+            <p>Alle 16 Vorschläge wurden intern darauf geprüft, ob die gewählte Verfassungsstelle die gemeinsame Rechtsfunktion mit möglichst geringem systematischem Eingriff aufnehmen kann. Aus dieser begrenzten Funktions- und Architekturprüfung ergibt sich derzeit kein Änderungsbedarf am hier gezeigten Normvorschlag.</p>
+            <p>{istBayern ? "Für Bayern kommt die bereits bestehende rechtswissenschaftliche Begleitung hinzu. Die heutige Weiterentwicklung muss sich nun im konkreten Verfahren bewähren." : "Diese interne Prüfung ist kein externes verfassungsrechtliches Gutachten. Eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen."}</p>
           </div>
         </div>
 
         <div className={styles.coordination}>
-          <p className={styles.label}>Stand der 16-Länder-Arbeit</p>
-          <h2>Ein gemeinsames Ziel – 16 verfassungsrechtlich unterschiedliche Wege.</h2>
-          <p>Die Entwürfe wurden projektintern mit dem geltenden Aufbau und Wortlaut der jeweiligen Landesverfassung abgeglichen. Frühere Fassungen wurden dort korrigiert, wo sie nicht mehr zum aktuellen Verfassungstext oder zum gewählten Ansatz passten.</p>
-          <p>{istBayern ? "Für Bayern besteht bereits eine eigenständige rechtswissenschaftliche Vorgeschichte; die heutige Weiterentwicklung wird sich im tatsächlichen Verfahren bewähren müssen. Für die übrigen Länder ist eine zusätzliche externe bzw. universitäre Gegenprüfung vorgesehen." : "Eine zusätzliche externe bzw. universitäre Gegenprüfung ist vorgesehen. Auch die konkreten gesetzlichen Voraussetzungen, Fristen und Quoren für einen späteren politischen oder direktdemokratischen Weg werden für jedes Bundesland gesondert geprüft."}</p>
+          <p className={styles.label}>Systemische Grenze</p>
+          <h2>Die Verfassungsnorm ist Ausgangspunkt – nicht die vollständige Umsetzung.</h2>
+          <p>Aus der Anerkennung eigener Rechte folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung, Verbandsklagebefugnisse, eine neue Behörde oder ein bestimmtes Guardianship-Modell.</p>
+          <p>Diese Fragen gehören auf eine nachgelagerte institutionelle und verfahrensrechtliche Ebene. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
         </div>
 
         <div className={styles.actions}>
