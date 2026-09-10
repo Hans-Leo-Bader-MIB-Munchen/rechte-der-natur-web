@@ -3,6 +3,7 @@ import SiteHeader from "../components/SiteHeader";
 import BrandMark from "../components/BrandMark";
 
 const items = [
+  { date: "10.09.2026", tag: "Hintergrund", title: "Wir müssen schützen, was wir sind", text: "Zwei Tage Zukunftswerkstatt Biodiversität führen zu einer grundsätzlichen Frage: Reicht es, mehr zu schützen – oder müssen wir auch die Strukturen verändern, mit denen wir über das Lebendige entscheiden?", href: "/aktuelles/wir-muessen-schuetzen-was-wir-sind" },
   { date: "09.08.2026", tag: "In Prüfung", title: "Kolumbien: neuer Flussrechte-Entwurf", text: "Ein neuer Gesetzentwurf zu Flussrechten steht im Fokus. Geprüft werden Verfahrensstand, Inhalt und institutionelle Architektur.", href: "https://systemische-rechtsentwicklung.de/resonanzraum/von-einzelnen-fluessen-zum-system-kolumbien", external: true },
   { date: "2026", tag: "Hintergrund", title: "Mar Menor: Was die Anerkennung praktisch verlangt", text: "Die spanische Lagune zeigt besonders deutlich, wie Anerkennung, Vertretung, institutionelle Zuständigkeit und tatsächliche Wirkung zusammenwirken.", href: "/weltweit" },
   { date: "2026", tag: "Kampagne", title: "16 Länder – unterschiedliche Wege", text: "Die Deutschlandseite verbindet rechtliche Ausgangslagen und politische Möglichkeiten zu eigenständigen Landeswegen.", href: "/deutschland" },
