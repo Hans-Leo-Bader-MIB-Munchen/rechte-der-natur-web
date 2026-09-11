@@ -61,7 +61,7 @@ export default function Deutschland() {
       <section className={styles.principle}>
         <p className={styles.label}>Was damit noch nicht entschieden ist</p>
         <h2>Eigene Rechte sind Ausgangspunkt einer Rechtsentwicklung<br className={styles.desktopBreak}/> – nicht deren vollständige Umsetzung.</h2>
-        <p>Aus der verfassungsrechtlichen Anerkennung folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung, eine neue Behörde oder ein bestimmtes Guardianship-Modell. Solche institutionellen und verfahrensrechtlichen Fragen müssen anschließend gesondert entwickelt werden. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
+        <p>Aus der verfassungsrechtlichen Anerkennung folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung, eine neue Behörde oder ein bestimmtes Guardianship-Modell. Solche institutionellen und verfahrensrechtlichen Fragen müssen gesondert geprüft und entwickelt werden. Eigene Rechte der natürlichen Mitwelt sind nicht auf ein Klageinstrument zu reduzieren.</p>
       </section>
 
       <section className={styles.status}>
