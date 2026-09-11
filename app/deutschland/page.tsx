@@ -19,7 +19,7 @@ export default function Deutschland() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>Deutschland</p>
-          <h1>16 Bundesländer.<br className={styles.desktopBreak}/> Ein gemeinsames Ziel. 16 Verfassungswege.</h1>
+          <h1>16 Bundesländer.<br className={styles.desktopBreak}/> Ein gemeinsames Ziel.<br className={styles.desktopBreak}/> 16 Verfassungswege.</h1>
           <p className={styles.lead}>Die natürliche Mitwelt soll verfassungsrechtlich als Trägerin eigener Rechte anerkannt werden. Aber die Landesverfassungen unterscheiden sich in Aufbau, Grundrechten, Staatszielen und möglichen Anknüpfungspunkten. Deshalb beginnt unsere Arbeit nicht mit einem starren Einheitstext, sondern mit der Frage: Welche Rechtsfunktion soll entstehen – und wo lässt sie sich in der jeweiligen Verfassung am klarsten und sparsamsten verankern?</p>
           <div className={styles.actions}><a className={styles.button} href="#laender">Die Länder ansehen</a><Link className={styles.textLink} href="/volksbegehren">Zur Kampagnenidee →</Link></div>
         </div>
@@ -60,7 +60,7 @@ export default function Deutschland() {
 
       <section className={styles.principle}>
         <p className={styles.label}>Was damit noch nicht entschieden ist</p>
-        <h2>Eigene Rechte sind Ausgangspunkt einer Rechtsentwicklung – nicht deren vollständige Umsetzung.</h2>
+        <h2>Eigene Rechte sind Ausgangspunkt einer Rechtsentwicklung<br className={styles.desktopBreak}/> – nicht deren vollständige Umsetzung.</h2>
         <p>Aus der verfassungsrechtlichen Anerkennung folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung, eine neue Behörde oder ein bestimmtes Guardianship-Modell. Solche institutionellen und verfahrensrechtlichen Fragen müssen anschließend gesondert entwickelt werden. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
       </section>
 
@@ -71,7 +71,7 @@ export default function Deutschland() {
 
       <section className={styles.bayern}><div><p className={styles.label}>Bayern · Ausgangspunkt und laufende Kampagne</p><h2>Vom bayerischen Entwurf zu 16 Landeswegen.</h2></div><div><p>Der bayerische Art.-101-Ansatz ist der historische Ausgangspunkt der Entwicklung. Er wurde bereits rechtswissenschaftlich begleitet und veröffentlicht diskutiert. Die heutige Formulierung entwickelt diese Linie weiter und benennt ausdrücklich die „Rechte der natürlichen Mitwelt“. Aus den Erfahrungen in Bayern ist die Idee entstanden, für alle Landesverfassungen jeweils die systematisch passende Fassung zu entwickeln.</p><Link className={styles.button} href="/deutschland/bayern">Bayern-Normvorschlag ansehen →</Link><br/><Link className={styles.textLink} href="/volksbegehren/bayern">Zur laufenden Sammelphase →</Link></div></section>
 
-      <section className={styles.join}><p className={styles.label}>Landeswege aufbauen</p><h2>Die Normvorschläge sind da. Jetzt braucht es Gegenprüfung, Menschen und Strukturen vor Ort.</h2><div className={styles.joinLinks}><Link href="/mitmachen">Mitstreiten und mitaufbauen →</Link><Link href="/volksbegehren">Von der Idee zur Landesinitiative →</Link><Link href="/volksbegehren/bayern">Bayern: laufende Sammelphase →</Link></div></section>
+      <section className={styles.join}><p className={styles.label}>Landeswege aufbauen</p><h2>Die Normvorschläge sind da. Jetzt braucht es Gegenprüfung,<br className={styles.desktopBreak}/> Menschen und Strukturen vor Ort.</h2><div className={styles.joinLinks}><Link href="/mitmachen">Mitstreiten und mitaufbauen →</Link><Link href="/volksbegehren">Von der Idee zur Landesinitiative →</Link><Link href="/volksbegehren/bayern">Bayern: laufende Sammelphase →</Link></div></section>
 
       <footer className={styles.footer}><Link href="/">Startseite</Link><Link href="/volksbegehren">Volksbegehren</Link><Link href="/mitmachen">Mitmachen</Link><span>16-Länder-Arbeitsstand · systemisch hergeleitet</span></footer>
     </main>
