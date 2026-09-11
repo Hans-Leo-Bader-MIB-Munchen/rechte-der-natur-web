@@ -20,7 +20,7 @@ export default function Aktuelles() {
     <main className="newsPage">
       <SiteHeader section="Aktuelles" claimLead="Was sich bewegt." claimTrail="Geprüft. Eingeordnet. In Bewegung." />
 
-      <section className="newsHero"><p className="eyebrow">Aktuelles</p><h1>Was neu ist – und was daraus für die Kampagne folgt.</h1><p className="lead">Neue Urteile, Gesetze und Initiativen prägen die Entwicklung der Rechte der Natur. Hier zeigen wir Entwicklungen mit besonderer Bedeutung für die Kampagne.</p></section>
+      <section className="newsHero"><p className="eyebrow">Aktuelles</p><h1>Was neu ist – und was daraus<br/>für die Kampagne folgt.</h1><p className="lead">Neue Urteile, Gesetze und Initiativen prägen die Entwicklung der Rechte der Natur. Hier zeigen wir Entwicklungen mit besonderer Bedeutung für die Kampagne.</p></section>
 
       <section className="newsItems" id="beitraege">{items.map((item,i)=><article className="newsItem" key={item.title}><div className="newsMeta"><span>{item.date}</span><strong>{item.tag}</strong></div><div className="newsBody"><span className="newsNo">{String(i+1).padStart(2,"0")}</span><h2>{item.title}</h2><p>{item.text}</p>{item.external ? <a href={item.href} target="_blank" rel="noreferrer">Weiterlesen →</a> : <Link href={item.href}>Weiterlesen →</Link>}</div></article>)}</section>
 
