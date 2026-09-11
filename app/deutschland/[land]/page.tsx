@@ -245,7 +245,7 @@ export default async function LandesEntwurfSeite({ params }: { params: Promise<{
           <p className={styles.label}>Systemische Grenze</p>
           <h2>Die Verfassungsnorm ist Ausgangspunkt – nicht die vollständige Umsetzung.</h2>
           <p>Aus der Anerkennung eigener Rechte folgen nicht automatisch Prozessfähigkeit, Klagebefugnis, Prozessstandschaft, gesetzliche Vertretung, Verbandsklagebefugnisse, eine neue Behörde oder ein bestimmtes Guardianship-Modell.</p>
-          <p>Diese Fragen gehören auf eine nachgelagerte institutionelle und verfahrensrechtliche Ebene. Rechte der natürlichen Mitwelt sind kein Klageinstrument.</p>
+          <p>Diese institutionellen und verfahrensrechtlichen Fragen müssen gesondert geprüft und entwickelt werden. Eigene Rechte der natürlichen Mitwelt sind nicht auf ein Klageinstrument zu reduzieren.</p>
         </div>
 
         <div className={styles.actions}>
