@@ -2,9 +2,32 @@ import Link from "next/link";
 import SiteHeader from "../../components/SiteHeader";
 import BrandMark from "../../components/BrandMark";
 
+const title = "Braucht die Loisach eigene Rechte, wenn die Menschen miteinander reden?";
+const description = "Ein Treffen in Ohlstadt bringt kommunale Praxis an der Loisach, das Mar Menor und den Whanganui zusammen – und stellt die Frage, wer für den Fluss spricht.";
+const image = "/images/IMG_5090.jpeg";
+
 export const metadata = {
-  title: "Braucht die Loisach eigene Rechte, wenn die Menschen miteinander reden? | Rechte der Natur",
-  description: "Ein Treffen in Ohlstadt bringt kommunale Praxis an der Loisach, das Mar Menor und den Whanganui zusammen – und stellt die Frage, wer für den Fluss spricht.",
+  title: `${title} | Rechte der Natur`,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "article",
+    url: "https://rechtedernatur.de/aktuelles/ohlstadt-loisach-rechte-der-natur",
+    siteName: "Rechte der Natur",
+    images: [
+      {
+        url: image,
+        alt: "Treffen in Ohlstadt zur Loisach und zu Rechten der Natur",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [image],
+  },
 };
 
 export default function OhlstadtLoisachArtikel() {
