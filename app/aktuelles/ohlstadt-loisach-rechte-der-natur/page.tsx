@@ -83,9 +83,9 @@ export default function OhlstadtLoisachArtikel() {
         <p>Aber vielleicht ist genau das der Punkt, an dem eine ernsthafte Diskussion beginnen kann.</p>
 
         <hr style={{margin:"52px 0 28px", border:0, borderTop:"1px solid rgba(0,0,0,.15)"}} />
-        <p style={{fontSize:".9rem"}}><strong>Lizenzhinweis:</strong> Dieser Beitrag einschließlich des begleitenden KI-generierten Bildes steht unter der Lizenz Creative Commons Namensnennung – Nicht kommerziell 4.0 International (CC BY-NC-SA 4.0).</p>
+        <p style={{fontSize:".9rem"}}><strong>Lizenzhinweis:</strong> Dieser Beitrag einschließlich des begleitenden Fotos steht unter der Lizenz Creative Commons Namensnennung – Nicht kommerziell 4.0 International (CC BY-NC-SA 4.0).</p>
         <p style={{fontSize:".9rem"}}>Struktur und Teile der Formulierung dieses Textes wurden mithilfe von KI (GPT, OpenAI) entwickelt. Inhaltliche Verantwortung: Hans Leo Bader. (CC BY-NC-SA 4.0)</p>
-        <p style={{fontSize:".9rem"}}>Bild (sofern enthalten): In Kooperation mit KI - generiert mit ChatGPT Images (OpenAI) – Lizenz: CC BY-NC-SA 4.0</p>
+        <p style={{fontSize:".9rem"}}>Foto: Hans Leo Bader – Lizenz: CC BY-NC-SA 4.0</p>
         <p style={{marginTop:36}}><Link href="/aktuelles">← Zurück zu Aktuelles</Link></p>
       </article>
 
