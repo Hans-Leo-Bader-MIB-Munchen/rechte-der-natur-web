@@ -18,6 +18,10 @@ export default function OhlstadtLoisachArtikel() {
         <p className="lead">Ein Treffen in Ohlstadt bringt drei sehr unterschiedliche Erfahrungen zusammen: kommunale Praxis an der Loisach, die Rechte des Mar Menor in Spanien und die Rechtspersönlichkeit des Whanganui in Neuseeland. Am Ende steht weniger ein Streit über Gerichte als eine überraschend praktische Frage: Wer spricht eigentlich für den Fluss?</p>
       </section>
 
+      <div style={{maxWidth:1100, margin:"0 auto 42px", padding:"0 28px"}}>
+        <img src="/images/IMG_5090.jpeg" alt="Treffen in Ohlstadt zur Loisach und zu Rechten der Natur" style={{display:"block", width:"100%", height:"auto", borderRadius:20}} />
+      </div>
+
       <article style={{maxWidth:860, margin:"0 auto", padding:"0 28px 72px", fontSize:"1.08rem", lineHeight:1.75}}>
         <p>Ohlstadt, 14. September 2026. Manchmal wird eine Diskussion gerade dort interessant, wo keine Einigkeit entsteht.</p>
         <p>Beim heutigen Treffen in Ohlstadt trafen unterschiedliche Vorstellungen davon aufeinander, wie Flüsse und andere Gewässer geschützt werden können. Dabei ging es nicht nur um abstrakte Rechtsfragen. Es ging um Kläranlagen, Wasserqualität, Gemeinden, Landwirtschaft, Eigentümer, Behörden – und um die Frage, ob ein Fluss selbst eine institutionell abgesicherte Stimme braucht.</p>
