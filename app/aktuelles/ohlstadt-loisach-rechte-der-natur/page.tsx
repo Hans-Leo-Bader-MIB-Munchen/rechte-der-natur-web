@@ -29,12 +29,12 @@ export default function OhlstadtLoisachArtikel() {
         <blockquote style={{fontSize:"1.5rem", lineHeight:1.45, margin:"34px 0", paddingLeft:24, borderLeft:"4px solid var(--green)"}}>„Wir arbeiten jeden Tag daran, das Wasser der Loisach besser zu machen.“</blockquote>
         <p>Das ist ein ernst zu nehmender Einwand gegen Rechte der Natur. Denn wenn Kommunen Verantwortung übernehmen, technische Lösungen umsetzen und Beteiligte miteinander sprechen: Was würde eine zusätzliche Rechtsstellung des Flusses tatsächlich verbessern?</p>
 
-        <h2>Eduardo: „I don't like courts“</h2>
-        <p>Darauf antwortete Eduardo mit den Erfahrungen des Mar Menor in Spanien.</p>
+        <h2>Eduardo Salazar: „I don't like courts“</h2>
+        <p>Darauf antwortete Eduardo Salazar mit den Erfahrungen des Mar Menor in Spanien.</p>
         <p>Bemerkenswert war schon sein Ausgangspunkt. Obwohl er Jurist ist, sagte er:</p>
         <blockquote style={{fontSize:"1.35rem", lineHeight:1.5, margin:"30px 0", paddingLeft:24, borderLeft:"4px solid var(--green)"}}>„Although I am a lawyer, I don't like courts. I like public participation and democracy.“</blockquote>
         <p>Damit stellte er eine verbreitete Vorstellung auf den Kopf: Rechte der Natur müssen nicht in erster Linie bedeuten, häufiger vor Gericht zu ziehen.</p>
-        <p>Eduardo beschrieb die Konstruktion beim Mar Menor vielmehr als eine Art institutionelle „Tutorship“ für die Salzwasserlagune. Unterschiedliche Beteiligte – unter anderem Fischerei, Landwirtschaft, Eigentümer, NGOs und die umliegenden Gemeinden – sollen miteinander arbeiten.</p>
+        <p>Eduardo Salazar beschrieb die Konstruktion beim Mar Menor vielmehr als eine Art institutionelle „Tutorship“ für die Salzwasserlagune. Unterschiedliche Beteiligte – unter anderem Fischerei, Landwirtschaft, Eigentümer, NGOs und die umliegenden Gemeinden – sollen miteinander arbeiten.</p>
         <p>Zunächst soll versucht werden, Konsens herzustellen, statt rechtliche Positionen als „weapon against the other“, als Waffe gegeneinander, einzusetzen.</p>
         <p>Gerade bei einem Fluss, der mehrere Gemeinden durchquert, bei dem staatliche Stellen, Eigentümer und unterschiedliche Nutzer beteiligt sind, könne eine solche Konstruktion helfen, Kommunikation dauerhaft zu organisieren.</p>
         <p><strong>Kann eine rechtliche und institutionelle Struktur dafür sorgen, dass dauerhaft miteinander geredet wird – und dass dabei auch das Gewässer selbst vertreten ist?</strong></p>
@@ -75,7 +75,7 @@ export default function OhlstadtLoisachArtikel() {
         <h2>Ohlstadt als Ausgangspunkt</h2>
         <p>Vielleicht liegt gerade in der unterschiedlichen Sichtweise beim Treffen in Ohlstadt ein produktiver Anfang.</p>
         <p>Der Bürgermeister sagt: <strong>Wir müssen miteinander reden.</strong></p>
-        <p>Eduardo zeigt am Mar Menor: <strong>Eine rechtliche Repräsentationsstruktur kann gerade dafür geschaffen werden, miteinander zu reden und unterschiedliche Interessen zusammenzubringen.</strong></p>
+        <p>Eduardo Salazar zeigt am Mar Menor: <strong>Eine rechtliche Repräsentationsstruktur kann gerade dafür geschaffen werden, miteinander zu reden und unterschiedliche Interessen zusammenzubringen.</strong></p>
         <p>Die Erfahrung des Whanganui ergänzt: <strong>Der Fluss bleibt eine Einheit, auch wenn die menschlichen Zuständigkeiten entlang seines Laufes wechseln. Seine Repräsentanten ersetzen diese Institutionen nicht. Sie geben dem Fluss Gesicht und Stimme.</strong></p>
         <p>Damit lautet die entscheidende Frage möglicherweise gar nicht: <strong>Braucht die Loisach Rechte oder braucht sie Zusammenarbeit?</strong></p>
         <p><strong>Wie organisieren wir die Zusammenarbeit entlang der gesamten Loisach so, dass der Fluss selbst dauerhaft eine Stimme besitzt?</strong></p>
