@@ -72,13 +72,24 @@ export default function OhlstadtLoisachArtikel() {
         <p>Was geschieht also, wenn die Beteiligten sich einmal nicht einigen?</p>
         <p>Wer vertritt dann nicht die Gemeinde, nicht den Eigentümer, nicht die Landwirtschaft, nicht einen Verband und nicht eine Behörde – sondern die Loisach?</p>
 
+        <h2>Vom Gespräch über Gewässer zum Dialog der Gewässer</h2>
+        <p>Vielleicht steckt in dem Satz des Bürgermeisters – <strong>„Wir müssen miteinander reden“</strong> – mehr Gemeinsamkeit mit dem Gedanken des „Dialogs der Gewässer“, als es zunächst scheint.</p>
+        <p>Auch dort geht es um Kommunikation. Aber die Frage verschiebt sich: <strong>Wer gehört eigentlich zu diesem „Wir“?</strong></p>
+        <p>Wenn Whanganui, Mar Menor und Loisach miteinander in Beziehung treten sollen, genügt es nicht, dass Menschen nur über diese Gewässer sprechen. Praktisch geschieht ein solcher Dialog notwendigerweise vermittelt durch Menschen. Gerade deshalb stellt sich die institutionelle Frage, unter welchen Voraussetzungen diese Menschen tatsächlich für ein Gewässer sprechen können – und nicht lediglich über es.</p>
+        <blockquote style={{fontSize:"1.35rem", lineHeight:1.6, margin:"32px 0", paddingLeft:24, borderLeft:"4px solid var(--green)"}}><strong>We talk about water bodies.<br/>Water bodies talk to each other.<br/>We are water bodies.</strong></blockquote>
+        <p>Der schwierigste Satz ist der mittlere.</p>
+        <p>Denn aus einer Metapher wird erst dann ein wirklicher Dialog der Gewässer, wenn nachvollziehbar ist, wer für ein Gewässer sprechen kann, wodurch diese Stimme legitimiert wird und welche Verantwortung mit diesem Mandat verbunden ist.</p>
+        <p>Das bedeutet nicht, dass Repräsentanten das Gewässer besitzen, verwalten oder an die Stelle bestehender Behörden treten. <strong>Stimme ist nicht Management. Repräsentation ist nicht Eigentum. Und Repräsentation ist nicht automatisch behördliche Zuständigkeit.</strong></p>
+        <p>Gerade wenn menschliche Interessen kollidieren, muss eine Stimme des Gewässers eigenständig genug sein, um dessen ökologische Beziehungen und Funktionen in die Entscheidung einzubringen.</p>
+
         <h2>Ohlstadt als Ausgangspunkt</h2>
         <p>Vielleicht liegt gerade in der unterschiedlichen Sichtweise beim Treffen in Ohlstadt ein produktiver Anfang.</p>
         <p>Der Bürgermeister sagt: <strong>Wir müssen miteinander reden.</strong></p>
         <p>Eduardo Salazar zeigt am Mar Menor: <strong>Eine rechtliche Repräsentationsstruktur kann gerade dafür geschaffen werden, miteinander zu reden und unterschiedliche Interessen zusammenzubringen.</strong></p>
         <p>Die Erfahrung des Whanganui ergänzt: <strong>Der Fluss bleibt eine Einheit, auch wenn die menschlichen Zuständigkeiten entlang seines Laufes wechseln. Seine Repräsentanten ersetzen diese Institutionen nicht. Sie geben dem Fluss Gesicht und Stimme.</strong></p>
+        <p>Der „Dialog der Gewässer“ führt diese Gedanken noch einen Schritt weiter. Wenn Gewässer selbst miteinander in Beziehung treten sollen, brauchen ihre Stimmen eine nachvollziehbare Form von Repräsentation, Mandat und Verantwortung.</p>
         <p>Damit lautet die entscheidende Frage möglicherweise gar nicht: <strong>Braucht die Loisach Rechte oder braucht sie Zusammenarbeit?</strong></p>
-        <p><strong>Wie organisieren wir die Zusammenarbeit entlang der gesamten Loisach so, dass der Fluss selbst dauerhaft eine Stimme besitzt?</strong></p>
+        <p><strong>Wie organisieren wir die Zusammenarbeit entlang der gesamten Loisach so, dass der Fluss selbst dauerhaft eine Stimme besitzt – und wie wird aus dieser Stimme ein Gegenüber, das mit anderen Gewässern tatsächlich in einen Dialog treten kann?</strong></p>
         <p>Auf diese Frage gibt es nach dem Treffen in Ohlstadt noch keine gemeinsame Antwort.</p>
         <p>Aber vielleicht ist genau das der Punkt, an dem eine ernsthafte Diskussion beginnen kann.</p>
 
