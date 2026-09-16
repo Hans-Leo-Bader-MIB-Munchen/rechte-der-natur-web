@@ -3,6 +3,7 @@ import SiteHeader from "../components/SiteHeader";
 import BrandMark from "../components/BrandMark";
 
 const items = [
+  { date: "16.09.2026", tag: "Hintergrund", title: "B12: Was „überragendes öffentliches Interesse“ verändert – und was nicht", text: "Der Ausbau der B12 zeigt, warum gesetzliche Priorisierung, Umweltverbandsklage, Art. 20a GG und Rechte der Mitwelt unterschiedliche Rechtsfunktionen erfüllen.", href: "/aktuelles/b12-ueberragendes-oeffentliches-interesse" },
   { date: "14.09.2026", tag: "Hintergrund", title: "Braucht die Loisach eigene Rechte, wenn die Menschen miteinander reden?", text: "Ohlstadt, Mar Menor und Whanganui: drei unterschiedliche Erfahrungen führen zu einer praktischen Frage – wer spricht eigentlich für den Fluss?", href: "/aktuelles/ohlstadt-loisach-rechte-der-natur" },
   { date: "09.08.2026", tag: "In Prüfung", title: "Kolumbien: neuer Flussrechte-Entwurf", text: "Ein neuer Gesetzentwurf zu Flussrechten steht im Fokus. Geprüft werden Verfahrensstand, Inhalt und institutionelle Architektur.", href: "https://systemische-rechtsentwicklung.de/resonanzraum/von-einzelnen-fluessen-zum-system-kolumbien", external: true },
   { date: "2026", tag: "Hintergrund", title: "Mar Menor: Was die Anerkennung praktisch verlangt", text: "Die spanische Lagune zeigt besonders deutlich, wie Anerkennung, Vertretung, institutionelle Zuständigkeit und tatsächliche Wirkung zusammenwirken.", href: "/weltweit" },
