@@ -4,6 +4,7 @@ import BrandMark from "../../components/BrandMark";
 
 const title = "B12: Was „überragendes öffentliches Interesse“ verändert – und was nicht";
 const description = "Am Beispiel der B12: Was bestehendes Umweltrecht bereits kann – und was sich ändern würde, wenn die Mitwelt selbst Trägerin von Rechten wäre.";
+const b12Visual = "https://raw.githubusercontent.com/Hans-Leo-Bader-MIB-Munchen/rechte-der-natur-web/main/public/images/8742A3CC-8E21-4572-92ED-CADA4BBE7749.png";
 
 export const metadata = {
   title: `${title} | Rechte der Natur`,
@@ -14,8 +15,9 @@ export const metadata = {
     type: "article",
     url: "https://rechtedernatur.de/aktuelles/b12-ueberragendes-oeffentliches-interesse",
     siteName: "Rechte der Natur",
+    images: [{ url: b12Visual, alt: "Visualisierung: bestehende zweispurige B12 und möglicher vierstreifiger Ausbau im Vergleich" }],
   },
-  twitter: { card: "summary", title, description },
+  twitter: { card: "summary_large_image", title, description, images: [b12Visual] },
 };
 
 export default function B12Artikel() {
@@ -27,6 +29,11 @@ export default function B12Artikel() {
       <h1>{title}</h1>
       <p className="lead">Wenn der Gesetzgeber einer Straße „überragendes öffentliches Interesse“ bescheinigt – was bleibt dann vom Umwelt- und Klimaschutz? Und würden eigene Rechte der Mitwelt daran überhaupt etwas ändern? Der Ausbau der B12 macht sichtbar, was unser Umweltrecht bereits kann und worin der strukturelle Unterschied eigener Rechte liegt.</p>
     </section>
+
+    <figure style={{maxWidth:1040,margin:"0 auto 42px",padding:"0 28px"}}>
+      <img src={b12Visual} alt="Visualisierung: bestehende zweispurige B12 und möglicher vierstreifiger Ausbau im Vergleich" style={{display:"block",width:"100%",height:"auto",borderRadius:4}} />
+      <figcaption style={{fontSize:".88rem",lineHeight:1.5,marginTop:10,opacity:.72}}><strong>Visualisierung:</strong> Vergleich der bestehenden zweispurigen B12 mit einem möglichen vierstreifigen Ausbau. Die Darstellung dient der Veranschaulichung und zeigt keinen bereits realisierten Ausbauzustand.</figcaption>
+    </figure>
 
     <article style={{maxWidth:860,margin:"0 auto",padding:"0 28px 72px",fontSize:"1.08rem",lineHeight:1.75}}>
       <p>Am 16. September 2026 griff die Füssener Zeitung unter der Überschrift „Müsste B12-Ausbau nun schneller gehen?“ eine neue Rechtsfrage rund um den vierstreifigen Ausbau der B12 auf. Der Landtagsabgeordnete Bernhard Pohl (Freie Wähler) wird dort mit der Auffassung wiedergegeben, die neue Rechtslage habe „unmittelbaren Einfluss auf das bestehende gerichtliche Verfahren“. Der Gesetzgeber habe dem Ausbau der Verkehrsinfrastruktur gegenüber anderen rechtlichen Belangen Vorrang geben wollen; als Beispiel nennt der Artikel den Klimaschutz.</p>
