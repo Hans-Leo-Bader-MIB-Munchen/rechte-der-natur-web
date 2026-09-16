@@ -15,7 +15,7 @@ export const metadata = {
     type: "article",
     url: "https://rechtedernatur.de/aktuelles/b12-ueberragendes-oeffentliches-interesse",
     siteName: "Rechte der Natur",
-    images: [{ url: b12Visual, alt: "Visualisierung: bestehende zweispurige B12 und möglicher vierstreifiger Ausbau im Vergleich" }],
+    images: [{ url: b12Visual, alt: "Visualisierung eines Vorher-Nachher-Vergleichs der B12 mit möglichem vierstreifigem Ausbau" }],
   },
   twitter: { card: "summary_large_image", title, description, images: [b12Visual] },
 };
@@ -31,8 +31,8 @@ export default function B12Artikel() {
     </section>
 
     <figure style={{maxWidth:1040,margin:"0 auto 42px",padding:"0 28px"}}>
-      <img src={b12Visual} alt="Visualisierung: bestehende zweispurige B12 und möglicher vierstreifiger Ausbau im Vergleich" style={{display:"block",width:"100%",height:"auto",borderRadius:4}} />
-      <figcaption style={{fontSize:".88rem",lineHeight:1.5,marginTop:10,opacity:.72}}><strong>Visualisierung:</strong> Vergleich der bestehenden zweispurigen B12 mit einem möglichen vierstreifigen Ausbau. Die Darstellung dient der Veranschaulichung und zeigt keinen bereits realisierten Ausbauzustand.</figcaption>
+      <img src={b12Visual} alt="Visualisierung eines Vorher-Nachher-Vergleichs der B12 mit möglichem vierstreifigem Ausbau" style={{display:"block",width:"100%",height:"auto",borderRadius:4}} />
+      <figcaption style={{fontSize:".88rem",lineHeight:1.5,marginTop:10,opacity:.72}}><strong>Visualisierung:</strong> Schematischer Vorher-Nachher-Vergleich zur Veranschaulichung eines möglichen vierstreifigen Ausbaus der B12. Die Darstellung bildet keinen bereits realisierten Ausbauzustand und keinen exakten Straßenquerschnitt ab.</figcaption>
     </figure>
 
     <article style={{maxWidth:860,margin:"0 auto",padding:"0 28px 72px",fontSize:"1.08rem",lineHeight:1.75}}>
@@ -64,7 +64,7 @@ export default function B12Artikel() {
       <p>Kontrolle, Repräsentation und Rechtsträgerschaft sind deshalb verschiedene Funktionen. Genau an dieser Trennung setzt die Systemische Rechtsentwicklung an. Sie fragt nicht zuerst nach einem neuen Instrument, sondern: Was kann das bestehende System bereits? Wo bleibt tatsächlich eine Lücke? Und könnte sie durch eine weniger weitgehende Veränderung bestehender Strukturen geschlossen werden?</p>
 
       <h2>Was Eigenrechte der Mitwelt bei der B12 zusätzlich verändern würden</h2>
-      <p>Für das bayerische Volksbegehren lässt sich diese Frage konkret stellen. Die vorgeschlagene Änderung des Art. 101 der Bayerischen Verfassung spricht von den „Rechten der natürlichen Mitwelt“. Die veröffentlichte Begründung erläutert dies als grundsätzliche Anerkennung ihrer Rechtssubjektivität und bezieht diese Rechtsposition auf Inhalt und Grenzen menschlicher Handlungsfreiheit. Sie beschreibt Rechte der Natur unter anderem mit Existenz, Gedeihen, Regeneration, Entwicklung und Wiederherstellung.</p>
+      <p>Für das bayerische Volksbegehren lässt sich diese Frage konkret stellen. Die vorgeschlagene Änderung des Art. 101 der Bayerischen Verfassung spricht von den „Rechten der natürlichen Mitwelt“. Die veröffentlichte Erläuterung zum Volksbegehren versteht die Neufassung als grundsätzliche Anerkennung ihrer Rechtssubjektivität und bezieht diese Rechtsposition auf Inhalt und Grenzen menschlicher Handlungsfreiheit.</p>
       <p>Der entscheidende Unterschied lässt sich einfacher ausdrücken: <strong>Die Mitwelt wäre nicht mehr nur Gegenstand rechtlichen Schutzes, sondern selbst Trägerin einer Rechtsposition.</strong></p>
       <p>Auf die B12 übertragen würde damit eine zusätzliche Rechtsfrage entstehen, die das heutige Verfahren so nicht stellt: <strong>Nicht nur, ob die gesetzlichen Umweltvorschriften eingehalten und die betroffenen Umweltbelange ausreichend ermittelt und berücksichtigt wurden, sondern zusätzlich, ob der Ausbau eigene Rechte der betroffenen Mitwelt verletzt.</strong></p>
       <p>Das verändert die rechtliche Struktur des Konflikts. Ökologische Beeinträchtigungen wären dann nicht mehr ausschließlich etwas, das Behörden aufgrund des geltenden Umweltrechts prüfen und berücksichtigen müssen. <strong>Wenn Inhalt und gerichtliche Durchsetzung der Eigenrechte hinreichend bestimmt wären, könnte zusätzlich geprüft werden, ob eine eigene Rechtsposition der Mitwelt verletzt ist.</strong></p>
