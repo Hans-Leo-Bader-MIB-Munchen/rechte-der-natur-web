@@ -10,8 +10,8 @@ const notes=[
 ["Dadachova, E. et al. (2007): Ionizing Radiation Changes the Electronic Properties of Melanin and Enhances the Growth of Melanized Fungi. PLOS ONE 2(5): e457.","https://doi.org/10.1371/journal.pone.0000457"],
 ["Eisenhauer, N. et al. (2023): Reconsidering functional redundancy in biodiversity research. npj Biodiversity 2, 9.","https://doi.org/10.1038/s44185-023-00015-5"],
 ["Fischer, F. M.; de Bello, F. (2023): On the uniqueness of functional redundancy. npj Biodiversity 2, 23.","https://doi.org/10.1038/s44185-023-00029-z"],
-["Gamfeldt, L.; Roger, F. (2017): Revisiting the biodiversity–ecosystem multifunctionality relationship. Nature Ecology & Evolution.","https://doi.org/10.1038/s41559-017-0168"],
 ["Meyer, S. T. et al. (2018): Biodiversity–multifunctionality relationships depend on identity and number of measured functions. Nature Ecology & Evolution.","https://doi.org/10.1038/s41559-017-0391-4"],
+["Gamfeldt, L.; Roger, F. (2017): Revisiting the biodiversity–ecosystem multifunctionality relationship. Nature Ecology & Evolution.","https://doi.org/10.1038/s41559-017-0168"],
 ["Faith, D. P. (2021): Valuation and Appreciation of Biodiversity: The “Maintenance of Options” Provided by the Variety of Life. Frontiers in Ecology and Evolution 9:635670.","https://doi.org/10.3389/fevo.2021.635670"],
 ["Mora, C. et al. (2011): How Many Species Are There on Earth and in the Ocean? PLOS Biology 9(8): e1001127.","https://doi.org/10.1371/journal.pbio.1001127"]];
 const N=({n,id}:{n:number,id:string})=><sup id={id}><a href={"#note-"+n} aria-label={"Endnote "+n}>[{n}]</a></sup>;
