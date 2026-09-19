@@ -7,6 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/aktuelles",
+    "/aktuelles/artenvielfalt-moeglichkeitsraum",
+    "/aktuelles/artenvielfalt-moeglichkeitsraum/en",
+    "/aktuelles/artenvielfalt-moeglichkeitsraum/es",
     "/buendnispartner",
     "/datenschutz",
     "/deutschland",
