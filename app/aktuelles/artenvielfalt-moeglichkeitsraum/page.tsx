@@ -3,7 +3,7 @@ import SiteHeader from "../../components/SiteHeader";
 import BrandMark from "../../components/BrandMark";
 const title="Woher wissen wir, welche Arten wir nicht brauchen?";
 const description="Je stärker wir Landschaften auf wenige menschlich gewünschte Funktionen vereinheitlichen, desto leichter erscheinen Arten entbehrlich. Doch kennen wir ihre Möglichkeiten überhaupt?";
-const image="/images/artenvielfalt-moeglichkeitsraum.jpg";
+const image="/images/FE6C03CC-8703-4A37-87CC-15EF33ADEBFB.png";
 const notes=[
 ["Hector, A.; Bagchi, R. (2007): Biodiversity and ecosystem multifunctionality. Nature 448, 188–190.","https://doi.org/10.1038/nature05947"],
 ["Yoshida, S. et al. (2016): A bacterium that degrades and assimilates poly(ethylene terephthalate). Science 351, 1196–1199.","https://doi.org/10.1126/science.aad6359"],
@@ -15,10 +15,10 @@ const notes=[
 ["Faith, D. P. (2021): Valuation and Appreciation of Biodiversity: The “Maintenance of Options” Provided by the Variety of Life. Frontiers in Ecology and Evolution 9:635670.","https://doi.org/10.3389/fevo.2021.635670"],
 ["Mora, C. et al. (2011): How Many Species Are There on Earth and in the Ocean? PLOS Biology 9(8): e1001127.","https://doi.org/10.1371/journal.pbio.1001127"]];
 const N=({n}:{n:number})=><sup><a href={"#note-"+n} aria-label={"Endnote "+n}>[{n}]</a></sup>;
-export const metadata={title:`${title} | Rechte der Natur`,description,openGraph:{title,description,type:"article",url:"https://rechtedernatur.de/aktuelles/artenvielfalt-moeglichkeitsraum",siteName:"Rechte der Natur"},twitter:{card:"summary_large_image",title,description}};
+export const metadata={title:`${title} | Rechte der Natur`,description,openGraph:{title,description,type:"article",url:"https://rechtedernatur.de/aktuelles/artenvielfalt-moeglichkeitsraum",siteName:"Rechte der Natur",images:[{url:image,alt:"Biologischer Möglichkeitsraum zwischen vereinheitlichter Nutzung und biologischer Vielfalt"}]},twitter:{card:"summary_large_image",title,description,images:[image]}};
 export default function Artikel(){return <main className="newsPage"><SiteHeader section="Aktuelles" claimLead="Was sich bewegt." claimTrail="Geprüft. Eingeordnet. In Bewegung."/>
 <section className="newsHero"><p className="eyebrow">Biodiversität · 19. September 2026</p><h1>{title}</h1><p className="lead">{description}</p><nav aria-label="Sprachauswahl" style={{display:"flex",gap:10,marginTop:24,fontWeight:700}}><span aria-current="page">DE</span><Link href="/aktuelles/artenvielfalt-moeglichkeitsraum/en">EN</Link><Link href="/aktuelles/artenvielfalt-moeglichkeitsraum/es">ES</Link></nav></section>
-<div style={{maxWidth:1100,margin:"0 auto 42px",padding:"0 28px",borderRadius:20,background:"rgba(0,0,0,.035)",minHeight:320,display:"grid",placeItems:"center"}}><p style={{opacity:.6}}>Titelbild folgt</p></div>
+<div style={{maxWidth:1100,margin:"0 auto 42px",padding:"0 28px"}}><img src={image} alt="Biologischer Möglichkeitsraum zwischen vereinheitlichter Nutzung und biologischer Vielfalt" style={{display:"block",width:"100%",height:"auto",borderRadius:20}} /></div>
 <article style={{maxWidth:860,margin:"0 auto",padding:"0 28px 72px",fontSize:"1.08rem",lineHeight:1.75}}>
 <p>Wir gestalten Landschaften immer stärker nach unseren Bedürfnissen. Was dort keinen erkennbaren Zweck erfüllt, erscheint schnell entbehrlich. Doch genau darin steckt ein Denkfehler: Wir beurteilen Arten nach Funktionen, die wir bereits kennen – obwohl wir einen erheblichen Teil ihrer Fähigkeiten und Beziehungen noch gar nicht verstanden haben.</p>
 <p>Stellen wir uns eine Landschaft vor, die konsequent auf menschliche Bedürfnisse zugeschnitten ist. Auf dem Acker wächst, was wir essen oder wirtschaftlich verwerten wollen. Der Wald liefert Holz. Flüsse werden so gestaltet, dass Wasser verfügbar ist und Hochwasser möglichst beherrschbar bleibt. Straßen verbinden Siedlungen, Gewerbegebiete schaffen Arbeitsplätze, Grünflächen erfüllen definierte Funktionen.</p><p>Je konsequenter wir eine solche Landschaft optimieren, desto naheliegender erscheint eine zunächst provozierende Frage: <strong>Wozu brauchen wir eigentlich noch so viele Arten?</strong></p>
