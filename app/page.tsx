@@ -124,6 +124,12 @@ export default function Home() {
               <p className={styles.impactKicker}>Systemische Rechtsentwicklung</p>
               <h3>Strukturen verstehen</h3>
               <p>An konkreten rechtlichen und institutionellen Fällen untersuchen wir, wo Schutzmechanismen funktionieren, wo sie zu spät greifen und wie Recht, Verfahren, Zuständigkeiten und ökologische Zusammenhänge besser zusammenspielen können.</p>
+              <div className={styles.impactCase}>
+                <span>Aktuelle Untersuchung · Spree</span>
+                <strong>Was bringt Rechtssubjektivität zusätzlich?</strong>
+                <p>Die Spree zeigt, warum vorhandener Gewässerschutz die Frage nach eigenen Rechten nicht erledigt – sondern präziser macht.</p>
+                <Link href="/aktuelles/spree-eigene-rechte">Zur Spree-Untersuchung →</Link>
+              </div>
               <div className={styles.impactLinks}>
                 <a className={styles.textLink} href="https://systemische-rechtsentwicklung.de" target="_blank" rel="noreferrer">Systemische Rechtsentwicklung →</a>
               </div>
