@@ -37,6 +37,7 @@ export default function Artikel(){
       <h2>Mehr als ein zusätzliches Schutzinstrument</h2>
       <p>Albrecht verweist zugleich auf eine zweite Ebene. Die öffentliche Auseinandersetzung mit Eigenrechten der Natur könne einen Bewusstseinswandel im Verhältnis zwischen Menschen und ihrer Mitwelt fördern. Ihre Formulierung ist dabei bewusst vorsichtig: Sie <em>kann</em> einen solchen Wandel fördern – sie muss es nicht.</p>
       <p>Damit stehen zwei unterschiedliche Begründungen nebeneinander: ein möglicher <strong>juristisch-institutioneller Mehrwert</strong> und ein möglicher <strong>normativer Perspektivwechsel</strong>. Beides sollte nicht miteinander verwechselt werden.</p>
+      <p>Hinzu kommt ein weiterer juristischer Unterschied: Umweltverträglichkeitsprüfung, Bewirtschaftungsplanung und Verbandsrechtsschutz können erhebliche Schutz- und Kontrollwirkungen entfalten. Sie machen die Spree aber nicht selbst zur Trägerin eines materiellen subjektiven Rechts. Eigene Rechte würden ihr demgegenüber eine eigene Rechtsposition zuordnen. Ob daraus praktisch ein stärkerer Schutz folgt, hängt wiederum davon ab, wie Vertretung, gerichtliche Durchsetzung, Prüfungsmaßstab und Rechtsfolgen ausgestaltet sind.</p>
 
       <h2>Die offene Frage liegt tiefer</h2>
       <p>Unsere Untersuchung hat deshalb nicht zu dem Ergebnis geführt, dass Rechte der Natur für die Spree überflüssig wären. Sie hat die Beweisfrage verschoben.</p>
