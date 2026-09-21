@@ -51,13 +51,13 @@ export default function Artikel(){
 
       <hr/>
       <h2>Quellen und Hinweise</h2>
-      <ol>
+      <ol className="sreSourceList">
         <li><a href="https://greenlegal.eu/publikation/gesetzentwurf-rechte-der-spree/" target="_blank" rel="noreferrer">Green Legal Impact: Gesetzentwurf „Rechte der Spree“</a>.</li>
         <li><a href="https://wassermanagement-lausitz.de/wmlausitz/de/ueber-uns/geschaeftsstelle/" target="_blank" rel="noreferrer">AG Flussgebietsbewirtschaftung Spree, Schwarze Elster und Lausitzer Neiße: Geschäftsstelle</a>.</li>
         <li>Franziska Johanna Albrecht, persönliche schriftliche Stellungnahme auf Anfrage des Autors, 21.09.2026; ausdrücklich nicht als Position von Green Legal Impact Germany e.V. oder sämtlicher am Entwurf Beteiligter.</li>
       </ol>
-      <p style={{fontSize:".9rem"}}><strong>Transparenzhinweis:</strong> Stand 21. September 2026. Eine gezielte Umweltinformationsanfrage zur länderübergreifenden Kumulation und Rückkopplung von Entscheidungen wird derzeit bearbeitet. Sollte die Antwort den dargestellten Befund wesentlich verändern oder präzisieren, wird der Beitrag transparent aktualisiert.</p>
-      <p style={{fontSize:".9rem"}}>Struktur und Teile der Formulierung wurden mit Unterstützung von KI (GPT, OpenAI) entwickelt. Redaktionelle Verantwortung: Hans Leo Bader.</p>
+      <h3 className="sreTransparencyHeading">Transparenzhinweis</h3>\n      <p className="sreTransparencyText"><strong>Stand 21. September 2026.</strong> Eine gezielte Umweltinformationsanfrage zur länderübergreifenden Kumulation und Rückkopplung von Entscheidungen wird derzeit bearbeitet. Sollte die Antwort den dargestellten Befund wesentlich verändern oder präzisieren, wird der Beitrag transparent aktualisiert.</p>
+      <p className="sreTransparencyText">Struktur und Teile der Formulierung wurden mit Unterstützung von KI (GPT, OpenAI) entwickelt. Redaktionelle Verantwortung: Hans Leo Bader.</p>
     </article>
     <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Aktuelles</small></div></div></footer>
   </main>
