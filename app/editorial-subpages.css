@@ -126,3 +126,57 @@
   .joinPage .joinContact,.aboutPage .aboutOpen{border-radius:0;margin-left:0;margin-right:0}
 }
 @media(max-width:480px){.aboutPage .aboutPatronCard{grid-template-columns:1fr}.aboutPage .aboutPatronImage{aspect-ratio:16/10}.aboutPage .aboutLeadDelegate{padding:14px}.aboutPage .aboutLeadDelegateImage{border-radius:12px}}
+
+
+/* Shared SRE editorial source apparatus — binding across article repositories. */
+.newsPage .sreSourceList{
+  margin:1.7rem 0 2.6rem;
+  padding:0;
+  list-style:none;
+  counter-reset:article-sources;
+  border-top:1px solid var(--line);
+}
+.newsPage .sreSourceList li{
+  counter-increment:article-sources;
+  position:relative;
+  margin:0;
+  padding:1.05rem 0 1.05rem 3.25rem;
+  border-bottom:1px solid var(--line);
+  color:var(--earth);
+  font-size:.92rem;
+  line-height:1.62;
+}
+.newsPage .sreSourceList li::before{
+  content:counter(article-sources,decimal-leading-zero);
+  position:absolute;
+  left:0;
+  top:1.12rem;
+  color:var(--green);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+.newsPage .sreSourceList a{
+  color:var(--green);
+  text-decoration-thickness:1px;
+  text-underline-offset:.2em;
+}
+.newsPage .sreSourceList a:hover,
+.newsPage .sreSourceList a:focus-visible{ text-decoration-thickness:2px; }
+.newsPage .sreTransparencyHeading{
+  margin-top:2.8rem;
+  margin-bottom:1rem;
+  color:var(--green);
+  font-size:1rem;
+  line-height:1.35;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.newsPage .sreTransparencyText{
+  color:var(--earth);
+  font-size:.9rem;
+  line-height:1.62;
+}
+@media(max-width:640px){
+  .newsPage .sreSourceList li{padding-left:2.65rem;font-size:.9rem}
+}
