@@ -57,7 +57,8 @@ export default function Artikel(){
         <li><a href="https://wassermanagement-lausitz.de/wmlausitz/de/ueber-uns/geschaeftsstelle/" target="_blank" rel="noreferrer">AG Flussgebietsbewirtschaftung Spree, Schwarze Elster und Lausitzer Neiße: Geschäftsstelle</a>.</li>
         <li>Franziska Johanna Albrecht, persönliche schriftliche Stellungnahme auf Anfrage des Autors, 21.09.2026; ausdrücklich nicht als Position von Green Legal Impact Germany e.V. oder sämtlicher am Entwurf Beteiligter.</li>
       </ol>
-      <h3 className="sreTransparencyHeading">Transparenzhinweis</h3>\n      <p className="sreTransparencyText"><strong>Stand 21. September 2026.</strong> Eine gezielte Umweltinformationsanfrage zur länderübergreifenden Kumulation und Rückkopplung von Entscheidungen wird derzeit bearbeitet. Sollte die Antwort den dargestellten Befund wesentlich verändern oder präzisieren, wird der Beitrag transparent aktualisiert.</p>
+      <h3 className="sreTransparencyHeading">Transparenzhinweis</h3>
+      <p className="sreTransparencyText"><strong>Stand 21. September 2026.</strong> Eine gezielte Umweltinformationsanfrage zur länderübergreifenden Kumulation und Rückkopplung von Entscheidungen wird derzeit bearbeitet. Sollte die Antwort den dargestellten Befund wesentlich verändern oder präzisieren, wird der Beitrag transparent aktualisiert.</p>
       <p className="sreTransparencyText">Struktur und Teile der Formulierung wurden mit Unterstützung von KI (GPT, OpenAI) entwickelt. Redaktionelle Verantwortung: Hans Leo Bader.</p>
     </article>
     <footer><div className="footerIdentity"><BrandMark/><div><strong>Rechte der Natur</strong><small>Aktuelles</small></div></div></footer>
