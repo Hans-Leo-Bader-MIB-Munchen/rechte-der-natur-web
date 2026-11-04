@@ -3,6 +3,14 @@ import SiteHeader from "../components/SiteHeader";
 import BrandMark from "../components/BrandMark";
 
 const items = [
+  {
+    date: "04.11.2026",
+    tag: "Hintergrund",
+    title: "COP17: Die Natur schützen – und ihre Eigenständigkeit anerkennen?",
+    text: "Was bedeutet der Eigenwert der natürlichen Mitwelt für die Rechte der Natur? Der Beitrag auf Systemische Rechtsentwicklung unterscheidet ethischen Anspruch, rechtliche Anerkennung und praktische Verantwortung. Mit englischer und spanischer Fassung.",
+    href: "https://systemische-rechtsentwicklung.de/reflexionen/cop17-eigenwert-rechte-der-natur/",
+    external: true
+  },
   { date: "21.09.2026", tag: "Hintergrund", title: "Braucht die Spree eigene Rechte – obwohl es schon so viele Schutzinstrumente gibt?", text: "Die Spree zeigt, warum bestehender Gewässerschutz und eigene Rechte keine einfache Entweder-oder-Frage sind. Die Prüfung schärft den möglichen zusätzlichen Wert von Rechtssubjektivität.", href: "/aktuelles/spree-eigene-rechte" },
   { date: "19.09.2026", tag: "Hintergrund", title: "Woher wissen wir, welche Arten wir nicht brauchen?", text: "Artenvielfalt als biologischer Möglichkeitsraum: Was Einheitsnutzflächen sichtbar machen – und welche Fähigkeiten und Beziehungen wir verlieren könnten, bevor wir sie kennen.", href: "/aktuelles/artenvielfalt-moeglichkeitsraum" },
   { date: "16.09.2026", tag: "Hintergrund", title: "B12: Was „überragendes öffentliches Interesse“ verändert – und was nicht", text: "Der Ausbau der B12 zeigt, warum gesetzliche Priorisierung, Umweltverbandsklage, Art. 20a GG und Rechte der Mitwelt unterschiedliche Rechtsfunktionen erfüllen.", href: "/aktuelles/b12-ueberragendes-oeffentliches-interesse" },
