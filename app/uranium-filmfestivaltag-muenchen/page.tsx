@@ -7,11 +7,11 @@ export default function UraniumFestival(){return <main className={styles.festiva
 <SiteHeader claimLead="Gib der Natur Recht." claimTrail="Eine Kampagne für die Mitwelt." />
 <div className={styles.draft}>INTERNER GESTALTUNGSENTWURF · NICHT FREIGEGEBEN · TERMIN UND ORT OFFEN</div>
 <section className={styles.hero} aria-labelledby="festival-title">
-<img className={styles.heroImage} src="/uranium-filmfestivaltag/hero.svg" alt="" aria-hidden="true"/>
+<img className={styles.heroImage} src="/uranium-filmfestivaltag/uranium-hero-ki-platzhalter.png" alt="" aria-hidden="true"/>
 <div className={styles.heroContent}><p className={styles.placeholder}>KI-GENERIERTES PLATZHALTERBILD · KEIN OFFIZIELLES FESTIVALMOTIV</p><h1 id="festival-title">Uranium<br/>Filmfestivaltag<br/><span>München 2027</span></h1><p>Film · Gespräch · Ausstellung</p><p className={styles.sub}>Uranium · Atomrisiken · Rechte der Natur</p></div>
 </section>
 <div className={styles.content}><section className={styles.film} aria-label="Film im Programmvorschlag">
-<div className={styles.filmVisual}><span className={styles.filmPlaceholder}>KI-GENERIERTES PLATZHALTERBILD · KEIN OFFIZIELLES FILMPLAKAT</span><img src="/uranium-filmfestivaltag/bunker.svg" alt="Symbolische Illustration eines Bunkergangs, kein offizielles Filmbild"/><strong>FINAL<br/>PICTURE</strong></div>
+<div className={styles.filmVisual}><span className={styles.filmPlaceholder}>KI-GENERIERTES PLATZHALTERBILD · KEIN OFFIZIELLES FILMPLAKAT</span><img src="/uranium-filmfestivaltag/final-picture-ki-platzhalter.png" alt="Symbolische Illustration eines Bunkergangs, kein offizielles Filmbild"/><strong>FINAL<br/>PICTURE</strong></div>
 <div className={styles.filmCopy}><span className={styles.pill}>Geplanter Film</span><h2>Final Picture</h2><p>Deutschland · 2013 · 92 Minuten<br/>Regie: Michael von Hohenberg</p><p>Ein globaler Atomkrieg hat die Welt verändert. In Bunkeranlagen versuchen Menschen zu überleben. Der Spielfilm erzählt vom Leben und Sterben nach einer nuklearen Katastrophe.</p><div className={styles.award}><strong>Auszeichnung:</strong> Yellow Oscar 2014 beim International Uranium Film Festival (laut Festivalangaben).</div><p className={styles.small}>Das dargestellte Bild ist ein KI-generierter Platzhalter und kein offizielles Filmplakat. Vorführung, Rechte und Gäste sind nicht bestätigt.</p><a href={filmUrl} target="_blank" rel="noopener noreferrer">Film beim Festival ansehen ↗</a></div>
 </section></div>
 <section className={styles.topics} aria-label="Themenbereiche">
