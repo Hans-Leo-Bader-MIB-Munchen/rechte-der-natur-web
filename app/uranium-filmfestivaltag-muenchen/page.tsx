@@ -1,47 +1,24 @@
 import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Uranium Filmfestivaltag München 2027 – Entwurf",
-  description: "Film, Ausstellung und Gespräche über das Atomzeitalter, langfristige Verantwortung und die Rechte der Natur. Interner Entwurf.",
-  robots: { index: false, follow: false },
-};
-
-const festival = "https://uraniumfilmfestival.org/de";
-const film = "https://uraniumfilmfestival.org/de/film/quebec-2015-berlin-2014-passau-2014-rio-2014/final-picture";
-
-export default function UraniumFilmfestivaltagEntwurf() {
-  return (
-    <main style={{ background: "#111c21", color: "#f4f3ed", minHeight: "100vh", fontFamily: "inherit" }}>
-      <div style={{ maxWidth: 1000, margin: "0 auto", padding: "clamp(24px, 5vw, 70px)" }}>
-        <p style={{ color: "#d7e58c", fontSize: 13, fontWeight: 700, letterSpacing: "0.14em" }}>INTERNER ENTWURF · NICHT FREIGEGEBEN</p>
-        <p style={{ fontSize: 14, marginTop: 32 }}>MÜNCHEN · 2027 · TERMIN UND ORT IN PLANUNG</p>
-        <h1 style={{ fontSize: "clamp(2.5rem, 7vw, 5.5rem)", lineHeight: 1.05, letterSpacing: "-0.04em", margin: "24px 0" }}>URANIUM<br />FILMFESTIVALTAG<br /><span style={{ color: "#d7e58c" }}>MÜNCHEN</span></h1>
-        <p style={{ fontSize: "clamp(1.25rem, 3vw, 2rem)", lineHeight: 1.35, maxWidth: 760 }}>Die Folgen bleiben. Die Verantwortung auch.</p>
-        <p style={{ fontSize: 18, lineHeight: 1.7, maxWidth: 760, color: "#d9dfdc" }}>Ein geplanter Tag mit Film, Ausstellung und Diskussionen über das Atomzeitalter und die Frage, wie wir Menschen, natürliche Lebensgrundlagen und künftige Generationen wirksam schützen können.</p>
-        <section style={{ marginTop: 70, paddingTop: 30, borderTop: "1px solid #52615e" }}>
-          <h2 style={{ fontSize: 32 }}>Film im Programmvorschlag</h2>
-          <p style={{ color: "#d7e58c", fontWeight: 700 }}>FINAL PICTURE</p>
-          <p>Deutschland · 2013 · Regie: Michael von Hohenberg</p>
-          <p style={{ lineHeight: 1.7, maxWidth: 760 }}>Ein Spielfilm über das Überleben nach einem Atomkrieg. Die geplante Vorführung soll ein Gespräch über nukleare Risiken, langfristige Verantwortung und den Schutz der natürlichen Mitwelt eröffnen.</p>
-          <p style={{ fontSize: 14, color: "#cbd5d1" }}>Vorführung, Filmfassung, Gäste und Aufführungsrechte sind noch nicht bestätigt.</p>
-          <a href={film} target="_blank" rel="noopener noreferrer" style={{ color: "#d7e58c" }}>Film auf der Website des International Uranium Film Festivals ansehen ↗</a>
-        </section>
-        <section style={{ marginTop: 65, paddingTop: 30, borderTop: "1px solid #52615e" }}>
-          <h2 style={{ fontSize: 32 }}>Rechte der Natur</h2>
-          <p style={{ lineHeight: 1.7, maxWidth: 760 }}>Was bedeutet Verantwortung, wenn Schäden an Gewässern, Böden und Lebensgemeinschaften über Generationen bestehen bleiben? Die Rechte der Natur eröffnen eine rechtliche Perspektive auf den Eigenwert natürlicher Systeme und ihre Berücksichtigung in Entscheidungen. Sie sind nicht bloß ein Klageinstrument.</p>
-          <p style={{ lineHeight: 1.7, maxWidth: 760 }}>Geplant ist eine Verbindung mit der Wanderausstellung „Rechte der Natur“ und einem Gespräch über Vorsorge, bestehende Schutzinstrumente und mögliche zusätzliche Rechtsansätze.</p>
-        </section>
-        <section style={{ marginTop: 65, paddingTop: 30, borderTop: "1px solid #52615e" }}>
-          <h2 style={{ fontSize: 32 }}>Geplantes Format</h2>
-          <p style={{ lineHeight: 1.7 }}>Zwei bis drei ausgewählte Filme · Ausstellung · Gespräche mit Filmschaffenden und Fachleuten. Als Spielstätte werden Kino und geeignete ehemalige Bunkeranlagen geprüft.</p>
-          <p style={{ lineHeight: 1.7 }}>München war bereits 2013 Veranstaltungsort des International Uranium Film Festivals. Der geplante Festivaltag knüpft an diese Geschichte an.</p>
-          <a href={festival} target="_blank" rel="noopener noreferrer" style={{ color: "#d7e58c" }}>International Uranium Film Festival ↗</a>
-        </section>
-        <footer style={{ marginTop: 75, paddingTop: 25, borderTop: "1px solid #52615e", color: "#cbd5d1", fontSize: 13, lineHeight: 1.7 }}>
-          <p>Konzeptentwurf. Keine offizielle Veranstaltungsankündigung. Termin, Veranstalter, Kooperationen, Marken- und Filmrechte, Spielstätte und Finanzierung sind noch zu klären. Keine Anmeldung und kein Ticketverkauf.</p>
-          <p>Textentwurf in Kooperation mit KI (GPT, OpenAI). Inhaltliche Verantwortung: Hans Leo Bader. CC BY-NC-SA 4.0. Rechte an Filmen, Festivalnamen und Fremdmaterial bleiben bei den jeweiligen Berechtigten.</p>
-        </footer>
-      </div>
-    </main>
-  );
-}
+export const metadata: Metadata = {title:"Uranium Filmfestivaltag München 2027 – Entwurf",description:"Film, Gespräch und Ausstellung über atomare Risiken, langfristige Verantwortung und Rechte der Natur.",robots:{index:false,follow:false}};
+const filmUrl="https://uraniumfilmfestival.org/de/film/quebec-2015-berlin-2014-passau-2014-rio-2014/final-picture";
+export default function Page(){return <main style={{background:"#f7f8f4",color:"#17211a",minHeight:"100vh",fontFamily:"inherit"}}>
+<div style={{background:"#f4f7f1",borderBottom:"1px solid #d8e2d5",padding:"15px clamp(20px,5vw,70px)",display:"flex",justifyContent:"space-between",alignItems:"center",gap:20,flexWrap:"wrap"}}><a href="/" style={{fontSize:22,fontWeight:800,color:"#19552b",textDecoration:"none"}}>✦ Rechte der Natur</a><span style={{fontSize:12,color:"#4b5c4f",fontWeight:700,letterSpacing:".08em"}}>INTERNER ENTWURF · NICHT FREIGEGEBEN</span></div>
+<section style={{background:"#091c26",color:"white",position:"relative",minHeight:430,overflow:"hidden",display:"flex",alignItems:"center"}}>
+<img src="/uranium-filmfestivaltag/hero.svg" alt="Illustration: Filmprojektor, Erde, Wald und Atomsymbol" style={{position:"absolute",width:"100%",height:"100%",objectFit:"cover",opacity:.82}}/>
+<div style={{position:"relative",width:"100%",maxWidth:1200,margin:"0 auto",padding:"65px clamp(22px,6vw,80px)",textShadow:"0 2px 16px #08151e"}}>
+<p style={{fontWeight:800,letterSpacing:".16em",color:"#f9d757",fontSize:13}}>MÜNCHEN · 2027 · IN PLANUNG</p>
+<h1 style={{fontSize:"clamp(2.3rem,6.5vw,5.2rem)",lineHeight:1.06,letterSpacing:"-.04em",margin:"20px 0",maxWidth:880}}>Uranium<br/>Filmfestivaltag<br/><span style={{color:"#f9d757"}}>München 2027</span></h1>
+<p style={{fontSize:"clamp(1.1rem,2.4vw,1.6rem)",fontWeight:600,margin:"20px 0 8px"}}>Film · Gespräch · Ausstellung</p>
+<p style={{fontSize:"clamp(1rem,2vw,1.25rem)",margin:0}}>Die Folgen bleiben. Die Verantwortung auch.</p>
+</div></section>
+<div style={{maxWidth:1200,margin:"0 auto",padding:"clamp(25px,5vw,65px)"}}>
+<p style={{fontSize:"clamp(1.05rem,2vw,1.3rem)",lineHeight:1.7,maxWidth:900,margin:"0 0 48px"}}>Ein Festivaltag über Uran, atomare Risiken und die Verantwortung für Menschen, die natürliche Mitwelt und künftige Generationen. Ein Konzept für München – noch keine bestätigte Veranstaltung.</p>
+<section style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,330px),1fr))",gap:35,alignItems:"center",marginBottom:65}}>
+<div><img src="/uranium-filmfestivaltag/bunker.svg" alt="Künstlerische Bunkerillustration; kein offizielles Filmplakat oder Szenenbild" style={{width:"100%",height:"auto",display:"block",borderRadius:8}}/><p style={{fontSize:12,color:"#56645b"}}>Symbolische Entwurfsillustration – kein offizielles Filmmotiv.</p></div>
+<div><p style={{display:"inline-block",background:"#256e34",color:"white",borderRadius:4,padding:"6px 12px",fontWeight:700,fontSize:13}}>Film im Programmvorschlag</p><h2 style={{fontSize:"clamp(2rem,4vw,3.5rem)",margin:"10px 0"}}>Final Picture</h2><p style={{fontSize:18}}>Deutschland · 2013<br/>Regie: Michael von Hohenberg</p><p style={{fontSize:17,lineHeight:1.7}}>Ein Spielfilm über das Überleben nach einem Atomkrieg. Er eröffnet Fragen nach Vorsorge, den Grenzen bloßen Überlebens und langfristiger Verantwortung.</p><p style={{fontSize:14,color:"#5e625b"}}>Vorführung, Aufführungsrechte und Gäste sind noch nicht bestätigt.</p><a href={filmUrl} target="_blank" rel="noopener noreferrer" style={{color:"#165d31",fontWeight:700}}>Offizielle Filmseite ↗</a></div>
+</section>
+<section style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,260px),1fr))",gap:20}}>
+{[{symbol:"◉",title:"Film und Gespräch",text:"Überleben allein genügt nicht. Was schulden wir den Lebensgrundlagen künftiger Generationen?"},{symbol:"⚖",title:"Rechte der Natur",text:"Eigenwert natürlicher Systeme, wirksame Vorsorge und rechtliche Verantwortung – nicht bloß ein Klageinstrument."},{symbol:"▧",title:"Wanderausstellung",text:"Die bestehende Ausstellung „Rechte der Natur“ soll das Filmprogramm begleiten. Umfang und Verfügbarkeit sind offen."}].map(item=><article key={item.title} style={{padding:"26px",background:"#ecf2e9",borderRadius:8,borderTop:"4px solid #2e7838"}}><div aria-hidden="true" style={{fontSize:34,color:"#236e33"}}>{item.symbol}</div><h3 style={{fontSize:24,margin:"14px 0 10px"}}>{item.title}</h3><p style={{fontSize:16,lineHeight:1.7,margin:0}}>{item.text}</p></article>)}</section>
+<section style={{marginTop:55,borderTop:"1px solid #cbd8ca",paddingTop:30}}><h2 style={{fontSize:28}}>Ein Tag mit Geschichte</h2><p style={{fontSize:17,lineHeight:1.7,maxWidth:900}}>Das International Uranium Film Festival war bereits 2013 in München zu Gast. Für 2027 wird ein neues eintägiges Format mit zwei bis drei Filmen, Ausstellung und Diskussion erwogen. Termin, Spielstätte, Kooperationen und Finanzierung sind offen.</p><a href="https://uraniumfilmfestival.org/de" target="_blank" rel="noopener noreferrer" style={{color:"#165d31",fontWeight:700}}>International Uranium Film Festival ↗</a></section>
+<footer style={{marginTop:65,paddingTop:24,borderTop:"1px solid #cbd8ca",fontSize:13,lineHeight:1.7,color:"#536154"}}><p>Interner Gestaltungs- und Konzeptentwurf. Keine offizielle Ankündigung, kein Ticketverkauf. Festivalname, Filmbilder und Veranstaltungsrechte bleiben vorbehalten. Die Illustrationen sind eigenständige Entwurfsgrafiken, keine offiziellen Festival- oder Filmmotive.</p><p>Struktur und Teile der Formulierung mithilfe von KI (GPT, OpenAI) entwickelt. Inhaltliche Verantwortung: Hans Leo Bader. Textentwurf CC BY-NC-SA 4.0; Rechte Dritter bleiben unberührt.</p></footer>
+</div></main>}
