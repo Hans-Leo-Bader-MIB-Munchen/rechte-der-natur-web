@@ -49,6 +49,22 @@ export default function UraniumFestival(){return <main className={styles.festiva
 <article><h3>Die Ausstellung als verbindender Raum</h3><p>Die Wanderausstellung Rechte der Natur soll unabhängig vom Kinobesuch zugänglich sein. Kurze Rundgänge und ein möglicher lokaler Bezug zu Isar oder Stadtbäumen verbinden die Filme mit Fragen vor Ort. Ausleihe, Flächenbedarf, Transport und Vermittlung sind mit dem Ausstellungspartner zu klären.</p></article>
 <article><h3>Gespräche mit journalistischer Einordnung</h3><p>TELI könnte an Leitfragen, Moderation und wissenschaftlicher Einordnung mitwirken. Das ist eine vorgeschlagene Rolle; eine Partnerschaft oder Berichterstattung ist nicht zugesagt. Bevorzugt wird ein Kino mit geeigneter Ausstellungsfläche oder einem nahe gelegenen Ausstellungsort.</p></article>
 </div>
+<h3>Historisches Netzwerk als Ausgangspunkt</h3>
+<p>Der Projektbericht von 2013 nennt ein breites Netzwerk in Deutschland und Brasilien. Daran könnte die weitere Planung anknüpfen – über Kino- und Filmvermittlung, Fachgespräche, Kultur- und Bildungskooperationen sowie gezielte Publikumsansprache. Die Liste dokumentiert damalige Beziehungen; sie ist keine Unterstützerliste für 2027.</p>
+<details className={styles.seriesSchedule}><summary>Alle im Projektbericht genannten Partner und Förderer</summary>
+<p><strong>Deutschland · historische Nennungen:</strong></p>
+<ul>
+<li>Nuclear-Free Future Award; DENKmal-Film Verhaag GmbH.</li>
+<li>Heinrich-Böll-Stiftung; Stiftung Neue Energie / GLS Treuhand e.V.; Petra-Kelly-Stiftung; Kulturreferat der Stadt München; Bildungswerk – Katholische Arbeiterbewegung.</li>
+<li>ICBUW Deutschland / Anti-Uranwaffen-Koalition; Umweltinstitut München; BUND Naturschutz in Bayern; WECF – Women in Europe for a Common Future.</li>
+<li>Deutsch-Brasilianischer Kulturverein e.V.; Istituto Italiano di Cultura.</li>
+<li>Globalmagazin; Nachhaltig Leben.</li>
+</ul>
+<p><strong>Brasilien · historischer internationaler Zusammenhang:</strong> Museu de Arte Moderna do Rio de Janeiro (MAM Rio); Fundação de Apoio à Escola Técnica do Estado do Rio de Janeiro (FAETEC), Escola Técnica Estadual Adolpho Bloch; Fundação Heinrich Boell Brasil; Armazém São Thiago; Cachaça Magnífica; Bar do Mineiro.</p>
+<p className={styles.seriesSmall}>Quelle: <a href="https://uraniumfilmfestival.org/files/2013_muenchen_abschlussbericht.pdf" target="_blank" rel="noopener noreferrer">IUFF-Projektbericht München 2013, Seite 7 ↗</a>. Der Bericht unterscheidet die damaligen Einzelleistungen nicht. Heutige Zuständigkeiten, Interesse und Beiträge sind vor einer Ansprache zu klären; eine Beteiligung 2027 ist nicht zugesagt.</p>
+</details>
+<p>Rio Filmpalast und Werkstattkino sind historische Spielstätten und damit mögliche Anknüpfungspunkte für die Standortsuche. Claus Biegert könnte als Gesprächs- oder Moderationspartner einbezogen werden. Für keine dieser Optionen liegt im Konzept eine aktuelle Zusage vor.</p>
+<p>Ein Beginn am Nachmittag und ein anschließender Austausch mit Filmschaffenden sind weitere Ideen. Eine Terminierung während des Oktoberfests bleibt gegen Kosten, Verfügbarkeit und Terminkonkurrenz abzuwägen. In der Kommunikation sollen neben Fachredaktionen auch Kultur und Feuilleton gezielt angesprochen werden; historische Berichte sind keine heutige Reichweitenzusage.</p>
 <p>Die Gespräche berücksichtigen die Leistungen des bestehenden Schutzrechts. Sie fragen zugleich, welche zusätzlichen Funktionen Rechte der Natur für Eigenwert, Integrität und Beziehungen natürlicher Systeme erfüllen könnten. Rechte der Natur werden weder auf Rechtspersönlichkeit noch auf ein Klageinstrument reduziert; eine automatische Verhinderung von Schäden wird nicht unterstellt.</p>
 <p className={styles.seriesSmall}>Nächster Schritt ist die Abstimmung von Format und Rollen. Vor verbindlicher Planung müssen Trägerschaft, Budgetverantwortung, Finanzierung, Ausstellungsverfügbarkeit und Aufführungsrechte geklärt werden.</p>
 </div>
