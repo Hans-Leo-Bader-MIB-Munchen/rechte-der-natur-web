@@ -28,3 +28,33 @@
 .filmVisual{aspect-ratio:auto}
 .filmVisual img{height:auto;object-fit:contain}
 .filmVisual strong{display:none}
+.series{background:#f2f5ed;border-top:1px solid #dce5d7;padding:48px clamp(20px,4vw,55px) 60px;scroll-margin-top:24px}
+.seriesInner{max-width:1200px;margin:auto;min-width:0}
+.seriesLabel{font-size:12px!important;letter-spacing:.08em;font-weight:700;color:#456334}
+.series h2{font-size:clamp(1.9rem,3.4vw,3rem);line-height:1.15;margin:12px 0 18px}
+.series h3{font-size:clamp(1.25rem,2.1vw,1.65rem);line-height:1.3;margin:30px 0 14px}
+.series p,.series li{font-size:17px;line-height:1.65}
+.seriesLead{font-size:clamp(1.15rem,2vw,1.4rem)!important;max-width:900px}
+.series blockquote{border-left:4px solid #78a63c;padding:8px 0 8px 22px;margin:26px 0;font-size:clamp(1.2rem,2.3vw,1.7rem);line-height:1.5;max-width:950px}
+.seriesStatus{background:#fff8df;border:1px solid #e3d7a2;padding:16px 20px;font-size:15px!important;border-radius:8px}
+.seriesFilms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.seriesFilms article{background:#fff;border:1px solid #dce5d7;border-radius:10px;padding:24px;min-width:0}
+.seriesFilms h4{font-size:1.5rem;line-height:1.25;margin:14px 0}
+.seriesFilms p{font-size:16px}
+.seriesNumber{font-size:11px!important;letter-spacing:.08em;color:#456334;font-weight:700;margin-top:0}
+.seriesMeta{font-size:14px!important;color:#586257}
+.series a{color:#216b2c;font-weight:700;text-underline-offset:4px}
+.seriesSmall{font-size:14px!important;color:#586257}
+.seriesTableWrap{overflow-x:auto}
+.seriesTable{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.5}
+.seriesTable caption{text-align:left;font-size:14px;color:#586257;padding:0 0 10px}
+.seriesTable th,.seriesTable td{padding:16px;text-align:left;vertical-align:top;border:1px solid #cbd8ca}
+.seriesTable thead th{background:#e4eddc}
+.seriesTable th[scope=row]{width:26%}
+.seriesSchedule{background:#fff;border:1px solid #cbd8ca;border-radius:8px;padding:18px 22px;margin:24px 0}
+.seriesSchedule summary{font-size:17px;font-weight:700;cursor:pointer;line-height:1.5}
+.seriesSchedule summary:focus-visible{outline:3px solid #216b2c;outline-offset:5px}
+.seriesSchedule li+li{margin-top:10px}
+.seriesContext{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+@media(max-width:800px){.seriesFilms{grid-template-columns:1fr}.seriesContext{grid-template-columns:1fr;gap:0}}
+@media(max-width:650px){.series{padding:32px 20px 40px}.seriesTable{font-size:14px}.seriesTable th,.seriesTable td{padding:10px;overflow-wrap:anywhere}.seriesFilms article{padding:20px}.series blockquote{padding-left:16px}}
